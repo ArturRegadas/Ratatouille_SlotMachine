@@ -8,7 +8,7 @@ Item {
 
     Image {
         anchors.fill: parent
-        source: "../assets/"
+        source: "../assets/BGbottonbar.png"
 
     }
 

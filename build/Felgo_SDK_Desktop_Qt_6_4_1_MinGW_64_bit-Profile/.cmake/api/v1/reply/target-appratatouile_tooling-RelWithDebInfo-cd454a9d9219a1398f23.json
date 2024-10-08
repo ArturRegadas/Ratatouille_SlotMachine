@@ -81,13 +81,13 @@
 		{
 			"backtrace" : 5,
 			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Profile/ratatouile/qml/BottonBar.qml",
+			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Profile/ratatouile/qml/ButtonBottonBar.qml",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Profile/ratatouile/qml/BottonBar.qml.rule",
+			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Profile/ratatouile/qml/ButtonBottonBar.qml.rule",
 			"sourceGroupIndex" : 1
 		}
 	],

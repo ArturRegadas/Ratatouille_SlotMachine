@@ -1,4 +1,5 @@
 module ratatouile
 typeinfo appratatouile.qmltypes
 prefer :/
+ButtonBottonBar 1.0 qml/ButtonBottonBar.qml
 

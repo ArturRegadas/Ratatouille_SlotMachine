@@ -8,8 +8,29 @@ Item {
 
     Image {
         anchors.fill: parent
-        source: "../assets/BGtopbar.png"
+        source: "../assets/BGbottonbar.png"
 
+    }
+
+    Image {
+        id: auto
+        source: "../assets/"
+    }
+
+
+    Image {
+        id: minus
+        source: "../assets/"
+    }
+
+    Image {
+        id: plus
+        source: "../assets/"
+    }
+
+    Image {
+        id: max
+        source: "../assets/"
     }
 
 }

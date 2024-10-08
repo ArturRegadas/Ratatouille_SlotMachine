@@ -76,6 +76,18 @@
 				"file" : 0,
 				"line" : 133,
 				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 133,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 133,
+				"parent" : 3
 			}
 		]
 	},
@@ -90,7 +102,7 @@
 				"appratatouile.exe"
 			],
 			"targetId" : "appratatouile::@6890427a1f51a3e7e1df",
-			"targetIndex" : 5,
+			"targetIndex" : 7,
 			"type" : "target"
 		},
 		{
@@ -99,7 +111,7 @@
 			"cxxModuleBmiTarget" : 
 			{
 				"id" : "appratatouile::@6890427a1f51a3e7e1df",
-				"index" : 5
+				"index" : 7
 			},
 			"destination" : "C:/Program Files (x86)/ratatouile",
 			"type" : "cxxModuleBmi"
@@ -120,7 +132,7 @@
 			"destination" : "qml",
 			"paths" : 
 			[
-				"qml/Main.qml"
+				"qml/ButtonBottonBar.qml"
 			],
 			"type" : "file"
 		},
@@ -130,17 +142,17 @@
 			"destination" : "qml",
 			"paths" : 
 			[
-				"qml/TopBar.qml"
+				"qml/Main.qml"
 			],
 			"type" : "file"
 		},
 		{
 			"backtrace" : 7,
 			"component" : "Unspecified",
-			"destination" : "assets",
+			"destination" : "qml",
 			"paths" : 
 			[
-				"assets/BGtopbar.png"
+				"qml/TopBar.qml"
 			],
 			"type" : "file"
 		},
@@ -150,7 +162,7 @@
 			"destination" : "assets",
 			"paths" : 
 			[
-				"assets/GameCoin.png"
+				"assets/BGbottonbar.png"
 			],
 			"type" : "file"
 		},
@@ -160,12 +172,32 @@
 			"destination" : "assets",
 			"paths" : 
 			[
-				"assets/GameLogo.png"
+				"assets/BGtopbar.png"
 			],
 			"type" : "file"
 		},
 		{
 			"backtrace" : 10,
+			"component" : "Unspecified",
+			"destination" : "assets",
+			"paths" : 
+			[
+				"assets/GameCoin.png"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 11,
+			"component" : "Unspecified",
+			"destination" : "assets",
+			"paths" : 
+			[
+				"assets/GameLogo.png"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 12,
 			"component" : "Unspecified",
 			"destination" : "qml",
 			"paths" : 

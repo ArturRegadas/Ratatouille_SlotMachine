@@ -17,12 +17,17 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "appratatouile_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"backtrace" : 0,
+			"id" : "appratatouile_tooling::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "appratatouile_qmlimportscan::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "appratatouile_autogen::@6890427a1f51a3e7e1df",
+	"id" : "appratatouile_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
 	"isGeneratorProvided" : true,
-	"name" : "appratatouile_autogen",
+	"name" : "appratatouile_autogen_timestamp_deps",
 	"paths" : 
 	{
 		"build" : ".",
@@ -51,19 +56,19 @@
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Profile/CMakeFiles/appratatouile_autogen",
+			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Profile/CMakeFiles/appratatouile_autogen_timestamp_deps",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Profile/CMakeFiles/appratatouile_autogen.rule",
+			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Profile/CMakeFiles/appratatouile_autogen_timestamp_deps.rule",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Profile/appratatouile_autogen/timestamp.rule",
+			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Profile/.rcc/qmlcache/appratatouile_qmlcache_loader.cpp.rule",
 			"sourceGroupIndex" : 1
 		}
 	],

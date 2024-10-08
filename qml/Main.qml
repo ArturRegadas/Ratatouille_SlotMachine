@@ -29,6 +29,7 @@ GameWindow{
                 anchors.top: scene.gameWindowAnchorItem.top
                 anchors.horizontalCenter: scene.gameWindowAnchorItem.horizontalCenter
          }
+
          BottonBar{
                 id: bottomBar
                 width: scene.gameWindowAnchorItem.width
