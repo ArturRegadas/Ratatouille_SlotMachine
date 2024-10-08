@@ -52,7 +52,7 @@ qt_add_qml_module(appratatouile
 #    QML_FILES ${QmlFiles}
 #    RESOURCES ${AssetsFiles}
     NO_RESOURCE_TARGET_PATH
-    QML_FILES qml/BottonBar.qml
+    QML_FILES
 )
 
 # NOTE: for PUBLISHING, perform the following steps:
