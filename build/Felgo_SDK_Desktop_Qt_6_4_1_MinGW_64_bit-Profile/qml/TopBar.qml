@@ -3,7 +3,7 @@ import QtQuick 2.0
 
 Item {
     id: item
-    height: 50 //mudar tamanho da top NavigationBar
+    height: 51 //mudar tamanho da top NavigationBar
 
 
     Image{   // imagem de fundo, deve ter o mesmo tamanho do item.height
@@ -18,6 +18,7 @@ Item {
 
         anchors.top:parent.top
         anchors.horizontalCenter: parent.horizontalCenter
+
     }
 
     Image { //imagem do money

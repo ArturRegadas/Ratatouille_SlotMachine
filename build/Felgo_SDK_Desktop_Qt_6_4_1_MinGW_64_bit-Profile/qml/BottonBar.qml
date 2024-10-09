@@ -19,7 +19,7 @@ Item {
     signal maxValueClicked()
 
 
-    Image {
+    Image {//background od the BottomBar
         anchors.fill: parent
         source: "../assets/BGbottonbar.png"
 
@@ -44,7 +44,7 @@ Item {
         id : fastbutton
         width: 61
         height: 31
-        source: bottomBar.autoActive ? "../assets/PrecessedFastButton" : "../assets/NormalFastButton.png"
+        source: bottomBar.fastActive ? "../assets/PrecessedFastButton" : "../assets/NormalFastButton.png"
         anchors.bottom: bottomBar.bottom
         anchors.left: autobutton.right
         anchors.bottomMargin: 4
@@ -59,7 +59,7 @@ Item {
         id : startbutton
         width: 61
         height: 31
-        source: bottomBar.autoActive ? "../assets/PrecessedStartButton" : "../assets/NormalStartButton.png"
+        source: bottomBar.startActive ? "../assets/PrecessedStartButton" : "../assets/NormalStartButton.png"
         anchors.bottom: bottomBar.bottom
         anchors.right: parent.right
         anchors.bottomMargin: 4
@@ -103,6 +103,12 @@ Item {
             height: 23
             source: "../assets/ButtonMinus.png"
             anchors.verticalCenter: parent.verticalCenter
+            MouseArea{
+                anchors.fill: parent
+                onClicked: decrementClicked()
+            }
+
+
         }
 
         Image {
@@ -111,6 +117,12 @@ Item {
             height: 23
             source: "../assets/ButtonPlus.png"
             anchors.verticalCenter: parent.verticalCenter
+            MouseArea{
+                anchors.fill: parent
+                onClicked: incrementClicked()
+            }
+
+
         }
 
         Image {
@@ -119,6 +131,12 @@ Item {
             height: 23
             source: "../assets/MaxText.png"
             anchors.verticalCenter: parent.verticalCenter
+            MouseArea{
+                anchors.fill: parent
+                onClicked: maxValueClicked()
+            }
+
+
         }
     }
 }
