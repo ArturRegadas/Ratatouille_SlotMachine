@@ -1,0 +1,6 @@
+module ratatouile
+typeinfo appratatouile.qmltypes
+prefer :/
+BottonBar 1.0 qml/BottonBar.qml
+SlotMachine 1.0 qml/slotGame/SlotMachine.qml
+

@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="qml/BottonBar.qml">F:/programas/git/ratatouille/Game_Log/qml/BottonBar.qml</file>
+    <file alias="qml/slotGame/SlotMachine.qml">F:/programas/git/ratatouille/Game_Log/qml/slotGame/SlotMachine.qml</file>
+  </qresource>
+</RCC>
+

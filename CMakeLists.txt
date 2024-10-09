@@ -53,6 +53,7 @@ qt_add_qml_module(appratatouile
 #    RESOURCES ${AssetsFiles}
     NO_RESOURCE_TARGET_PATH
     QML_FILES qml/BottonBar.qml
+    QML_FILES qml/slotGame/SlotMachine.qml
 )
 
 # NOTE: for PUBLISHING, perform the following steps:
