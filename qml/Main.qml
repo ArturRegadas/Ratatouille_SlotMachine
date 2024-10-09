@@ -1,5 +1,6 @@
 import Felgo 4.0
 import QtQuick 2.0
+import "./slotMachine"
 
 GameWindow{
     id: gameWindow
@@ -19,15 +20,28 @@ GameWindow{
          property int betStack: 5 // valor da bet
          property int creditStack: 400 // quantia na carteira
 
-         Rectangle {
-           anchors.fill: scene.gameWindowAnchorItem
-           color: "#722F37"
-         }
+         //Possível imagem de fundo
+         // Image{
+         //    anchors.centerIn: scene.Center
+         //    width: scene.gameWindowAnchorItem.width
+         //    height: scene.gameWindowAnchorItem.height
+         //    source: "../assets/backgroundMain.jpg"
+         // }
+
+        Rectangle {
+            anchors.fill: scene.gameWindowAnchorItem
+            color: "#722F37"
+        }
          TopBar {
            id: topBar
            width: scene.gameWindowAnchorItem.width
            anchors.top: scene.gameWindowAnchorItem.top
            anchors.horizontalCenter: scene.gameWindowAnchorItem.horizontalCenter
+         }
+         Ratatouille{
+             anchors.centerIn: parent
+             defaultItemHeight: 80
+             defaultReelWidth: 67
          }
     }
     // configurar top bar

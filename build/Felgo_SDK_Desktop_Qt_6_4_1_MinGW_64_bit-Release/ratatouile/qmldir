@@ -3,4 +3,9 @@ typeinfo appratatouile.qmltypes
 prefer :/
 BottonBar 1.0 qml/BottonBar.qml
 SlotMachine 1.0 qml/slotGame/SlotMachine.qml
+Symbol 1.0 qml/slotGame/Symbol.qml
+Ratatouille 1.0 qml/slotGame/Ratatouille.qml
+SymbolRats 1.0 qml/config/SymbolRats.qml
+Symbol 1.0 qml/slotMachine/Symbol.qml
+Ratatouille 1.0 qml/slotMachine/Ratatouille.qml
 

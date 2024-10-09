@@ -65,14 +65,20 @@
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1,
+				2,
+				3
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				1
+				4,
+				5,
+				6,
+				7
 			]
 		}
 	],
@@ -85,9 +91,45 @@
 			"sourceGroupIndex" : 0
 		},
 		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/ratatouile/qml/slotGame/SlotMachine.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/ratatouile/qml/slotGame/Symbol.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/ratatouile/qml/slotGame/Ratatouille.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/ratatouile/qml/BottonBar.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/ratatouile/qml/slotGame/SlotMachine.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/ratatouile/qml/slotGame/Symbol.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/ratatouile/qml/slotGame/Ratatouille.qml.rule",
 			"sourceGroupIndex" : 1
 		}
 	],
