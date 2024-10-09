@@ -886,8 +886,8 @@
 			[
 				0,
 				1,
-				13,
-				14
+				21,
+				22
 			]
 		},
 		{
@@ -1114,7 +1114,7 @@
 			"language" : "RC",
 			"sourceIndexes" : 
 			[
-				10
+				18
 			]
 		},
 		{
@@ -1351,7 +1351,7 @@
 			"language" : "CXX",
 			"sourceIndexes" : 
 			[
-				12
+				20
 			]
 		}
 	],
@@ -1362,15 +1362,15 @@
 			"id" : "Felgo_resources_1::@6890427a1f51a3e7e1df"
 		},
 		{
+			"backtrace" : 0,
+			"id" : "appratatouile_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
 			"backtrace" : 85,
 			"id" : "appratatouile_qmlimportscan::@6890427a1f51a3e7e1df"
 		},
 		{
 			"id" : "appratatouile_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
-			"backtrace" : 0,
-			"id" : "appratatouile_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "appratatouile::@6890427a1f51a3e7e1df",
@@ -1557,10 +1557,10 @@
 			[
 				0,
 				1,
-				10,
-				12,
-				13,
-				14
+				18,
+				20,
+				21,
+				22
 			]
 		},
 		{
@@ -1570,23 +1570,23 @@
 				2,
 				3,
 				4,
-				9,
-				11,
-				15,
-				22,
+				17,
+				19,
 				23,
-				24,
-				25,
-				26,
-				27,
-				28,
-				29,
 				30,
 				31,
 				32,
 				33,
 				34,
-				35
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43
 			]
 		},
 		{
@@ -1596,19 +1596,27 @@
 				5,
 				6,
 				7,
-				8
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				16,
-				17,
-				18,
-				19,
-				20,
-				21
+				24,
+				25,
+				26,
+				27,
+				28,
+				29
 			]
 		}
 	],
@@ -1654,12 +1662,52 @@
 		},
 		{
 			"backtrace" : 4,
+			"path" : "assets/BetText.png",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "assets/ButtonMinus.png",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "assets/ButtonPlus.png",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
 			"path" : "assets/GameCoin.png",
 			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 4,
 			"path" : "assets/GameLogo.png",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "assets/MaxText.png",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "assets/NormalAutoButton.png",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "assets/NormalFastButton.png",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "assets/PrecessedFastButton.png",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "assets/PressedAutoButton.png",
 			"sourceGroupIndex" : 2
 		},
 		{

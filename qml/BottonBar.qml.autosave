@@ -19,7 +19,7 @@ Item {
     signal maxValueClicked()
 
 
-    Image {
+    Image {//background od the BottomBar
         anchors.fill: parent
         source: "../assets/BGbottonbar.png"
 

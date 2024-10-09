@@ -82,6 +82,54 @@
 				"file" : 0,
 				"line" : 133,
 				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 133,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 133,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 133,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 133,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 133,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 133,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 133,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 133,
+				"parent" : 3
 			}
 		]
 	},
@@ -166,7 +214,7 @@
 			"destination" : "assets",
 			"paths" : 
 			[
-				"assets/GameCoin.png"
+				"assets/BetText.png"
 			],
 			"type" : "file"
 		},
@@ -176,12 +224,92 @@
 			"destination" : "assets",
 			"paths" : 
 			[
-				"assets/GameLogo.png"
+				"assets/ButtonMinus.png"
 			],
 			"type" : "file"
 		},
 		{
 			"backtrace" : 11,
+			"component" : "Unspecified",
+			"destination" : "assets",
+			"paths" : 
+			[
+				"assets/ButtonPlus.png"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 12,
+			"component" : "Unspecified",
+			"destination" : "assets",
+			"paths" : 
+			[
+				"assets/GameCoin.png"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 13,
+			"component" : "Unspecified",
+			"destination" : "assets",
+			"paths" : 
+			[
+				"assets/GameLogo.png"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 14,
+			"component" : "Unspecified",
+			"destination" : "assets",
+			"paths" : 
+			[
+				"assets/MaxText.png"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 15,
+			"component" : "Unspecified",
+			"destination" : "assets",
+			"paths" : 
+			[
+				"assets/NormalAutoButton.png"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 16,
+			"component" : "Unspecified",
+			"destination" : "assets",
+			"paths" : 
+			[
+				"assets/NormalFastButton.png"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 17,
+			"component" : "Unspecified",
+			"destination" : "assets",
+			"paths" : 
+			[
+				"assets/PrecessedFastButton.png"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 18,
+			"component" : "Unspecified",
+			"destination" : "assets",
+			"paths" : 
+			[
+				"assets/PressedAutoButton.png"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 19,
 			"component" : "Unspecified",
 			"destination" : "qml",
 			"paths" : 

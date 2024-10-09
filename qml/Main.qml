@@ -4,10 +4,10 @@ import QtQuick 2.0
 GameWindow{
     id: gameWindow
 
-    //declara a cena como ativa
+    //declare the scene as active
     activeScene: scene
 
-    //tamanho da janela principal
+    //main window size
     width: 920
     height: 640
 
@@ -16,10 +16,10 @@ GameWindow{
         width: 480
         height: 320
 
-        property int betStack: 5 // valor da bet
-        property int creditStack: 400 // quantia na carteira
+        property int betStack: 5 // bet value
+        property int creditStack: 400 // amount in wallet
 
-        Rectangle {
+        Rectangle {//main background
                 anchors.fill: scene.gameWindowAnchorItem
                 color: "#722F37"
          }
@@ -37,6 +37,5 @@ GameWindow{
                 anchors.horizontalCenter: scene.gameWindowAnchorItem.horizontalCenter
          }
     }
-    // configurar top bar
 
 }
