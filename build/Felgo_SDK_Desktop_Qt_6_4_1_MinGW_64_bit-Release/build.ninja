@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: ratatouile
+# Project: FlaskOfRum
 # Configurations: Release
 # =============================================================================
 
@@ -41,127 +41,79 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = F$:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/
 # =============================================================================
-# Object build statements for EXECUTABLE target appratatouile
+# Object build statements for EXECUTABLE target appFlaskOfRum
 
 
 #############################################
-# Order-only phony target for appratatouile
+# Order-only phony target for appFlaskOfRum
 
-build cmake_object_order_depends_target_appratatouile: phony || .rcc/qmlcache/appratatouile_qml/BottonBar_qml.cpp .rcc/qmlcache/appratatouile_qml/slotGame/Ratatouille_qml.cpp .rcc/qmlcache/appratatouile_qml/slotGame/SlotMachine_qml.cpp .rcc/qmlcache/appratatouile_qml/slotGame/Symbol_qml.cpp .rcc/qmlcache/appratatouile_qmlcache_loader.cpp .rcc/qrc_appratatouile_raw_qml_0.cpp .rcc/qrc_qmake_ratatouile.cpp .rcc/qrc_qmake_ratatouile_copy.cpp appratatouile_autogen appratatouile_autogen/mocs_compilation.cpp appratatouile_autogen/timestamp appratatouile_autogen_timestamp_deps appratatouile_qmlimportscan appratatouile_qmltyperegistrations.cpp appratatouile_tooling assets/BGtopbar.png assets/GameCoin.png assets/GameLogo.png cmake_object_order_depends_target_Felgo_resources_1 meta_types/appratatouile_json_file_list.txt meta_types/appratatouile_json_file_list.txt.timestamp meta_types/qt6appratatouile_release_metatypes.json meta_types/qt6appratatouile_release_metatypes.json.gen qml/..gitignore.un~ qml/.gitignore qml/BottonBar.qml qml/Main.qml qml/TopBar.qml qml/config.json qml/configs/.qmldir.swp qml/configs/.qmldir.un~ qml/configs/qmldir qml/slotGame/Ratatouille.qml qml/slotGame/SlotMachine.qml qml/slotGame/SlotMachine.qml.autosave qml/slotGame/Symbol.qml qml/slotGame/Symbol.qml.autosave qml/slotGame/Symbols/Bancinha.png qml/slotGame/Symbols/Remy.png ratatouile/appratatouile.qmltypes
+build cmake_object_order_depends_target_appFlaskOfRum: phony || .rcc/qrc_qmake_FlaskOfRum.cpp .rcc/qrc_qmake_FlaskOfRum_copy.cpp FlaskOfRum/appFlaskOfRum.qmltypes appFlaskOfRum_autogen appFlaskOfRum_autogen/mocs_compilation.cpp appFlaskOfRum_autogen/timestamp appFlaskOfRum_autogen_timestamp_deps appFlaskOfRum_qmlimportscan appflaskofrum_qmltyperegistrations.cpp assets/BGtopbar.png assets/GameCoin.png assets/GameLogo.png assets/backgroundMain.jpg assets/slotMachine/back.png assets/slotMachine/bancinha.png assets/slotMachine/remy.png cmake_object_order_depends_target_Felgo_resources_1 meta_types/appFlaskOfRum_json_file_list.txt meta_types/appFlaskOfRum_json_file_list.txt.timestamp meta_types/qt6appflaskofrum_release_metatypes.json meta_types/qt6appflaskofrum_release_metatypes.json.gen qml/..gitignore.un~ qml/.gitignore qml/BottonBar.qml qml/Main.qml qml/TopBar.qml qml/config.json qml/config/.qmldir.swp qml/config/.qmldir.un~ qml/config/SymbolRats.qml qml/config/qmldir qml/slotMachine/Ratatouille.qml qml/slotMachine/Symbol.qml
 
-build CMakeFiles/appratatouile.dir/appratatouile_autogen/mocs_compilation.cpp.obj: CXX_COMPILER__appratatouile_unscanned_Release F$:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appratatouile_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_appratatouile
+build CMakeFiles/appFlaskOfRum.dir/appFlaskOfRum_autogen/mocs_compilation.cpp.obj: CXX_COMPILER__appFlaskOfRum_unscanned_Release F$:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appFlaskOfRum_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_appFlaskOfRum
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_BLUETOOTH_LIB -DQT_CORE5COMPAT_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMODELS_LIB -DQT_QML_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_SQL_LIB -DQT_WEBSOCKETS_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
-  DEP_FILE = CMakeFiles\appratatouile.dir\appratatouile_autogen\mocs_compilation.cpp.obj.d
+  DEP_FILE = CMakeFiles\appFlaskOfRum.dir\appFlaskOfRum_autogen\mocs_compilation.cpp.obj.d
   FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
-  INCLUDES = -IF:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appratatouile_autogen/include -IF:/programas/git/ratatouille/Game_Log -isystem C:/Felgo/Felgo/mingw_64/include/QtQml/6.4.1 -isystem C:/Felgo/Felgo/mingw_64/include/QtQml/6.4.1/QtQml -isystem C:/Felgo/Felgo/mingw_64/include/QtCore/6.4.1 -isystem C:/Felgo/Felgo/mingw_64/include/QtCore/6.4.1/QtCore -isystem C:/Felgo/Felgo/mingw_64/include/QtCore -isystem C:/Felgo/Felgo/mingw_64/include -isystem C:/Felgo/Felgo/mingw_64/mkspecs/win32-g++ -isystem C:/Felgo/Felgo/mingw_64/include/QtQml -isystem C:/Felgo/Felgo/mingw_64/include/QtQmlIntegration -isystem C:/Felgo/Felgo/mingw_64/include/QtNetwork -isystem C:/Felgo/Felgo/mingw_64/include/Felgo -isystem C:/Felgo/Felgo/mingw_64/include/QtQuick -isystem C:/Felgo/Felgo/mingw_64/include/QtGui -isystem C:/Felgo/Felgo/mingw_64/include/QtQmlModels -isystem C:/Felgo/Felgo/mingw_64/include/QtOpenGL -isystem C:/Felgo/Felgo/mingw_64/include/QtWidgets -isystem C:/Felgo/Felgo/mingw_64/include/QtMultimedia -isystem C:/Felgo/Felgo/mingw_64/include/QtSql -isystem C:/Felgo/Felgo/mingw_64/include/QtWebSockets -isystem C:/Felgo/Felgo/mingw_64/include/QtBluetooth -isystem C:/Felgo/Felgo/mingw_64/include/QtCore5Compat -isystem C:/Felgo/Felgo/mingw_64/include/QtQuickControls2
-  OBJECT_DIR = CMakeFiles\appratatouile.dir
-  OBJECT_FILE_DIR = CMakeFiles\appratatouile.dir\appratatouile_autogen
+  INCLUDES = -IF:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appFlaskOfRum_autogen/include -IF:/programas/git/ratatouille/Game_Log -IC:/Felgo/Felgo/mingw_64/include/QtQml/6.4.1 -IC:/Felgo/Felgo/mingw_64/include/QtQml/6.4.1/QtQml -IC:/Felgo/Felgo/mingw_64/include/QtCore/6.4.1 -IC:/Felgo/Felgo/mingw_64/include/QtCore/6.4.1/QtCore -isystem C:/Felgo/Felgo/mingw_64/include/QtCore -isystem C:/Felgo/Felgo/mingw_64/include -isystem C:/Felgo/Felgo/mingw_64/mkspecs/win32-g++ -isystem C:/Felgo/Felgo/mingw_64/include/QtQml -isystem C:/Felgo/Felgo/mingw_64/include/QtQmlIntegration -isystem C:/Felgo/Felgo/mingw_64/include/QtNetwork -isystem C:/Felgo/Felgo/mingw_64/include/Felgo -isystem C:/Felgo/Felgo/mingw_64/include/QtQuick -isystem C:/Felgo/Felgo/mingw_64/include/QtGui -isystem C:/Felgo/Felgo/mingw_64/include/QtQmlModels -isystem C:/Felgo/Felgo/mingw_64/include/QtOpenGL -isystem C:/Felgo/Felgo/mingw_64/include/QtWidgets -isystem C:/Felgo/Felgo/mingw_64/include/QtMultimedia -isystem C:/Felgo/Felgo/mingw_64/include/QtSql -isystem C:/Felgo/Felgo/mingw_64/include/QtWebSockets -isystem C:/Felgo/Felgo/mingw_64/include/QtBluetooth -isystem C:/Felgo/Felgo/mingw_64/include/QtCore5Compat -isystem C:/Felgo/Felgo/mingw_64/include/QtQuickControls2
+  OBJECT_DIR = CMakeFiles\appFlaskOfRum.dir
+  OBJECT_FILE_DIR = CMakeFiles\appFlaskOfRum.dir\appFlaskOfRum_autogen
 
-build CMakeFiles/appratatouile.dir/main.cpp.obj: CXX_COMPILER__appratatouile_unscanned_Release F$:/programas/git/ratatouille/Game_Log/main.cpp || cmake_object_order_depends_target_appratatouile
+build CMakeFiles/appFlaskOfRum.dir/main.cpp.obj: CXX_COMPILER__appFlaskOfRum_unscanned_Release F$:/programas/git/ratatouille/Game_Log/main.cpp || cmake_object_order_depends_target_appFlaskOfRum
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_BLUETOOTH_LIB -DQT_CORE5COMPAT_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMODELS_LIB -DQT_QML_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_SQL_LIB -DQT_WEBSOCKETS_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
-  DEP_FILE = CMakeFiles\appratatouile.dir\main.cpp.obj.d
+  DEP_FILE = CMakeFiles\appFlaskOfRum.dir\main.cpp.obj.d
   FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
-  INCLUDES = -IF:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appratatouile_autogen/include -IF:/programas/git/ratatouille/Game_Log -isystem C:/Felgo/Felgo/mingw_64/include/QtQml/6.4.1 -isystem C:/Felgo/Felgo/mingw_64/include/QtQml/6.4.1/QtQml -isystem C:/Felgo/Felgo/mingw_64/include/QtCore/6.4.1 -isystem C:/Felgo/Felgo/mingw_64/include/QtCore/6.4.1/QtCore -isystem C:/Felgo/Felgo/mingw_64/include/QtCore -isystem C:/Felgo/Felgo/mingw_64/include -isystem C:/Felgo/Felgo/mingw_64/mkspecs/win32-g++ -isystem C:/Felgo/Felgo/mingw_64/include/QtQml -isystem C:/Felgo/Felgo/mingw_64/include/QtQmlIntegration -isystem C:/Felgo/Felgo/mingw_64/include/QtNetwork -isystem C:/Felgo/Felgo/mingw_64/include/Felgo -isystem C:/Felgo/Felgo/mingw_64/include/QtQuick -isystem C:/Felgo/Felgo/mingw_64/include/QtGui -isystem C:/Felgo/Felgo/mingw_64/include/QtQmlModels -isystem C:/Felgo/Felgo/mingw_64/include/QtOpenGL -isystem C:/Felgo/Felgo/mingw_64/include/QtWidgets -isystem C:/Felgo/Felgo/mingw_64/include/QtMultimedia -isystem C:/Felgo/Felgo/mingw_64/include/QtSql -isystem C:/Felgo/Felgo/mingw_64/include/QtWebSockets -isystem C:/Felgo/Felgo/mingw_64/include/QtBluetooth -isystem C:/Felgo/Felgo/mingw_64/include/QtCore5Compat -isystem C:/Felgo/Felgo/mingw_64/include/QtQuickControls2
-  OBJECT_DIR = CMakeFiles\appratatouile.dir
-  OBJECT_FILE_DIR = CMakeFiles\appratatouile.dir
+  INCLUDES = -IF:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appFlaskOfRum_autogen/include -IF:/programas/git/ratatouille/Game_Log -IC:/Felgo/Felgo/mingw_64/include/QtQml/6.4.1 -IC:/Felgo/Felgo/mingw_64/include/QtQml/6.4.1/QtQml -IC:/Felgo/Felgo/mingw_64/include/QtCore/6.4.1 -IC:/Felgo/Felgo/mingw_64/include/QtCore/6.4.1/QtCore -isystem C:/Felgo/Felgo/mingw_64/include/QtCore -isystem C:/Felgo/Felgo/mingw_64/include -isystem C:/Felgo/Felgo/mingw_64/mkspecs/win32-g++ -isystem C:/Felgo/Felgo/mingw_64/include/QtQml -isystem C:/Felgo/Felgo/mingw_64/include/QtQmlIntegration -isystem C:/Felgo/Felgo/mingw_64/include/QtNetwork -isystem C:/Felgo/Felgo/mingw_64/include/Felgo -isystem C:/Felgo/Felgo/mingw_64/include/QtQuick -isystem C:/Felgo/Felgo/mingw_64/include/QtGui -isystem C:/Felgo/Felgo/mingw_64/include/QtQmlModels -isystem C:/Felgo/Felgo/mingw_64/include/QtOpenGL -isystem C:/Felgo/Felgo/mingw_64/include/QtWidgets -isystem C:/Felgo/Felgo/mingw_64/include/QtMultimedia -isystem C:/Felgo/Felgo/mingw_64/include/QtSql -isystem C:/Felgo/Felgo/mingw_64/include/QtWebSockets -isystem C:/Felgo/Felgo/mingw_64/include/QtBluetooth -isystem C:/Felgo/Felgo/mingw_64/include/QtCore5Compat -isystem C:/Felgo/Felgo/mingw_64/include/QtQuickControls2
+  OBJECT_DIR = CMakeFiles\appFlaskOfRum.dir
+  OBJECT_FILE_DIR = CMakeFiles\appFlaskOfRum.dir
 
-build CMakeFiles/appratatouile.dir/win/app_icon.rc.obj: RC_COMPILER__appratatouile_unscanned_Release F$:/programas/git/ratatouille/Game_Log/win/app_icon.rc || cmake_object_order_depends_target_appratatouile
+build CMakeFiles/appFlaskOfRum.dir/win/app_icon.rc.obj: RC_COMPILER__appFlaskOfRum_unscanned_Release F$:/programas/git/ratatouille/Game_Log/win/app_icon.rc || cmake_object_order_depends_target_appFlaskOfRum
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_BLUETOOTH_LIB -DQT_CORE5COMPAT_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMODELS_LIB -DQT_QML_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_SQL_LIB -DQT_WEBSOCKETS_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
-  DEP_FILE = CMakeFiles\appratatouile.dir\win\app_icon.rc.obj.d
-  INCLUDES = -I F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appratatouile_autogen/include -I F:/programas/git/ratatouille/Game_Log -I C:/Felgo/Felgo/mingw_64/include/QtQml/6.4.1 -I C:/Felgo/Felgo/mingw_64/include/QtQml/6.4.1/QtQml -I C:/Felgo/Felgo/mingw_64/include/QtCore/6.4.1 -I C:/Felgo/Felgo/mingw_64/include/QtCore/6.4.1/QtCore -I C:/Felgo/Felgo/mingw_64/include/QtCore -I C:/Felgo/Felgo/mingw_64/include -I C:/Felgo/Felgo/mingw_64/mkspecs/win32-g++ -I C:/Felgo/Felgo/mingw_64/include/QtQml -I C:/Felgo/Felgo/mingw_64/include/QtQmlIntegration -I C:/Felgo/Felgo/mingw_64/include/QtNetwork -I C:/Felgo/Felgo/mingw_64/include/Felgo -I C:/Felgo/Felgo/mingw_64/include/QtQuick -I C:/Felgo/Felgo/mingw_64/include/QtGui -I C:/Felgo/Felgo/mingw_64/include/QtQmlModels -I C:/Felgo/Felgo/mingw_64/include/QtOpenGL -I C:/Felgo/Felgo/mingw_64/include/QtWidgets -I C:/Felgo/Felgo/mingw_64/include/QtMultimedia -I C:/Felgo/Felgo/mingw_64/include/QtSql -I C:/Felgo/Felgo/mingw_64/include/QtWebSockets -I C:/Felgo/Felgo/mingw_64/include/QtBluetooth -I C:/Felgo/Felgo/mingw_64/include/QtCore5Compat -I C:/Felgo/Felgo/mingw_64/include/QtQuickControls2
-  OBJECT_DIR = CMakeFiles\appratatouile.dir
-  OBJECT_FILE_DIR = CMakeFiles\appratatouile.dir\win
+  DEP_FILE = CMakeFiles\appFlaskOfRum.dir\win\app_icon.rc.obj.d
+  INCLUDES = -I F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appFlaskOfRum_autogen/include -I F:/programas/git/ratatouille/Game_Log -I C:/Felgo/Felgo/mingw_64/include/QtQml/6.4.1 -I C:/Felgo/Felgo/mingw_64/include/QtQml/6.4.1/QtQml -I C:/Felgo/Felgo/mingw_64/include/QtCore/6.4.1 -I C:/Felgo/Felgo/mingw_64/include/QtCore/6.4.1/QtCore -I C:/Felgo/Felgo/mingw_64/include/QtCore -I C:/Felgo/Felgo/mingw_64/include -I C:/Felgo/Felgo/mingw_64/mkspecs/win32-g++ -I C:/Felgo/Felgo/mingw_64/include/QtQml -I C:/Felgo/Felgo/mingw_64/include/QtQmlIntegration -I C:/Felgo/Felgo/mingw_64/include/QtNetwork -I C:/Felgo/Felgo/mingw_64/include/Felgo -I C:/Felgo/Felgo/mingw_64/include/QtQuick -I C:/Felgo/Felgo/mingw_64/include/QtGui -I C:/Felgo/Felgo/mingw_64/include/QtQmlModels -I C:/Felgo/Felgo/mingw_64/include/QtOpenGL -I C:/Felgo/Felgo/mingw_64/include/QtWidgets -I C:/Felgo/Felgo/mingw_64/include/QtMultimedia -I C:/Felgo/Felgo/mingw_64/include/QtSql -I C:/Felgo/Felgo/mingw_64/include/QtWebSockets -I C:/Felgo/Felgo/mingw_64/include/QtBluetooth -I C:/Felgo/Felgo/mingw_64/include/QtCore5Compat -I C:/Felgo/Felgo/mingw_64/include/QtQuickControls2
+  OBJECT_DIR = CMakeFiles\appFlaskOfRum.dir
+  OBJECT_FILE_DIR = CMakeFiles\appFlaskOfRum.dir\win
 
-build CMakeFiles/appratatouile.dir/appratatouile_qmltyperegistrations.cpp.obj: CXX_COMPILER__appratatouile_unscanned_Release F$:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appratatouile_qmltyperegistrations.cpp || cmake_object_order_depends_target_appratatouile
+build CMakeFiles/appFlaskOfRum.dir/appflaskofrum_qmltyperegistrations.cpp.obj: CXX_COMPILER__appFlaskOfRum_unscanned_Release F$:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appflaskofrum_qmltyperegistrations.cpp || cmake_object_order_depends_target_appFlaskOfRum
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_BLUETOOTH_LIB -DQT_CORE5COMPAT_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMODELS_LIB -DQT_QML_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_SQL_LIB -DQT_WEBSOCKETS_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
-  DEP_FILE = CMakeFiles\appratatouile.dir\appratatouile_qmltyperegistrations.cpp.obj.d
+  DEP_FILE = CMakeFiles\appFlaskOfRum.dir\appflaskofrum_qmltyperegistrations.cpp.obj.d
   FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always -Wa,-mbig-obj
-  INCLUDES = -IF:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appratatouile_autogen/include -IF:/programas/git/ratatouille/Game_Log -isystem C:/Felgo/Felgo/mingw_64/include/QtQml/6.4.1 -isystem C:/Felgo/Felgo/mingw_64/include/QtQml/6.4.1/QtQml -isystem C:/Felgo/Felgo/mingw_64/include/QtCore/6.4.1 -isystem C:/Felgo/Felgo/mingw_64/include/QtCore/6.4.1/QtCore -isystem C:/Felgo/Felgo/mingw_64/include/QtCore -isystem C:/Felgo/Felgo/mingw_64/include -isystem C:/Felgo/Felgo/mingw_64/mkspecs/win32-g++ -isystem C:/Felgo/Felgo/mingw_64/include/QtQml -isystem C:/Felgo/Felgo/mingw_64/include/QtQmlIntegration -isystem C:/Felgo/Felgo/mingw_64/include/QtNetwork -isystem C:/Felgo/Felgo/mingw_64/include/Felgo -isystem C:/Felgo/Felgo/mingw_64/include/QtQuick -isystem C:/Felgo/Felgo/mingw_64/include/QtGui -isystem C:/Felgo/Felgo/mingw_64/include/QtQmlModels -isystem C:/Felgo/Felgo/mingw_64/include/QtOpenGL -isystem C:/Felgo/Felgo/mingw_64/include/QtWidgets -isystem C:/Felgo/Felgo/mingw_64/include/QtMultimedia -isystem C:/Felgo/Felgo/mingw_64/include/QtSql -isystem C:/Felgo/Felgo/mingw_64/include/QtWebSockets -isystem C:/Felgo/Felgo/mingw_64/include/QtBluetooth -isystem C:/Felgo/Felgo/mingw_64/include/QtCore5Compat -isystem C:/Felgo/Felgo/mingw_64/include/QtQuickControls2
-  OBJECT_DIR = CMakeFiles\appratatouile.dir
-  OBJECT_FILE_DIR = CMakeFiles\appratatouile.dir
+  INCLUDES = -IF:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appFlaskOfRum_autogen/include -IF:/programas/git/ratatouille/Game_Log -IC:/Felgo/Felgo/mingw_64/include/QtQml/6.4.1 -IC:/Felgo/Felgo/mingw_64/include/QtQml/6.4.1/QtQml -IC:/Felgo/Felgo/mingw_64/include/QtCore/6.4.1 -IC:/Felgo/Felgo/mingw_64/include/QtCore/6.4.1/QtCore -isystem C:/Felgo/Felgo/mingw_64/include/QtCore -isystem C:/Felgo/Felgo/mingw_64/include -isystem C:/Felgo/Felgo/mingw_64/mkspecs/win32-g++ -isystem C:/Felgo/Felgo/mingw_64/include/QtQml -isystem C:/Felgo/Felgo/mingw_64/include/QtQmlIntegration -isystem C:/Felgo/Felgo/mingw_64/include/QtNetwork -isystem C:/Felgo/Felgo/mingw_64/include/Felgo -isystem C:/Felgo/Felgo/mingw_64/include/QtQuick -isystem C:/Felgo/Felgo/mingw_64/include/QtGui -isystem C:/Felgo/Felgo/mingw_64/include/QtQmlModels -isystem C:/Felgo/Felgo/mingw_64/include/QtOpenGL -isystem C:/Felgo/Felgo/mingw_64/include/QtWidgets -isystem C:/Felgo/Felgo/mingw_64/include/QtMultimedia -isystem C:/Felgo/Felgo/mingw_64/include/QtSql -isystem C:/Felgo/Felgo/mingw_64/include/QtWebSockets -isystem C:/Felgo/Felgo/mingw_64/include/QtBluetooth -isystem C:/Felgo/Felgo/mingw_64/include/QtCore5Compat -isystem C:/Felgo/Felgo/mingw_64/include/QtQuickControls2
+  OBJECT_DIR = CMakeFiles\appFlaskOfRum.dir
+  OBJECT_FILE_DIR = CMakeFiles\appFlaskOfRum.dir
 
-build CMakeFiles/appratatouile.dir/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qrc_qmake_ratatouile.cpp.obj: CXX_COMPILER__appratatouile_unscanned_Release F$:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qrc_qmake_ratatouile.cpp || cmake_object_order_depends_target_appratatouile
+build CMakeFiles/appFlaskOfRum.dir/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qrc_qmake_FlaskOfRum.cpp.obj: CXX_COMPILER__appFlaskOfRum_unscanned_Release F$:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qrc_qmake_FlaskOfRum.cpp || cmake_object_order_depends_target_appFlaskOfRum
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_BLUETOOTH_LIB -DQT_CORE5COMPAT_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMODELS_LIB -DQT_QML_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_SQL_LIB -DQT_WEBSOCKETS_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
-  DEP_FILE = CMakeFiles\appratatouile.dir\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release\.rcc\qrc_qmake_ratatouile.cpp.obj.d
+  DEP_FILE = CMakeFiles\appFlaskOfRum.dir\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release\.rcc\qrc_qmake_FlaskOfRum.cpp.obj.d
   FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
-  INCLUDES = -IF:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appratatouile_autogen/include -IF:/programas/git/ratatouille/Game_Log -isystem C:/Felgo/Felgo/mingw_64/include/QtQml/6.4.1 -isystem C:/Felgo/Felgo/mingw_64/include/QtQml/6.4.1/QtQml -isystem C:/Felgo/Felgo/mingw_64/include/QtCore/6.4.1 -isystem C:/Felgo/Felgo/mingw_64/include/QtCore/6.4.1/QtCore -isystem C:/Felgo/Felgo/mingw_64/include/QtCore -isystem C:/Felgo/Felgo/mingw_64/include -isystem C:/Felgo/Felgo/mingw_64/mkspecs/win32-g++ -isystem C:/Felgo/Felgo/mingw_64/include/QtQml -isystem C:/Felgo/Felgo/mingw_64/include/QtQmlIntegration -isystem C:/Felgo/Felgo/mingw_64/include/QtNetwork -isystem C:/Felgo/Felgo/mingw_64/include/Felgo -isystem C:/Felgo/Felgo/mingw_64/include/QtQuick -isystem C:/Felgo/Felgo/mingw_64/include/QtGui -isystem C:/Felgo/Felgo/mingw_64/include/QtQmlModels -isystem C:/Felgo/Felgo/mingw_64/include/QtOpenGL -isystem C:/Felgo/Felgo/mingw_64/include/QtWidgets -isystem C:/Felgo/Felgo/mingw_64/include/QtMultimedia -isystem C:/Felgo/Felgo/mingw_64/include/QtSql -isystem C:/Felgo/Felgo/mingw_64/include/QtWebSockets -isystem C:/Felgo/Felgo/mingw_64/include/QtBluetooth -isystem C:/Felgo/Felgo/mingw_64/include/QtCore5Compat -isystem C:/Felgo/Felgo/mingw_64/include/QtQuickControls2
-  OBJECT_DIR = CMakeFiles\appratatouile.dir
-  OBJECT_FILE_DIR = CMakeFiles\appratatouile.dir\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release\.rcc
+  INCLUDES = -IF:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appFlaskOfRum_autogen/include -IF:/programas/git/ratatouille/Game_Log -IC:/Felgo/Felgo/mingw_64/include/QtQml/6.4.1 -IC:/Felgo/Felgo/mingw_64/include/QtQml/6.4.1/QtQml -IC:/Felgo/Felgo/mingw_64/include/QtCore/6.4.1 -IC:/Felgo/Felgo/mingw_64/include/QtCore/6.4.1/QtCore -isystem C:/Felgo/Felgo/mingw_64/include/QtCore -isystem C:/Felgo/Felgo/mingw_64/include -isystem C:/Felgo/Felgo/mingw_64/mkspecs/win32-g++ -isystem C:/Felgo/Felgo/mingw_64/include/QtQml -isystem C:/Felgo/Felgo/mingw_64/include/QtQmlIntegration -isystem C:/Felgo/Felgo/mingw_64/include/QtNetwork -isystem C:/Felgo/Felgo/mingw_64/include/Felgo -isystem C:/Felgo/Felgo/mingw_64/include/QtQuick -isystem C:/Felgo/Felgo/mingw_64/include/QtGui -isystem C:/Felgo/Felgo/mingw_64/include/QtQmlModels -isystem C:/Felgo/Felgo/mingw_64/include/QtOpenGL -isystem C:/Felgo/Felgo/mingw_64/include/QtWidgets -isystem C:/Felgo/Felgo/mingw_64/include/QtMultimedia -isystem C:/Felgo/Felgo/mingw_64/include/QtSql -isystem C:/Felgo/Felgo/mingw_64/include/QtWebSockets -isystem C:/Felgo/Felgo/mingw_64/include/QtBluetooth -isystem C:/Felgo/Felgo/mingw_64/include/QtCore5Compat -isystem C:/Felgo/Felgo/mingw_64/include/QtQuickControls2
+  OBJECT_DIR = CMakeFiles\appFlaskOfRum.dir
+  OBJECT_FILE_DIR = CMakeFiles\appFlaskOfRum.dir\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release\.rcc
 
-build CMakeFiles/appratatouile.dir/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qrc_qmake_ratatouile_copy.cpp.obj: CXX_COMPILER__appratatouile_unscanned_Release F$:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qrc_qmake_ratatouile_copy.cpp || cmake_object_order_depends_target_appratatouile
+build CMakeFiles/appFlaskOfRum.dir/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qrc_qmake_FlaskOfRum_copy.cpp.obj: CXX_COMPILER__appFlaskOfRum_unscanned_Release F$:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qrc_qmake_FlaskOfRum_copy.cpp || cmake_object_order_depends_target_appFlaskOfRum
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_BLUETOOTH_LIB -DQT_CORE5COMPAT_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMODELS_LIB -DQT_QML_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_SQL_LIB -DQT_WEBSOCKETS_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
-  DEP_FILE = CMakeFiles\appratatouile.dir\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release\.rcc\qrc_qmake_ratatouile_copy.cpp.obj.d
+  DEP_FILE = CMakeFiles\appFlaskOfRum.dir\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release\.rcc\qrc_qmake_FlaskOfRum_copy.cpp.obj.d
   FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
-  INCLUDES = -IF:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appratatouile_autogen/include -IF:/programas/git/ratatouille/Game_Log -isystem C:/Felgo/Felgo/mingw_64/include/QtQml/6.4.1 -isystem C:/Felgo/Felgo/mingw_64/include/QtQml/6.4.1/QtQml -isystem C:/Felgo/Felgo/mingw_64/include/QtCore/6.4.1 -isystem C:/Felgo/Felgo/mingw_64/include/QtCore/6.4.1/QtCore -isystem C:/Felgo/Felgo/mingw_64/include/QtCore -isystem C:/Felgo/Felgo/mingw_64/include -isystem C:/Felgo/Felgo/mingw_64/mkspecs/win32-g++ -isystem C:/Felgo/Felgo/mingw_64/include/QtQml -isystem C:/Felgo/Felgo/mingw_64/include/QtQmlIntegration -isystem C:/Felgo/Felgo/mingw_64/include/QtNetwork -isystem C:/Felgo/Felgo/mingw_64/include/Felgo -isystem C:/Felgo/Felgo/mingw_64/include/QtQuick -isystem C:/Felgo/Felgo/mingw_64/include/QtGui -isystem C:/Felgo/Felgo/mingw_64/include/QtQmlModels -isystem C:/Felgo/Felgo/mingw_64/include/QtOpenGL -isystem C:/Felgo/Felgo/mingw_64/include/QtWidgets -isystem C:/Felgo/Felgo/mingw_64/include/QtMultimedia -isystem C:/Felgo/Felgo/mingw_64/include/QtSql -isystem C:/Felgo/Felgo/mingw_64/include/QtWebSockets -isystem C:/Felgo/Felgo/mingw_64/include/QtBluetooth -isystem C:/Felgo/Felgo/mingw_64/include/QtCore5Compat -isystem C:/Felgo/Felgo/mingw_64/include/QtQuickControls2
-  OBJECT_DIR = CMakeFiles\appratatouile.dir
-  OBJECT_FILE_DIR = CMakeFiles\appratatouile.dir\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release\.rcc
-
-build CMakeFiles/appratatouile.dir/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmlcache/appratatouile_qmlcache_loader.cpp.obj: CXX_COMPILER__appratatouile_unscanned_Release F$:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmlcache/appratatouile_qmlcache_loader.cpp || cmake_object_order_depends_target_appratatouile
-  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_BLUETOOTH_LIB -DQT_CORE5COMPAT_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMODELS_LIB -DQT_QML_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_SQL_LIB -DQT_WEBSOCKETS_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
-  DEP_FILE = CMakeFiles\appratatouile.dir\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release\.rcc\qmlcache\appratatouile_qmlcache_loader.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
-  INCLUDES = -IF:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appratatouile_autogen/include -IF:/programas/git/ratatouille/Game_Log -isystem C:/Felgo/Felgo/mingw_64/include/QtQml/6.4.1 -isystem C:/Felgo/Felgo/mingw_64/include/QtQml/6.4.1/QtQml -isystem C:/Felgo/Felgo/mingw_64/include/QtCore/6.4.1 -isystem C:/Felgo/Felgo/mingw_64/include/QtCore/6.4.1/QtCore -isystem C:/Felgo/Felgo/mingw_64/include/QtCore -isystem C:/Felgo/Felgo/mingw_64/include -isystem C:/Felgo/Felgo/mingw_64/mkspecs/win32-g++ -isystem C:/Felgo/Felgo/mingw_64/include/QtQml -isystem C:/Felgo/Felgo/mingw_64/include/QtQmlIntegration -isystem C:/Felgo/Felgo/mingw_64/include/QtNetwork -isystem C:/Felgo/Felgo/mingw_64/include/Felgo -isystem C:/Felgo/Felgo/mingw_64/include/QtQuick -isystem C:/Felgo/Felgo/mingw_64/include/QtGui -isystem C:/Felgo/Felgo/mingw_64/include/QtQmlModels -isystem C:/Felgo/Felgo/mingw_64/include/QtOpenGL -isystem C:/Felgo/Felgo/mingw_64/include/QtWidgets -isystem C:/Felgo/Felgo/mingw_64/include/QtMultimedia -isystem C:/Felgo/Felgo/mingw_64/include/QtSql -isystem C:/Felgo/Felgo/mingw_64/include/QtWebSockets -isystem C:/Felgo/Felgo/mingw_64/include/QtBluetooth -isystem C:/Felgo/Felgo/mingw_64/include/QtCore5Compat -isystem C:/Felgo/Felgo/mingw_64/include/QtQuickControls2
-  OBJECT_DIR = CMakeFiles\appratatouile.dir
-  OBJECT_FILE_DIR = CMakeFiles\appratatouile.dir\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release\.rcc\qmlcache
-
-build CMakeFiles/appratatouile.dir/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmlcache/appratatouile_qml/BottonBar_qml.cpp.obj: CXX_COMPILER__appratatouile_unscanned_Release F$:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmlcache/appratatouile_qml/BottonBar_qml.cpp || cmake_object_order_depends_target_appratatouile
-  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_BLUETOOTH_LIB -DQT_CORE5COMPAT_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMODELS_LIB -DQT_QML_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_SQL_LIB -DQT_WEBSOCKETS_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
-  DEP_FILE = CMakeFiles\appratatouile.dir\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release\.rcc\qmlcache\appratatouile_qml\BottonBar_qml.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
-  INCLUDES = -IF:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appratatouile_autogen/include -IF:/programas/git/ratatouille/Game_Log -isystem C:/Felgo/Felgo/mingw_64/include/QtQml/6.4.1 -isystem C:/Felgo/Felgo/mingw_64/include/QtQml/6.4.1/QtQml -isystem C:/Felgo/Felgo/mingw_64/include/QtCore/6.4.1 -isystem C:/Felgo/Felgo/mingw_64/include/QtCore/6.4.1/QtCore -isystem C:/Felgo/Felgo/mingw_64/include/QtCore -isystem C:/Felgo/Felgo/mingw_64/include -isystem C:/Felgo/Felgo/mingw_64/mkspecs/win32-g++ -isystem C:/Felgo/Felgo/mingw_64/include/QtQml -isystem C:/Felgo/Felgo/mingw_64/include/QtQmlIntegration -isystem C:/Felgo/Felgo/mingw_64/include/QtNetwork -isystem C:/Felgo/Felgo/mingw_64/include/Felgo -isystem C:/Felgo/Felgo/mingw_64/include/QtQuick -isystem C:/Felgo/Felgo/mingw_64/include/QtGui -isystem C:/Felgo/Felgo/mingw_64/include/QtQmlModels -isystem C:/Felgo/Felgo/mingw_64/include/QtOpenGL -isystem C:/Felgo/Felgo/mingw_64/include/QtWidgets -isystem C:/Felgo/Felgo/mingw_64/include/QtMultimedia -isystem C:/Felgo/Felgo/mingw_64/include/QtSql -isystem C:/Felgo/Felgo/mingw_64/include/QtWebSockets -isystem C:/Felgo/Felgo/mingw_64/include/QtBluetooth -isystem C:/Felgo/Felgo/mingw_64/include/QtCore5Compat -isystem C:/Felgo/Felgo/mingw_64/include/QtQuickControls2
-  OBJECT_DIR = CMakeFiles\appratatouile.dir
-  OBJECT_FILE_DIR = CMakeFiles\appratatouile.dir\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release\.rcc\qmlcache\appratatouile_qml
-
-build CMakeFiles/appratatouile.dir/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmlcache/appratatouile_qml/slotGame/SlotMachine_qml.cpp.obj: CXX_COMPILER__appratatouile_unscanned_Release F$:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmlcache/appratatouile_qml/slotGame/SlotMachine_qml.cpp || cmake_object_order_depends_target_appratatouile
-  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_BLUETOOTH_LIB -DQT_CORE5COMPAT_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMODELS_LIB -DQT_QML_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_SQL_LIB -DQT_WEBSOCKETS_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
-  DEP_FILE = CMakeFiles\appratatouile.dir\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release\.rcc\qmlcache\appratatouile_qml\slotGame\SlotMachine_qml.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
-  INCLUDES = -IF:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appratatouile_autogen/include -IF:/programas/git/ratatouille/Game_Log -isystem C:/Felgo/Felgo/mingw_64/include/QtQml/6.4.1 -isystem C:/Felgo/Felgo/mingw_64/include/QtQml/6.4.1/QtQml -isystem C:/Felgo/Felgo/mingw_64/include/QtCore/6.4.1 -isystem C:/Felgo/Felgo/mingw_64/include/QtCore/6.4.1/QtCore -isystem C:/Felgo/Felgo/mingw_64/include/QtCore -isystem C:/Felgo/Felgo/mingw_64/include -isystem C:/Felgo/Felgo/mingw_64/mkspecs/win32-g++ -isystem C:/Felgo/Felgo/mingw_64/include/QtQml -isystem C:/Felgo/Felgo/mingw_64/include/QtQmlIntegration -isystem C:/Felgo/Felgo/mingw_64/include/QtNetwork -isystem C:/Felgo/Felgo/mingw_64/include/Felgo -isystem C:/Felgo/Felgo/mingw_64/include/QtQuick -isystem C:/Felgo/Felgo/mingw_64/include/QtGui -isystem C:/Felgo/Felgo/mingw_64/include/QtQmlModels -isystem C:/Felgo/Felgo/mingw_64/include/QtOpenGL -isystem C:/Felgo/Felgo/mingw_64/include/QtWidgets -isystem C:/Felgo/Felgo/mingw_64/include/QtMultimedia -isystem C:/Felgo/Felgo/mingw_64/include/QtSql -isystem C:/Felgo/Felgo/mingw_64/include/QtWebSockets -isystem C:/Felgo/Felgo/mingw_64/include/QtBluetooth -isystem C:/Felgo/Felgo/mingw_64/include/QtCore5Compat -isystem C:/Felgo/Felgo/mingw_64/include/QtQuickControls2
-  OBJECT_DIR = CMakeFiles\appratatouile.dir
-  OBJECT_FILE_DIR = CMakeFiles\appratatouile.dir\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release\.rcc\qmlcache\appratatouile_qml\slotGame
-
-build CMakeFiles/appratatouile.dir/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmlcache/appratatouile_qml/slotGame/Symbol_qml.cpp.obj: CXX_COMPILER__appratatouile_unscanned_Release F$:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmlcache/appratatouile_qml/slotGame/Symbol_qml.cpp || cmake_object_order_depends_target_appratatouile
-  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_BLUETOOTH_LIB -DQT_CORE5COMPAT_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMODELS_LIB -DQT_QML_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_SQL_LIB -DQT_WEBSOCKETS_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
-  DEP_FILE = CMakeFiles\appratatouile.dir\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release\.rcc\qmlcache\appratatouile_qml\slotGame\Symbol_qml.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
-  INCLUDES = -IF:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appratatouile_autogen/include -IF:/programas/git/ratatouille/Game_Log -isystem C:/Felgo/Felgo/mingw_64/include/QtQml/6.4.1 -isystem C:/Felgo/Felgo/mingw_64/include/QtQml/6.4.1/QtQml -isystem C:/Felgo/Felgo/mingw_64/include/QtCore/6.4.1 -isystem C:/Felgo/Felgo/mingw_64/include/QtCore/6.4.1/QtCore -isystem C:/Felgo/Felgo/mingw_64/include/QtCore -isystem C:/Felgo/Felgo/mingw_64/include -isystem C:/Felgo/Felgo/mingw_64/mkspecs/win32-g++ -isystem C:/Felgo/Felgo/mingw_64/include/QtQml -isystem C:/Felgo/Felgo/mingw_64/include/QtQmlIntegration -isystem C:/Felgo/Felgo/mingw_64/include/QtNetwork -isystem C:/Felgo/Felgo/mingw_64/include/Felgo -isystem C:/Felgo/Felgo/mingw_64/include/QtQuick -isystem C:/Felgo/Felgo/mingw_64/include/QtGui -isystem C:/Felgo/Felgo/mingw_64/include/QtQmlModels -isystem C:/Felgo/Felgo/mingw_64/include/QtOpenGL -isystem C:/Felgo/Felgo/mingw_64/include/QtWidgets -isystem C:/Felgo/Felgo/mingw_64/include/QtMultimedia -isystem C:/Felgo/Felgo/mingw_64/include/QtSql -isystem C:/Felgo/Felgo/mingw_64/include/QtWebSockets -isystem C:/Felgo/Felgo/mingw_64/include/QtBluetooth -isystem C:/Felgo/Felgo/mingw_64/include/QtCore5Compat -isystem C:/Felgo/Felgo/mingw_64/include/QtQuickControls2
-  OBJECT_DIR = CMakeFiles\appratatouile.dir
-  OBJECT_FILE_DIR = CMakeFiles\appratatouile.dir\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release\.rcc\qmlcache\appratatouile_qml\slotGame
-
-build CMakeFiles/appratatouile.dir/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmlcache/appratatouile_qml/slotGame/Ratatouille_qml.cpp.obj: CXX_COMPILER__appratatouile_unscanned_Release F$:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmlcache/appratatouile_qml/slotGame/Ratatouille_qml.cpp || cmake_object_order_depends_target_appratatouile
-  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_BLUETOOTH_LIB -DQT_CORE5COMPAT_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMODELS_LIB -DQT_QML_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_SQL_LIB -DQT_WEBSOCKETS_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
-  DEP_FILE = CMakeFiles\appratatouile.dir\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release\.rcc\qmlcache\appratatouile_qml\slotGame\Ratatouille_qml.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
-  INCLUDES = -IF:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appratatouile_autogen/include -IF:/programas/git/ratatouille/Game_Log -isystem C:/Felgo/Felgo/mingw_64/include/QtQml/6.4.1 -isystem C:/Felgo/Felgo/mingw_64/include/QtQml/6.4.1/QtQml -isystem C:/Felgo/Felgo/mingw_64/include/QtCore/6.4.1 -isystem C:/Felgo/Felgo/mingw_64/include/QtCore/6.4.1/QtCore -isystem C:/Felgo/Felgo/mingw_64/include/QtCore -isystem C:/Felgo/Felgo/mingw_64/include -isystem C:/Felgo/Felgo/mingw_64/mkspecs/win32-g++ -isystem C:/Felgo/Felgo/mingw_64/include/QtQml -isystem C:/Felgo/Felgo/mingw_64/include/QtQmlIntegration -isystem C:/Felgo/Felgo/mingw_64/include/QtNetwork -isystem C:/Felgo/Felgo/mingw_64/include/Felgo -isystem C:/Felgo/Felgo/mingw_64/include/QtQuick -isystem C:/Felgo/Felgo/mingw_64/include/QtGui -isystem C:/Felgo/Felgo/mingw_64/include/QtQmlModels -isystem C:/Felgo/Felgo/mingw_64/include/QtOpenGL -isystem C:/Felgo/Felgo/mingw_64/include/QtWidgets -isystem C:/Felgo/Felgo/mingw_64/include/QtMultimedia -isystem C:/Felgo/Felgo/mingw_64/include/QtSql -isystem C:/Felgo/Felgo/mingw_64/include/QtWebSockets -isystem C:/Felgo/Felgo/mingw_64/include/QtBluetooth -isystem C:/Felgo/Felgo/mingw_64/include/QtCore5Compat -isystem C:/Felgo/Felgo/mingw_64/include/QtQuickControls2
-  OBJECT_DIR = CMakeFiles\appratatouile.dir
-  OBJECT_FILE_DIR = CMakeFiles\appratatouile.dir\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release\.rcc\qmlcache\appratatouile_qml\slotGame
-
-build CMakeFiles/appratatouile.dir/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qrc_appratatouile_raw_qml_0.cpp.obj: CXX_COMPILER__appratatouile_unscanned_Release F$:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qrc_appratatouile_raw_qml_0.cpp || cmake_object_order_depends_target_appratatouile
-  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_BLUETOOTH_LIB -DQT_CORE5COMPAT_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMODELS_LIB -DQT_QML_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_SQL_LIB -DQT_WEBSOCKETS_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
-  DEP_FILE = CMakeFiles\appratatouile.dir\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release\.rcc\qrc_appratatouile_raw_qml_0.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
-  INCLUDES = -IF:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appratatouile_autogen/include -IF:/programas/git/ratatouille/Game_Log -isystem C:/Felgo/Felgo/mingw_64/include/QtQml/6.4.1 -isystem C:/Felgo/Felgo/mingw_64/include/QtQml/6.4.1/QtQml -isystem C:/Felgo/Felgo/mingw_64/include/QtCore/6.4.1 -isystem C:/Felgo/Felgo/mingw_64/include/QtCore/6.4.1/QtCore -isystem C:/Felgo/Felgo/mingw_64/include/QtCore -isystem C:/Felgo/Felgo/mingw_64/include -isystem C:/Felgo/Felgo/mingw_64/mkspecs/win32-g++ -isystem C:/Felgo/Felgo/mingw_64/include/QtQml -isystem C:/Felgo/Felgo/mingw_64/include/QtQmlIntegration -isystem C:/Felgo/Felgo/mingw_64/include/QtNetwork -isystem C:/Felgo/Felgo/mingw_64/include/Felgo -isystem C:/Felgo/Felgo/mingw_64/include/QtQuick -isystem C:/Felgo/Felgo/mingw_64/include/QtGui -isystem C:/Felgo/Felgo/mingw_64/include/QtQmlModels -isystem C:/Felgo/Felgo/mingw_64/include/QtOpenGL -isystem C:/Felgo/Felgo/mingw_64/include/QtWidgets -isystem C:/Felgo/Felgo/mingw_64/include/QtMultimedia -isystem C:/Felgo/Felgo/mingw_64/include/QtSql -isystem C:/Felgo/Felgo/mingw_64/include/QtWebSockets -isystem C:/Felgo/Felgo/mingw_64/include/QtBluetooth -isystem C:/Felgo/Felgo/mingw_64/include/QtCore5Compat -isystem C:/Felgo/Felgo/mingw_64/include/QtQuickControls2
-  OBJECT_DIR = CMakeFiles\appratatouile.dir
-  OBJECT_FILE_DIR = CMakeFiles\appratatouile.dir\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release\.rcc
+  INCLUDES = -IF:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appFlaskOfRum_autogen/include -IF:/programas/git/ratatouille/Game_Log -IC:/Felgo/Felgo/mingw_64/include/QtQml/6.4.1 -IC:/Felgo/Felgo/mingw_64/include/QtQml/6.4.1/QtQml -IC:/Felgo/Felgo/mingw_64/include/QtCore/6.4.1 -IC:/Felgo/Felgo/mingw_64/include/QtCore/6.4.1/QtCore -isystem C:/Felgo/Felgo/mingw_64/include/QtCore -isystem C:/Felgo/Felgo/mingw_64/include -isystem C:/Felgo/Felgo/mingw_64/mkspecs/win32-g++ -isystem C:/Felgo/Felgo/mingw_64/include/QtQml -isystem C:/Felgo/Felgo/mingw_64/include/QtQmlIntegration -isystem C:/Felgo/Felgo/mingw_64/include/QtNetwork -isystem C:/Felgo/Felgo/mingw_64/include/Felgo -isystem C:/Felgo/Felgo/mingw_64/include/QtQuick -isystem C:/Felgo/Felgo/mingw_64/include/QtGui -isystem C:/Felgo/Felgo/mingw_64/include/QtQmlModels -isystem C:/Felgo/Felgo/mingw_64/include/QtOpenGL -isystem C:/Felgo/Felgo/mingw_64/include/QtWidgets -isystem C:/Felgo/Felgo/mingw_64/include/QtMultimedia -isystem C:/Felgo/Felgo/mingw_64/include/QtSql -isystem C:/Felgo/Felgo/mingw_64/include/QtWebSockets -isystem C:/Felgo/Felgo/mingw_64/include/QtBluetooth -isystem C:/Felgo/Felgo/mingw_64/include/QtCore5Compat -isystem C:/Felgo/Felgo/mingw_64/include/QtQuickControls2
+  OBJECT_DIR = CMakeFiles\appFlaskOfRum.dir
+  OBJECT_FILE_DIR = CMakeFiles\appFlaskOfRum.dir\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release\.rcc
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target appratatouile
+# Link build statements for EXECUTABLE target appFlaskOfRum
 
 
 #############################################
-# Link the executable appratatouile.exe
+# Link the executable appFlaskOfRum.exe
 
-build appratatouile.exe: CXX_EXECUTABLE_LINKER__appratatouile_Release CMakeFiles/appratatouile.dir/appratatouile_autogen/mocs_compilation.cpp.obj CMakeFiles/appratatouile.dir/main.cpp.obj CMakeFiles/appratatouile.dir/win/app_icon.rc.obj CMakeFiles/appratatouile.dir/appratatouile_qmltyperegistrations.cpp.obj CMakeFiles/appratatouile.dir/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qrc_qmake_ratatouile.cpp.obj CMakeFiles/appratatouile.dir/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qrc_qmake_ratatouile_copy.cpp.obj CMakeFiles/appratatouile.dir/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmlcache/appratatouile_qmlcache_loader.cpp.obj CMakeFiles/appratatouile.dir/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmlcache/appratatouile_qml/BottonBar_qml.cpp.obj CMakeFiles/appratatouile.dir/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmlcache/appratatouile_qml/slotGame/SlotMachine_qml.cpp.obj CMakeFiles/appratatouile.dir/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmlcache/appratatouile_qml/slotGame/Symbol_qml.cpp.obj CMakeFiles/appratatouile.dir/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmlcache/appratatouile_qml/slotGame/Ratatouille_qml.cpp.obj CMakeFiles/appratatouile.dir/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qrc_appratatouile_raw_qml_0.cpp.obj | CMakeFiles/Felgo_resources_1.dir/./build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qrc_FelgoResources.cpp.obj C$:/Felgo/Felgo/mingw_64/lib/libFelgo.a C$:/Felgo/Felgo/mingw_64/lib/libQt6Widgets.a C$:/Felgo/Felgo/mingw_64/lib/libQt6Multimedia.a C$:/Felgo/Felgo/mingw_64/lib/libQt6Sql.a C$:/Felgo/Felgo/mingw_64/lib/libQt6WebSockets.a C$:/Felgo/Felgo/mingw_64/lib/libQt6Bluetooth.a C$:/Felgo/Felgo/mingw_64/lib/libQt6Core5Compat.a C$:/Felgo/Felgo/mingw_64/lib/libQt6QuickControls2.a C$:/Felgo/Felgo/mingw_64/lib/libQt6Quick.a C$:/Felgo/Felgo/mingw_64/lib/libQt6QmlModels.a C$:/Felgo/Felgo/mingw_64/lib/libQt6Qml.a C$:/Felgo/Felgo/mingw_64/lib/libQt6Network.a C$:/Felgo/Felgo/mingw_64/lib/libQt6OpenGL.a C$:/Felgo/Felgo/mingw_64/lib/libQt6Gui.a C$:/Felgo/Felgo/mingw_64/lib/libQt6Core.a C$:/Felgo/Felgo/mingw_64/lib/libQt6EntryPoint.a || Felgo_resources_1 appratatouile_autogen appratatouile_autogen_timestamp_deps appratatouile_qmlimportscan appratatouile_tooling
+build appFlaskOfRum.exe: CXX_EXECUTABLE_LINKER__appFlaskOfRum_Release CMakeFiles/appFlaskOfRum.dir/appFlaskOfRum_autogen/mocs_compilation.cpp.obj CMakeFiles/appFlaskOfRum.dir/main.cpp.obj CMakeFiles/appFlaskOfRum.dir/win/app_icon.rc.obj CMakeFiles/appFlaskOfRum.dir/appflaskofrum_qmltyperegistrations.cpp.obj CMakeFiles/appFlaskOfRum.dir/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qrc_qmake_FlaskOfRum.cpp.obj CMakeFiles/appFlaskOfRum.dir/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qrc_qmake_FlaskOfRum_copy.cpp.obj | CMakeFiles/Felgo_resources_1.dir/./build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qrc_FelgoResources.cpp.obj C$:/Felgo/Felgo/mingw_64/lib/libFelgo.a C$:/Felgo/Felgo/mingw_64/lib/libQt6Widgets.a C$:/Felgo/Felgo/mingw_64/lib/libQt6Multimedia.a C$:/Felgo/Felgo/mingw_64/lib/libQt6Sql.a C$:/Felgo/Felgo/mingw_64/lib/libQt6WebSockets.a C$:/Felgo/Felgo/mingw_64/lib/libQt6Bluetooth.a C$:/Felgo/Felgo/mingw_64/lib/libQt6Core5Compat.a C$:/Felgo/Felgo/mingw_64/lib/libQt6QuickControls2.a C$:/Felgo/Felgo/mingw_64/lib/libQt6Quick.a C$:/Felgo/Felgo/mingw_64/lib/libQt6QmlModels.a C$:/Felgo/Felgo/mingw_64/lib/libQt6Qml.a C$:/Felgo/Felgo/mingw_64/lib/libQt6Network.a C$:/Felgo/Felgo/mingw_64/lib/libQt6OpenGL.a C$:/Felgo/Felgo/mingw_64/lib/libQt6Gui.a C$:/Felgo/Felgo/mingw_64/lib/libQt6Core.a C$:/Felgo/Felgo/mingw_64/lib/libQt6EntryPoint.a || Felgo_resources_1 appFlaskOfRum_autogen appFlaskOfRum_autogen_timestamp_deps appFlaskOfRum_qmlimportscan
   FLAGS = -O3 -DNDEBUG
   LINK_FLAGS = -mwindows
   LINK_LIBRARIES = CMakeFiles/Felgo_resources_1.dir/./build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qrc_FelgoResources.cpp.obj  C:/Felgo/Felgo/mingw_64/lib/libFelgo.a  C:/Felgo/Felgo/mingw_64/lib/libQt6Widgets.a  C:/Felgo/Felgo/mingw_64/lib/libQt6Multimedia.a  C:/Felgo/Felgo/mingw_64/lib/libQt6Sql.a  C:/Felgo/Felgo/mingw_64/lib/libQt6WebSockets.a  -lz  C:/Felgo/Felgo/mingw_64/lib/libQt6Bluetooth.a  C:/Felgo/Felgo/mingw_64/lib/libQt6Core5Compat.a  C:/Felgo/Felgo/mingw_64/lib/libQt6QuickControls2.a  C:/Felgo/Felgo/mingw_64/lib/libQt6Quick.a  C:/Felgo/Felgo/mingw_64/lib/libQt6QmlModels.a  C:/Felgo/Felgo/mingw_64/lib/libQt6Qml.a  C:/Felgo/Felgo/mingw_64/lib/libQt6Network.a  -lws2_32  C:/Felgo/Felgo/mingw_64/lib/libQt6OpenGL.a  -luser32  C:/Felgo/Felgo/mingw_64/lib/libQt6Gui.a  -ld3d11  -ldxgi  -ldxguid  C:/Felgo/Felgo/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -lmingw32  C:/Felgo/Felgo/mingw_64/lib/libQt6EntryPoint.a  -lshell32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\appratatouile.dir
+  OBJECT_DIR = CMakeFiles\appFlaskOfRum.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = appratatouile.exe
-  TARGET_IMPLIB = libappratatouile.dll.a
-  TARGET_PDB = appratatouile.exe.dbg
+  TARGET_FILE = appFlaskOfRum.exe
+  TARGET_IMPLIB = libappFlaskOfRum.dll.a
+  TARGET_PDB = appFlaskOfRum.exe.dbg
 
 
 #############################################
@@ -203,57 +155,27 @@ build Felgo_resources_1: phony CMakeFiles/Felgo_resources_1.dir/Felgo_resources_
 
 
 #############################################
-# Utility command for appratatouile_qmltyperegistration
+# Utility command for appFlaskOfRum_qmltyperegistration
 
-build appratatouile_qmltyperegistration: phony CMakeFiles/appratatouile_qmltyperegistration appratatouile_qmltyperegistrations.cpp ratatouile/appratatouile.qmltypes meta_types/qt6appratatouile_release_metatypes.json.gen meta_types/qt6appratatouile_release_metatypes.json meta_types/appratatouile_json_file_list.txt meta_types/appratatouile_json_file_list.txt.timestamp appratatouile_autogen/timestamp appratatouile_autogen/mocs_compilation.cpp appratatouile_autogen_timestamp_deps
+build appFlaskOfRum_qmltyperegistration: phony CMakeFiles/appFlaskOfRum_qmltyperegistration appflaskofrum_qmltyperegistrations.cpp FlaskOfRum/appFlaskOfRum.qmltypes meta_types/qt6appflaskofrum_release_metatypes.json.gen meta_types/qt6appflaskofrum_release_metatypes.json meta_types/appFlaskOfRum_json_file_list.txt meta_types/appFlaskOfRum_json_file_list.txt.timestamp appFlaskOfRum_autogen/timestamp appFlaskOfRum_autogen/mocs_compilation.cpp appFlaskOfRum_autogen_timestamp_deps
 
 
 #############################################
 # Utility command for all_qmltyperegistrations
 
-build all_qmltyperegistrations: phony appratatouile_qmltyperegistration
+build all_qmltyperegistrations: phony appFlaskOfRum_qmltyperegistration
 
 
 #############################################
-# Utility command for appratatouile_other_files
+# Utility command for appFlaskOfRum_other_files
 
-build appratatouile_other_files: phony qml/BottonBar.qml qml/slotGame/SlotMachine.qml qml/slotGame/Symbol.qml qml/slotGame/Ratatouille.qml
-
-
-#############################################
-# Utility command for appratatouile_qmllint
-
-build appratatouile_qmllint: phony CMakeFiles/appratatouile_qmllint all_qmltyperegistrations
+build appFlaskOfRum_other_files: phony
 
 
 #############################################
-# Utility command for appratatouile_qmllint_json
+# Utility command for appFlaskOfRum_qmlimportscan
 
-build appratatouile_qmllint_json: phony CMakeFiles/appratatouile_qmllint_json all_qmltyperegistrations
-
-
-#############################################
-# Utility command for all_qmllint
-
-build all_qmllint: phony appratatouile_qmllint
-
-
-#############################################
-# Utility command for all_qmllint_json
-
-build all_qmllint_json: phony appratatouile_qmllint_json
-
-
-#############################################
-# Utility command for appratatouile_tooling
-
-build appratatouile_tooling: phony ratatouile/qml/BottonBar.qml ratatouile/qml/slotGame/SlotMachine.qml ratatouile/qml/slotGame/Symbol.qml ratatouile/qml/slotGame/Ratatouille.qml
-
-
-#############################################
-# Utility command for appratatouile_qmlimportscan
-
-build appratatouile_qmlimportscan: phony CMakeFiles/appratatouile_qmlimportscan .qt_plugins/Qt6_QmlPlugins_Imports_appratatouile.cmake
+build appFlaskOfRum_qmlimportscan: phony CMakeFiles/appFlaskOfRum_qmlimportscan .qt_plugins/Qt6_QmlPlugins_Imports_appFlaskOfRum.cmake
 
 
 #############################################
@@ -323,15 +245,15 @@ build install/strip: phony CMakeFiles/install/strip.util
 
 
 #############################################
-# Utility command for appratatouile_autogen_timestamp_deps
+# Utility command for appFlaskOfRum_autogen_timestamp_deps
 
-build appratatouile_autogen_timestamp_deps: phony CMakeFiles/appratatouile_autogen_timestamp_deps .rcc/qmlcache/appratatouile_qmlcache_loader.cpp appratatouile_qmlimportscan appratatouile_tooling
+build appFlaskOfRum_autogen_timestamp_deps: phony appFlaskOfRum_qmlimportscan
 
 
 #############################################
-# Utility command for appratatouile_autogen
+# Utility command for appFlaskOfRum_autogen
 
-build appratatouile_autogen: phony CMakeFiles/appratatouile_autogen appratatouile_autogen/timestamp appratatouile_autogen/mocs_compilation.cpp appratatouile_autogen_timestamp_deps
+build appFlaskOfRum_autogen: phony CMakeFiles/appFlaskOfRum_autogen appFlaskOfRum_autogen/timestamp appFlaskOfRum_autogen/mocs_compilation.cpp appFlaskOfRum_autogen_timestamp_deps
 
 
 #############################################
@@ -349,7 +271,7 @@ build Felgo_resources_1_autogen: phony CMakeFiles/Felgo_resources_1_autogen Felg
 #############################################
 # Custom command for qml\BottonBar.qml
 
-build qml/BottonBar.qml | ${cmake_ninja_workdir}qml/BottonBar.qml: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/qml/BottonBar.qml
+build qml/BottonBar.qml | ${cmake_ninja_workdir}qml/BottonBar.qml: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/qml/BottonBar.qml || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appFlaskOfRum_autogen appFlaskOfRum_autogen_timestamp_deps appFlaskOfRum_qmlimportscan
   COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E make_directory F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/ && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E copy F:/programas/git/ratatouille/Game_Log/qml/BottonBar.qml F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/"
   DESC = Generating qml/BottonBar.qml
   restat = 1
@@ -358,7 +280,7 @@ build qml/BottonBar.qml | ${cmake_ninja_workdir}qml/BottonBar.qml: CUSTOM_COMMAN
 #############################################
 # Custom command for qml\Main.qml
 
-build qml/Main.qml | ${cmake_ninja_workdir}qml/Main.qml: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/qml/Main.qml || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appratatouile_autogen appratatouile_autogen_timestamp_deps appratatouile_qmlimportscan appratatouile_tooling
+build qml/Main.qml | ${cmake_ninja_workdir}qml/Main.qml: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/qml/Main.qml || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appFlaskOfRum_autogen appFlaskOfRum_autogen_timestamp_deps appFlaskOfRum_qmlimportscan
   COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E make_directory F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/ && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E copy F:/programas/git/ratatouille/Game_Log/qml/Main.qml F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/"
   DESC = Generating qml/Main.qml
   restat = 1
@@ -367,43 +289,43 @@ build qml/Main.qml | ${cmake_ninja_workdir}qml/Main.qml: CUSTOM_COMMAND F$:/prog
 #############################################
 # Custom command for qml\TopBar.qml
 
-build qml/TopBar.qml | ${cmake_ninja_workdir}qml/TopBar.qml: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/qml/TopBar.qml || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appratatouile_autogen appratatouile_autogen_timestamp_deps appratatouile_qmlimportscan appratatouile_tooling
+build qml/TopBar.qml | ${cmake_ninja_workdir}qml/TopBar.qml: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/qml/TopBar.qml || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appFlaskOfRum_autogen appFlaskOfRum_autogen_timestamp_deps appFlaskOfRum_qmlimportscan
   COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E make_directory F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/ && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E copy F:/programas/git/ratatouille/Game_Log/qml/TopBar.qml F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/"
   DESC = Generating qml/TopBar.qml
   restat = 1
 
 
 #############################################
-# Custom command for qml\slotGame\Ratatouille.qml
+# Custom command for qml\config\SymbolRats.qml
 
-build qml/slotGame/Ratatouille.qml | ${cmake_ninja_workdir}qml/slotGame/Ratatouille.qml: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/qml/slotGame/Ratatouille.qml
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E make_directory F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotGame/ && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E copy F:/programas/git/ratatouille/Game_Log/qml/slotGame/Ratatouille.qml F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotGame/"
-  DESC = Generating qml/slotGame/Ratatouille.qml
+build qml/config/SymbolRats.qml | ${cmake_ninja_workdir}qml/config/SymbolRats.qml: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/qml/config/SymbolRats.qml || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appFlaskOfRum_autogen appFlaskOfRum_autogen_timestamp_deps appFlaskOfRum_qmlimportscan
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E make_directory F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/config/ && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E copy F:/programas/git/ratatouille/Game_Log/qml/config/SymbolRats.qml F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/config/"
+  DESC = Generating qml/config/SymbolRats.qml
   restat = 1
 
 
 #############################################
-# Custom command for qml\slotGame\SlotMachine.qml
+# Custom command for qml\slotMachine\Ratatouille.qml
 
-build qml/slotGame/SlotMachine.qml | ${cmake_ninja_workdir}qml/slotGame/SlotMachine.qml: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/qml/slotGame/SlotMachine.qml
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E make_directory F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotGame/ && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E copy F:/programas/git/ratatouille/Game_Log/qml/slotGame/SlotMachine.qml F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotGame/"
-  DESC = Generating qml/slotGame/SlotMachine.qml
+build qml/slotMachine/Ratatouille.qml | ${cmake_ninja_workdir}qml/slotMachine/Ratatouille.qml: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/qml/slotMachine/Ratatouille.qml || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appFlaskOfRum_autogen appFlaskOfRum_autogen_timestamp_deps appFlaskOfRum_qmlimportscan
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E make_directory F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/ && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E copy F:/programas/git/ratatouille/Game_Log/qml/slotMachine/Ratatouille.qml F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/"
+  DESC = Generating qml/slotMachine/Ratatouille.qml
   restat = 1
 
 
 #############################################
-# Custom command for qml\slotGame\Symbol.qml
+# Custom command for qml\slotMachine\Symbol.qml
 
-build qml/slotGame/Symbol.qml | ${cmake_ninja_workdir}qml/slotGame/Symbol.qml: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/qml/slotGame/Symbol.qml
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E make_directory F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotGame/ && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E copy F:/programas/git/ratatouille/Game_Log/qml/slotGame/Symbol.qml F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotGame/"
-  DESC = Generating qml/slotGame/Symbol.qml
+build qml/slotMachine/Symbol.qml | ${cmake_ninja_workdir}qml/slotMachine/Symbol.qml: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/qml/slotMachine/Symbol.qml || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appFlaskOfRum_autogen appFlaskOfRum_autogen_timestamp_deps appFlaskOfRum_qmlimportscan
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E make_directory F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/ && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E copy F:/programas/git/ratatouille/Game_Log/qml/slotMachine/Symbol.qml F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/"
+  DESC = Generating qml/slotMachine/Symbol.qml
   restat = 1
 
 
 #############################################
 # Custom command for assets\BGtopbar.png
 
-build assets/BGtopbar.png | ${cmake_ninja_workdir}assets/BGtopbar.png: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/assets/BGtopbar.png || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appratatouile_autogen appratatouile_autogen_timestamp_deps appratatouile_qmlimportscan appratatouile_tooling
+build assets/BGtopbar.png | ${cmake_ninja_workdir}assets/BGtopbar.png: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/assets/BGtopbar.png || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appFlaskOfRum_autogen appFlaskOfRum_autogen_timestamp_deps appFlaskOfRum_qmlimportscan
   COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E make_directory F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/assets/ && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E copy F:/programas/git/ratatouille/Game_Log/assets/BGtopbar.png F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/assets/"
   DESC = Generating assets/BGtopbar.png
   restat = 1
@@ -412,7 +334,7 @@ build assets/BGtopbar.png | ${cmake_ninja_workdir}assets/BGtopbar.png: CUSTOM_CO
 #############################################
 # Custom command for assets\GameCoin.png
 
-build assets/GameCoin.png | ${cmake_ninja_workdir}assets/GameCoin.png: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/assets/GameCoin.png || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appratatouile_autogen appratatouile_autogen_timestamp_deps appratatouile_qmlimportscan appratatouile_tooling
+build assets/GameCoin.png | ${cmake_ninja_workdir}assets/GameCoin.png: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/assets/GameCoin.png || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appFlaskOfRum_autogen appFlaskOfRum_autogen_timestamp_deps appFlaskOfRum_qmlimportscan
   COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E make_directory F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/assets/ && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E copy F:/programas/git/ratatouille/Game_Log/assets/GameCoin.png F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/assets/"
   DESC = Generating assets/GameCoin.png
   restat = 1
@@ -421,16 +343,52 @@ build assets/GameCoin.png | ${cmake_ninja_workdir}assets/GameCoin.png: CUSTOM_CO
 #############################################
 # Custom command for assets\GameLogo.png
 
-build assets/GameLogo.png | ${cmake_ninja_workdir}assets/GameLogo.png: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/assets/GameLogo.png || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appratatouile_autogen appratatouile_autogen_timestamp_deps appratatouile_qmlimportscan appratatouile_tooling
+build assets/GameLogo.png | ${cmake_ninja_workdir}assets/GameLogo.png: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/assets/GameLogo.png || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appFlaskOfRum_autogen appFlaskOfRum_autogen_timestamp_deps appFlaskOfRum_qmlimportscan
   COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E make_directory F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/assets/ && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E copy F:/programas/git/ratatouille/Game_Log/assets/GameLogo.png F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/assets/"
   DESC = Generating assets/GameLogo.png
   restat = 1
 
 
 #############################################
+# Custom command for assets\backgroundMain.jpg
+
+build assets/backgroundMain.jpg | ${cmake_ninja_workdir}assets/backgroundMain.jpg: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/assets/backgroundMain.jpg || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appFlaskOfRum_autogen appFlaskOfRum_autogen_timestamp_deps appFlaskOfRum_qmlimportscan
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E make_directory F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/assets/ && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E copy F:/programas/git/ratatouille/Game_Log/assets/backgroundMain.jpg F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/assets/"
+  DESC = Generating assets/backgroundMain.jpg
+  restat = 1
+
+
+#############################################
+# Custom command for assets\slotMachine\back.png
+
+build assets/slotMachine/back.png | ${cmake_ninja_workdir}assets/slotMachine/back.png: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/assets/slotMachine/back.png || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appFlaskOfRum_autogen appFlaskOfRum_autogen_timestamp_deps appFlaskOfRum_qmlimportscan
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E make_directory F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/assets/slotMachine/ && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E copy F:/programas/git/ratatouille/Game_Log/assets/slotMachine/back.png F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/assets/slotMachine/"
+  DESC = Generating assets/slotMachine/back.png
+  restat = 1
+
+
+#############################################
+# Custom command for assets\slotMachine\bancinha.png
+
+build assets/slotMachine/bancinha.png | ${cmake_ninja_workdir}assets/slotMachine/bancinha.png: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/assets/slotMachine/bancinha.png || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appFlaskOfRum_autogen appFlaskOfRum_autogen_timestamp_deps appFlaskOfRum_qmlimportscan
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E make_directory F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/assets/slotMachine/ && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E copy F:/programas/git/ratatouille/Game_Log/assets/slotMachine/bancinha.png F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/assets/slotMachine/"
+  DESC = Generating assets/slotMachine/bancinha.png
+  restat = 1
+
+
+#############################################
+# Custom command for assets\slotMachine\remy.png
+
+build assets/slotMachine/remy.png | ${cmake_ninja_workdir}assets/slotMachine/remy.png: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/assets/slotMachine/remy.png || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appFlaskOfRum_autogen appFlaskOfRum_autogen_timestamp_deps appFlaskOfRum_qmlimportscan
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E make_directory F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/assets/slotMachine/ && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E copy F:/programas/git/ratatouille/Game_Log/assets/slotMachine/remy.png F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/assets/slotMachine/"
+  DESC = Generating assets/slotMachine/remy.png
+  restat = 1
+
+
+#############################################
 # Custom command for qml\..gitignore.un~
 
-build qml/..gitignore.un~ | ${cmake_ninja_workdir}qml/..gitignore.un~: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/qml/..gitignore.un~ || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appratatouile_autogen appratatouile_autogen_timestamp_deps appratatouile_qmlimportscan appratatouile_tooling
+build qml/..gitignore.un~ | ${cmake_ninja_workdir}qml/..gitignore.un~: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/qml/..gitignore.un~ || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appFlaskOfRum_autogen appFlaskOfRum_autogen_timestamp_deps appFlaskOfRum_qmlimportscan
   COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E make_directory F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/ && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E copy F:/programas/git/ratatouille/Game_Log/qml/..gitignore.un~ F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/"
   DESC = Generating qml/..gitignore.un~
   restat = 1
@@ -439,7 +397,7 @@ build qml/..gitignore.un~ | ${cmake_ninja_workdir}qml/..gitignore.un~: CUSTOM_CO
 #############################################
 # Custom command for qml\.gitignore
 
-build qml/.gitignore | ${cmake_ninja_workdir}qml/.gitignore: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/qml/.gitignore || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appratatouile_autogen appratatouile_autogen_timestamp_deps appratatouile_qmlimportscan appratatouile_tooling
+build qml/.gitignore | ${cmake_ninja_workdir}qml/.gitignore: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/qml/.gitignore || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appFlaskOfRum_autogen appFlaskOfRum_autogen_timestamp_deps appFlaskOfRum_qmlimportscan
   COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E make_directory F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/ && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E copy F:/programas/git/ratatouille/Game_Log/qml/.gitignore F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/"
   DESC = Generating qml/.gitignore
   restat = 1
@@ -448,182 +406,92 @@ build qml/.gitignore | ${cmake_ninja_workdir}qml/.gitignore: CUSTOM_COMMAND F$:/
 #############################################
 # Custom command for qml\config.json
 
-build qml/config.json | ${cmake_ninja_workdir}qml/config.json: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/qml/config.json || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appratatouile_autogen appratatouile_autogen_timestamp_deps appratatouile_qmlimportscan appratatouile_tooling
+build qml/config.json | ${cmake_ninja_workdir}qml/config.json: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/qml/config.json || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appFlaskOfRum_autogen appFlaskOfRum_autogen_timestamp_deps appFlaskOfRum_qmlimportscan
   COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E make_directory F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/ && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E copy F:/programas/git/ratatouille/Game_Log/qml/config.json F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/"
   DESC = Generating qml/config.json
   restat = 1
 
 
 #############################################
-# Custom command for qml\configs\.qmldir.swp
+# Custom command for qml\config\.qmldir.swp
 
-build qml/configs/.qmldir.swp | ${cmake_ninja_workdir}qml/configs/.qmldir.swp: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/qml/configs/.qmldir.swp || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appratatouile_autogen appratatouile_autogen_timestamp_deps appratatouile_qmlimportscan appratatouile_tooling
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E make_directory F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/configs/ && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E copy F:/programas/git/ratatouille/Game_Log/qml/configs/.qmldir.swp F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/configs/"
-  DESC = Generating qml/configs/.qmldir.swp
+build qml/config/.qmldir.swp | ${cmake_ninja_workdir}qml/config/.qmldir.swp: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/qml/config/.qmldir.swp || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appFlaskOfRum_autogen appFlaskOfRum_autogen_timestamp_deps appFlaskOfRum_qmlimportscan
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E make_directory F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/config/ && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E copy F:/programas/git/ratatouille/Game_Log/qml/config/.qmldir.swp F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/config/"
+  DESC = Generating qml/config/.qmldir.swp
   restat = 1
 
 
 #############################################
-# Custom command for qml\configs\.qmldir.un~
+# Custom command for qml\config\.qmldir.un~
 
-build qml/configs/.qmldir.un~ | ${cmake_ninja_workdir}qml/configs/.qmldir.un~: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/qml/configs/.qmldir.un~ || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appratatouile_autogen appratatouile_autogen_timestamp_deps appratatouile_qmlimportscan appratatouile_tooling
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E make_directory F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/configs/ && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E copy F:/programas/git/ratatouille/Game_Log/qml/configs/.qmldir.un~ F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/configs/"
-  DESC = Generating qml/configs/.qmldir.un~
+build qml/config/.qmldir.un~ | ${cmake_ninja_workdir}qml/config/.qmldir.un~: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/qml/config/.qmldir.un~ || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appFlaskOfRum_autogen appFlaskOfRum_autogen_timestamp_deps appFlaskOfRum_qmlimportscan
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E make_directory F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/config/ && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E copy F:/programas/git/ratatouille/Game_Log/qml/config/.qmldir.un~ F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/config/"
+  DESC = Generating qml/config/.qmldir.un~
   restat = 1
 
 
 #############################################
-# Custom command for qml\configs\qmldir
+# Custom command for qml\config\qmldir
 
-build qml/configs/qmldir | ${cmake_ninja_workdir}qml/configs/qmldir: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/qml/configs/qmldir || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appratatouile_autogen appratatouile_autogen_timestamp_deps appratatouile_qmlimportscan appratatouile_tooling
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E make_directory F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/configs/ && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E copy F:/programas/git/ratatouille/Game_Log/qml/configs/qmldir F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/configs/"
-  DESC = Generating qml/configs/qmldir
+build qml/config/qmldir | ${cmake_ninja_workdir}qml/config/qmldir: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/qml/config/qmldir || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appFlaskOfRum_autogen appFlaskOfRum_autogen_timestamp_deps appFlaskOfRum_qmlimportscan
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E make_directory F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/config/ && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E copy F:/programas/git/ratatouille/Game_Log/qml/config/qmldir F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/config/"
+  DESC = Generating qml/config/qmldir
   restat = 1
 
 
 #############################################
-# Custom command for qml\slotGame\SlotMachine.qml.autosave
+# Custom command for meta_types\qt6appflaskofrum_release_metatypes.json.gen
 
-build qml/slotGame/SlotMachine.qml.autosave | ${cmake_ninja_workdir}qml/slotGame/SlotMachine.qml.autosave: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/qml/slotGame/SlotMachine.qml.autosave || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appratatouile_autogen appratatouile_autogen_timestamp_deps appratatouile_qmlimportscan appratatouile_tooling
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E make_directory F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotGame/ && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E copy F:/programas/git/ratatouille/Game_Log/qml/slotGame/SlotMachine.qml.autosave F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotGame/"
-  DESC = Generating qml/slotGame/SlotMachine.qml.autosave
+build meta_types/qt6appflaskofrum_release_metatypes.json.gen meta_types/qt6appflaskofrum_release_metatypes.json | ${cmake_ninja_workdir}meta_types/qt6appflaskofrum_release_metatypes.json.gen ${cmake_ninja_workdir}meta_types/qt6appflaskofrum_release_metatypes.json: CUSTOM_COMMAND C$:/Felgo/Felgo/mingw_64/./bin/moc.exe meta_types/appFlaskOfRum_json_file_list.txt || appFlaskOfRum_autogen_timestamp_deps appFlaskOfRum_qmlimportscan
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Felgo\mingw_64\.\bin\moc.exe -o F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/meta_types/qt6appflaskofrum_release_metatypes.json.gen --collect-json @F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/meta_types/appFlaskOfRum_json_file_list.txt && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E copy_if_different F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/meta_types/qt6appflaskofrum_release_metatypes.json.gen F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/meta_types/qt6appflaskofrum_release_metatypes.json"
+  DESC = Running moc --collect-json for target appFlaskOfRum
   restat = 1
 
 
 #############################################
-# Custom command for qml\slotGame\Symbol.qml.autosave
+# Custom command for appflaskofrum_qmltyperegistrations.cpp
 
-build qml/slotGame/Symbol.qml.autosave | ${cmake_ninja_workdir}qml/slotGame/Symbol.qml.autosave: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/qml/slotGame/Symbol.qml.autosave || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appratatouile_autogen appratatouile_autogen_timestamp_deps appratatouile_qmlimportscan appratatouile_tooling
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E make_directory F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotGame/ && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E copy F:/programas/git/ratatouille/Game_Log/qml/slotGame/Symbol.qml.autosave F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotGame/"
-  DESC = Generating qml/slotGame/Symbol.qml.autosave
+build appflaskofrum_qmltyperegistrations.cpp FlaskOfRum/appFlaskOfRum.qmltypes | ${cmake_ninja_workdir}appflaskofrum_qmltyperegistrations.cpp ${cmake_ninja_workdir}FlaskOfRum/appFlaskOfRum.qmltypes: CUSTOM_COMMAND qmltypes/appFlaskOfRum_foreign_types.txt meta_types/qt6appflaskofrum_release_metatypes.json C$:/Felgo/Felgo/mingw_64/./bin/qmltyperegistrar.exe C$:/Felgo/Felgo/mingw_64/lib/metatypes/qt6core_relwithdebinfo_metatypes.json C$:/Felgo/Felgo/mingw_64/lib/metatypes/qt6qml_relwithdebinfo_metatypes.json C$:/Felgo/Felgo/mingw_64/lib/metatypes/qt6network_relwithdebinfo_metatypes.json C$:/Felgo/Felgo/mingw_64/lib/metatypes/qt6quick_relwithdebinfo_metatypes.json C$:/Felgo/Felgo/mingw_64/lib/metatypes/qt6gui_relwithdebinfo_metatypes.json C$:/Felgo/Felgo/mingw_64/lib/metatypes/qt6qmlmodels_relwithdebinfo_metatypes.json C$:/Felgo/Felgo/mingw_64/lib/metatypes/qt6opengl_relwithdebinfo_metatypes.json C$:/Felgo/Felgo/mingw_64/lib/metatypes/qt6widgets_relwithdebinfo_metatypes.json C$:/Felgo/Felgo/mingw_64/lib/metatypes/qt6multimedia_relwithdebinfo_metatypes.json C$:/Felgo/Felgo/mingw_64/lib/metatypes/qt6sql_relwithdebinfo_metatypes.json C$:/Felgo/Felgo/mingw_64/lib/metatypes/qt6websockets_relwithdebinfo_metatypes.json C$:/Felgo/Felgo/mingw_64/lib/metatypes/qt6bluetooth_relwithdebinfo_metatypes.json C$:/Felgo/Felgo/mingw_64/lib/metatypes/qt6core5compat_relwithdebinfo_metatypes.json C$:/Felgo/Felgo/mingw_64/lib/metatypes/qt6quickcontrols2_relwithdebinfo_metatypes.json || appFlaskOfRum_autogen_timestamp_deps appFlaskOfRum_qmlimportscan
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release\.qt\bin\qt_setup_tool_path.bat C:/Felgo/Felgo/mingw_64/./bin/qmltyperegistrar.exe --generate-qmltypes=F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/FlaskOfRum/appFlaskOfRum.qmltypes --import-name=FlaskOfRum --major-version=1 --minor-version=0 @F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qmltypes/appFlaskOfRum_foreign_types.txt -o F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appflaskofrum_qmltyperegistrations.cpp F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/meta_types/qt6appflaskofrum_release_metatypes.json && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E make_directory F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.generated && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E touch F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.generated/appFlaskOfRum.qmltypes"
+  DESC = Automatic QML type registration for target appFlaskOfRum
   restat = 1
 
 
 #############################################
-# Custom command for qml\slotGame\Symbols\Bancinha.png
+# Custom command for .rcc\qrc_qmake_FlaskOfRum.cpp
 
-build qml/slotGame/Symbols/Bancinha.png | ${cmake_ninja_workdir}qml/slotGame/Symbols/Bancinha.png: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/qml/slotGame/Symbols/Bancinha.png || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appratatouile_autogen appratatouile_autogen_timestamp_deps appratatouile_qmlimportscan appratatouile_tooling
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E make_directory F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotGame/Symbols/ && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E copy F:/programas/git/ratatouille/Game_Log/qml/slotGame/Symbols/Bancinha.png F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotGame/Symbols/"
-  DESC = Generating qml/slotGame/Symbols/Bancinha.png
+build .rcc/qrc_qmake_FlaskOfRum.cpp | ${cmake_ninja_workdir}.rcc/qrc_qmake_FlaskOfRum.cpp: CUSTOM_COMMAND FlaskOfRum/qmldir .rcc/qmake_FlaskOfRum.qrc C$:/Felgo/Felgo/mingw_64/./bin/rcc.exe || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appFlaskOfRum_autogen appFlaskOfRum_autogen_timestamp_deps appFlaskOfRum_qmlimportscan
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Felgo\mingw_64\.\bin\rcc.exe --output F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qrc_qmake_FlaskOfRum.cpp --name qmake_FlaskOfRum F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmake_FlaskOfRum.qrc --no-zstd"
+  DESC = Running rcc for resource qmake_FlaskOfRum
   restat = 1
 
 
 #############################################
-# Custom command for qml\slotGame\Symbols\Remy.png
+# Custom command for .rcc\qrc_qmake_FlaskOfRum_copy.cpp
 
-build qml/slotGame/Symbols/Remy.png | ${cmake_ninja_workdir}qml/slotGame/Symbols/Remy.png: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/qml/slotGame/Symbols/Remy.png || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appratatouile_autogen appratatouile_autogen_timestamp_deps appratatouile_qmlimportscan appratatouile_tooling
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E make_directory F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotGame/Symbols/ && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E copy F:/programas/git/ratatouille/Game_Log/qml/slotGame/Symbols/Remy.png F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotGame/Symbols/"
-  DESC = Generating qml/slotGame/Symbols/Remy.png
+build .rcc/qrc_qmake_FlaskOfRum_copy.cpp | ${cmake_ninja_workdir}.rcc/qrc_qmake_FlaskOfRum_copy.cpp: CUSTOM_COMMAND FlaskOfRum/qmldir .rcc/qmake_FlaskOfRum_copy.qrc C$:/Felgo/Felgo/mingw_64/./bin/rcc.exe || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appFlaskOfRum_autogen appFlaskOfRum_autogen_timestamp_deps appFlaskOfRum_qmlimportscan
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Felgo\mingw_64\.\bin\rcc.exe --output F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qrc_qmake_FlaskOfRum_copy.cpp --name qmake_FlaskOfRum_copy F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmake_FlaskOfRum_copy.qrc --no-zstd"
+  DESC = Running rcc for resource qmake_FlaskOfRum_copy
   restat = 1
 
 
 #############################################
-# Custom command for meta_types\qt6appratatouile_release_metatypes.json.gen
+# Custom command for appFlaskOfRum_autogen\timestamp
 
-build meta_types/qt6appratatouile_release_metatypes.json.gen meta_types/qt6appratatouile_release_metatypes.json | ${cmake_ninja_workdir}meta_types/qt6appratatouile_release_metatypes.json.gen ${cmake_ninja_workdir}meta_types/qt6appratatouile_release_metatypes.json: CUSTOM_COMMAND C$:/Felgo/Felgo/mingw_64/./bin/moc.exe meta_types/appratatouile_json_file_list.txt || appratatouile_autogen_timestamp_deps appratatouile_qmlimportscan appratatouile_tooling
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Felgo\mingw_64\.\bin\moc.exe -o F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/meta_types/qt6appratatouile_release_metatypes.json.gen --collect-json @F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/meta_types/appratatouile_json_file_list.txt && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E copy_if_different F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/meta_types/qt6appratatouile_release_metatypes.json.gen F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/meta_types/qt6appratatouile_release_metatypes.json"
-  DESC = Running moc --collect-json for target appratatouile
-  restat = 1
-
-
-#############################################
-# Custom command for appratatouile_qmltyperegistrations.cpp
-
-build appratatouile_qmltyperegistrations.cpp ratatouile/appratatouile.qmltypes | ${cmake_ninja_workdir}appratatouile_qmltyperegistrations.cpp ${cmake_ninja_workdir}ratatouile/appratatouile.qmltypes: CUSTOM_COMMAND qmltypes/appratatouile_foreign_types.txt meta_types/qt6appratatouile_release_metatypes.json C$:/Felgo/Felgo/mingw_64/./bin/qmltyperegistrar.exe C$:/Felgo/Felgo/mingw_64/lib/metatypes/qt6core_relwithdebinfo_metatypes.json C$:/Felgo/Felgo/mingw_64/lib/metatypes/qt6qml_relwithdebinfo_metatypes.json C$:/Felgo/Felgo/mingw_64/lib/metatypes/qt6network_relwithdebinfo_metatypes.json C$:/Felgo/Felgo/mingw_64/lib/metatypes/qt6quick_relwithdebinfo_metatypes.json C$:/Felgo/Felgo/mingw_64/lib/metatypes/qt6gui_relwithdebinfo_metatypes.json C$:/Felgo/Felgo/mingw_64/lib/metatypes/qt6qmlmodels_relwithdebinfo_metatypes.json C$:/Felgo/Felgo/mingw_64/lib/metatypes/qt6opengl_relwithdebinfo_metatypes.json C$:/Felgo/Felgo/mingw_64/lib/metatypes/qt6widgets_relwithdebinfo_metatypes.json C$:/Felgo/Felgo/mingw_64/lib/metatypes/qt6multimedia_relwithdebinfo_metatypes.json C$:/Felgo/Felgo/mingw_64/lib/metatypes/qt6sql_relwithdebinfo_metatypes.json C$:/Felgo/Felgo/mingw_64/lib/metatypes/qt6websockets_relwithdebinfo_metatypes.json C$:/Felgo/Felgo/mingw_64/lib/metatypes/qt6bluetooth_relwithdebinfo_metatypes.json C$:/Felgo/Felgo/mingw_64/lib/metatypes/qt6core5compat_relwithdebinfo_metatypes.json C$:/Felgo/Felgo/mingw_64/lib/metatypes/qt6quickcontrols2_relwithdebinfo_metatypes.json || appratatouile_autogen_timestamp_deps appratatouile_qmlimportscan appratatouile_tooling
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release\.qt\bin\qt_setup_tool_path.bat C:/Felgo/Felgo/mingw_64/./bin/qmltyperegistrar.exe --generate-qmltypes=F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/ratatouile/appratatouile.qmltypes --import-name=ratatouile --major-version=1 --minor-version=0 @F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qmltypes/appratatouile_foreign_types.txt -o F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appratatouile_qmltyperegistrations.cpp F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/meta_types/qt6appratatouile_release_metatypes.json && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E make_directory F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.generated && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E touch F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.generated/appratatouile.qmltypes"
-  DESC = Automatic QML type registration for target appratatouile
-  restat = 1
-
-
-#############################################
-# Custom command for .rcc\qrc_qmake_ratatouile.cpp
-
-build .rcc/qrc_qmake_ratatouile.cpp | ${cmake_ninja_workdir}.rcc/qrc_qmake_ratatouile.cpp: CUSTOM_COMMAND ratatouile/qmldir .rcc/qmake_ratatouile.qrc C$:/Felgo/Felgo/mingw_64/./bin/rcc.exe || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appratatouile_autogen appratatouile_autogen_timestamp_deps appratatouile_qmlimportscan appratatouile_tooling
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Felgo\mingw_64\.\bin\rcc.exe --output F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qrc_qmake_ratatouile.cpp --name qmake_ratatouile F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmake_ratatouile.qrc --no-zstd"
-  DESC = Running rcc for resource qmake_ratatouile
-  restat = 1
-
-
-#############################################
-# Custom command for .rcc\qrc_qmake_ratatouile_copy.cpp
-
-build .rcc/qrc_qmake_ratatouile_copy.cpp | ${cmake_ninja_workdir}.rcc/qrc_qmake_ratatouile_copy.cpp: CUSTOM_COMMAND ratatouile/qmldir .rcc/qmake_ratatouile_copy.qrc C$:/Felgo/Felgo/mingw_64/./bin/rcc.exe || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appratatouile_autogen appratatouile_autogen_timestamp_deps appratatouile_qmlimportscan appratatouile_tooling
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Felgo\mingw_64\.\bin\rcc.exe --output F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qrc_qmake_ratatouile_copy.cpp --name qmake_ratatouile_copy F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmake_ratatouile_copy.qrc --no-zstd"
-  DESC = Running rcc for resource qmake_ratatouile_copy
-  restat = 1
-
-
-#############################################
-# Custom command for .rcc\qmlcache\appratatouile_qmlcache_loader.cpp
-
-build .rcc/qmlcache/appratatouile_qmlcache_loader.cpp | ${cmake_ninja_workdir}.rcc/qmlcache/appratatouile_qmlcache_loader.cpp: CUSTOM_COMMAND C$:/Felgo/Felgo/mingw_64/bin/qmlcachegen.exe .rcc/qmlcache/appratatouile_qml_loader_file_list.rsp .rcc/qmake_ratatouile.qrc .rcc/qmake_ratatouile_copy.qrc .rcc/appratatouile_raw_qml_0.qrc || appratatouile_qmlimportscan appratatouile_tooling
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release\.qt\bin\qt_setup_tool_path.bat C:/Felgo/Felgo/mingw_64/./bin/qmlcachegen.exe --resource-name qmlcache_appratatouile --resource F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmake_ratatouile.qrc --resource F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmake_ratatouile_copy.qrc --resource F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/appratatouile_raw_qml_0.qrc -o F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmlcache/appratatouile_qmlcache_loader.cpp @F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmlcache/appratatouile_qml_loader_file_list.rsp"
-  DESC = Generating .rcc/qmlcache/appratatouile_qmlcache_loader.cpp
-  restat = 1
-
-
-#############################################
-# Custom command for .rcc\qmlcache\appratatouile_qml\BottonBar_qml.cpp
-
-build .rcc/qmlcache/appratatouile_qml/BottonBar_qml.cpp | ${cmake_ninja_workdir}.rcc/qmlcache/appratatouile_qml/BottonBar_qml.cpp: CUSTOM_COMMAND C$:/Felgo/Felgo/mingw_64/bin/qmlcachegen.exe F$:/programas/git/ratatouille/Game_Log/qml/BottonBar.qml .rcc/qmake_ratatouile.qrc .rcc/qmake_ratatouile_copy.qrc .rcc/appratatouile_raw_qml_0.qrc ratatouile/appratatouile.qmltypes ratatouile/qmldir || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appratatouile_autogen appratatouile_autogen_timestamp_deps appratatouile_qmlimportscan appratatouile_tooling
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E make_directory F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmlcache/appratatouile_qml && F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release\.qt\bin\qt_setup_tool_path.bat C:/Felgo/Felgo/mingw_64/./bin/qmlcachegen.exe --bare --resource-path /qml/BottonBar.qml -I F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release -I C:/Felgo/Felgo/mingw_64/./qml -i F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/ratatouile/qmldir --resource F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmake_ratatouile.qrc --resource F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmake_ratatouile_copy.qrc --resource F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/appratatouile_raw_qml_0.qrc -o F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmlcache/appratatouile_qml/BottonBar_qml.cpp F:/programas/git/ratatouille/Game_Log/qml/BottonBar.qml"
-  DESC = Generating .rcc/qmlcache/appratatouile_qml/BottonBar_qml.cpp
-  restat = 1
-
-
-#############################################
-# Custom command for .rcc\qmlcache\appratatouile_qml\slotGame\SlotMachine_qml.cpp
-
-build .rcc/qmlcache/appratatouile_qml/slotGame/SlotMachine_qml.cpp | ${cmake_ninja_workdir}.rcc/qmlcache/appratatouile_qml/slotGame/SlotMachine_qml.cpp: CUSTOM_COMMAND C$:/Felgo/Felgo/mingw_64/bin/qmlcachegen.exe F$:/programas/git/ratatouille/Game_Log/qml/slotGame/SlotMachine.qml .rcc/qmake_ratatouile.qrc .rcc/qmake_ratatouile_copy.qrc .rcc/appratatouile_raw_qml_0.qrc ratatouile/appratatouile.qmltypes ratatouile/qmldir || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appratatouile_autogen appratatouile_autogen_timestamp_deps appratatouile_qmlimportscan appratatouile_tooling
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E make_directory F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmlcache/appratatouile_qml/slotGame && F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release\.qt\bin\qt_setup_tool_path.bat C:/Felgo/Felgo/mingw_64/./bin/qmlcachegen.exe --bare --resource-path /qml/slotGame/SlotMachine.qml -I F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release -I C:/Felgo/Felgo/mingw_64/./qml -i F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/ratatouile/qmldir --resource F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmake_ratatouile.qrc --resource F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmake_ratatouile_copy.qrc --resource F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/appratatouile_raw_qml_0.qrc -o F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmlcache/appratatouile_qml/slotGame/SlotMachine_qml.cpp F:/programas/git/ratatouille/Game_Log/qml/slotGame/SlotMachine.qml"
-  DESC = Generating .rcc/qmlcache/appratatouile_qml/slotGame/SlotMachine_qml.cpp
-  restat = 1
-
-
-#############################################
-# Custom command for .rcc\qmlcache\appratatouile_qml\slotGame\Symbol_qml.cpp
-
-build .rcc/qmlcache/appratatouile_qml/slotGame/Symbol_qml.cpp | ${cmake_ninja_workdir}.rcc/qmlcache/appratatouile_qml/slotGame/Symbol_qml.cpp: CUSTOM_COMMAND C$:/Felgo/Felgo/mingw_64/bin/qmlcachegen.exe F$:/programas/git/ratatouille/Game_Log/qml/slotGame/Symbol.qml .rcc/qmake_ratatouile.qrc .rcc/qmake_ratatouile_copy.qrc .rcc/appratatouile_raw_qml_0.qrc ratatouile/appratatouile.qmltypes ratatouile/qmldir || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appratatouile_autogen appratatouile_autogen_timestamp_deps appratatouile_qmlimportscan appratatouile_tooling
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E make_directory F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmlcache/appratatouile_qml/slotGame && F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release\.qt\bin\qt_setup_tool_path.bat C:/Felgo/Felgo/mingw_64/./bin/qmlcachegen.exe --bare --resource-path /qml/slotGame/Symbol.qml -I F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release -I C:/Felgo/Felgo/mingw_64/./qml -i F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/ratatouile/qmldir --resource F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmake_ratatouile.qrc --resource F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmake_ratatouile_copy.qrc --resource F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/appratatouile_raw_qml_0.qrc -o F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmlcache/appratatouile_qml/slotGame/Symbol_qml.cpp F:/programas/git/ratatouille/Game_Log/qml/slotGame/Symbol.qml"
-  DESC = Generating .rcc/qmlcache/appratatouile_qml/slotGame/Symbol_qml.cpp
-  restat = 1
-
-
-#############################################
-# Custom command for .rcc\qmlcache\appratatouile_qml\slotGame\Ratatouille_qml.cpp
-
-build .rcc/qmlcache/appratatouile_qml/slotGame/Ratatouille_qml.cpp | ${cmake_ninja_workdir}.rcc/qmlcache/appratatouile_qml/slotGame/Ratatouille_qml.cpp: CUSTOM_COMMAND C$:/Felgo/Felgo/mingw_64/bin/qmlcachegen.exe F$:/programas/git/ratatouille/Game_Log/qml/slotGame/Ratatouille.qml .rcc/qmake_ratatouile.qrc .rcc/qmake_ratatouile_copy.qrc .rcc/appratatouile_raw_qml_0.qrc ratatouile/appratatouile.qmltypes ratatouile/qmldir || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appratatouile_autogen appratatouile_autogen_timestamp_deps appratatouile_qmlimportscan appratatouile_tooling
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E make_directory F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmlcache/appratatouile_qml/slotGame && F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release\.qt\bin\qt_setup_tool_path.bat C:/Felgo/Felgo/mingw_64/./bin/qmlcachegen.exe --bare --resource-path /qml/slotGame/Ratatouille.qml -I F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release -I C:/Felgo/Felgo/mingw_64/./qml -i F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/ratatouile/qmldir --resource F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmake_ratatouile.qrc --resource F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmake_ratatouile_copy.qrc --resource F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/appratatouile_raw_qml_0.qrc -o F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmlcache/appratatouile_qml/slotGame/Ratatouille_qml.cpp F:/programas/git/ratatouille/Game_Log/qml/slotGame/Ratatouille.qml"
-  DESC = Generating .rcc/qmlcache/appratatouile_qml/slotGame/Ratatouille_qml.cpp
-  restat = 1
-
-
-#############################################
-# Custom command for .rcc\qrc_appratatouile_raw_qml_0.cpp
-
-build .rcc/qrc_appratatouile_raw_qml_0.cpp | ${cmake_ninja_workdir}.rcc/qrc_appratatouile_raw_qml_0.cpp: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/qml/BottonBar.qml F$:/programas/git/ratatouille/Game_Log/qml/slotGame/SlotMachine.qml F$:/programas/git/ratatouille/Game_Log/qml/slotGame/Symbol.qml F$:/programas/git/ratatouille/Game_Log/qml/slotGame/Ratatouille.qml .rcc/appratatouile_raw_qml_0.qrc C$:/Felgo/Felgo/mingw_64/./bin/rcc.exe || Felgo_resources_1 Felgo_resources_1_autogen Felgo_resources_1_autogen_timestamp_deps appratatouile_autogen appratatouile_autogen_timestamp_deps appratatouile_qmlimportscan appratatouile_tooling
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Felgo\mingw_64\.\bin\rcc.exe --output F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qrc_appratatouile_raw_qml_0.cpp --name appratatouile_raw_qml_0 F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/appratatouile_raw_qml_0.qrc --no-zstd"
-  DESC = Running rcc for resource appratatouile_raw_qml_0
-  restat = 1
-
-
-#############################################
-# Custom command for appratatouile_autogen\timestamp
-
-build appratatouile_autogen/timestamp appratatouile_autogen/mocs_compilation.cpp | ${cmake_ninja_workdir}appratatouile_autogen/timestamp ${cmake_ninja_workdir}appratatouile_autogen/mocs_compilation.cpp: CUSTOM_COMMAND C$:/Felgo/Felgo/mingw_64/./bin/moc.exe || appratatouile_autogen_timestamp_deps appratatouile_qmlimportscan appratatouile_tooling
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E cmake_autogen F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/CMakeFiles/appratatouile_autogen.dir/AutogenInfo.json Release && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E touch F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appratatouile_autogen/timestamp && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E cmake_transform_depfile Ninja gccdepfile F:/programas/git/ratatouille/Game_Log F:/programas/git/ratatouille/Game_Log F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appratatouile_autogen/deps F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/CMakeFiles/d/bfae2d0d270e01eee68935b7fb578b222773b24b80d5d6db5ac9b33acf516ead.d"
-  DESC = Automatic MOC for target appratatouile
-  depfile = CMakeFiles\d\bfae2d0d270e01eee68935b7fb578b222773b24b80d5d6db5ac9b33acf516ead.d
+build appFlaskOfRum_autogen/timestamp appFlaskOfRum_autogen/mocs_compilation.cpp | ${cmake_ninja_workdir}appFlaskOfRum_autogen/timestamp ${cmake_ninja_workdir}appFlaskOfRum_autogen/mocs_compilation.cpp: CUSTOM_COMMAND C$:/Felgo/Felgo/mingw_64/./bin/moc.exe || appFlaskOfRum_autogen_timestamp_deps appFlaskOfRum_qmlimportscan
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E cmake_autogen F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/CMakeFiles/appFlaskOfRum_autogen.dir/AutogenInfo.json Release && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E touch F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appFlaskOfRum_autogen/timestamp && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E cmake_transform_depfile Ninja gccdepfile F:/programas/git/ratatouille/Game_Log F:/programas/git/ratatouille/Game_Log F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appFlaskOfRum_autogen/deps F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/CMakeFiles/d/645123570658f3915909f3ad2c4f06b1156c343b40645e3f4e2f5730d9830614.d"
+  DESC = Automatic MOC for target appFlaskOfRum
+  depfile = CMakeFiles\d\645123570658f3915909f3ad2c4f06b1156c343b40645e3f4e2f5730d9830614.d
   deps = gcc
   restat = 1
 
 
 #############################################
-# Custom command for meta_types\appratatouile_json_file_list.txt
+# Custom command for meta_types\appFlaskOfRum_json_file_list.txt
 
-build meta_types/appratatouile_json_file_list.txt meta_types/appratatouile_json_file_list.txt.timestamp | ${cmake_ninja_workdir}meta_types/appratatouile_json_file_list.txt ${cmake_ninja_workdir}meta_types/appratatouile_json_file_list.txt.timestamp: CUSTOM_COMMAND C$:/Felgo/Felgo/mingw_64/./bin/cmake_automoc_parser.exe appratatouile_autogen/timestamp || appratatouile_autogen_timestamp_deps appratatouile_qmlimportscan appratatouile_tooling
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Felgo\mingw_64\.\bin\cmake_automoc_parser.exe --cmake-autogen-cache-file F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/CMakeFiles/appratatouile_autogen.dir/ParseCache.txt --cmake-autogen-info-file F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/CMakeFiles/appratatouile_autogen.dir/AutogenInfo.json --output-file-path F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/meta_types/appratatouile_json_file_list.txt --timestamp-file-path F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/meta_types/appratatouile_json_file_list.txt.timestamp --cmake-autogen-include-dir-path F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appratatouile_autogen/include"
-  DESC = Running AUTOMOC file extraction for target appratatouile
+build meta_types/appFlaskOfRum_json_file_list.txt meta_types/appFlaskOfRum_json_file_list.txt.timestamp | ${cmake_ninja_workdir}meta_types/appFlaskOfRum_json_file_list.txt ${cmake_ninja_workdir}meta_types/appFlaskOfRum_json_file_list.txt.timestamp: CUSTOM_COMMAND C$:/Felgo/Felgo/mingw_64/./bin/cmake_automoc_parser.exe appFlaskOfRum_autogen/timestamp || appFlaskOfRum_autogen_timestamp_deps appFlaskOfRum_qmlimportscan
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release && C:\Felgo\Felgo\mingw_64\.\bin\cmake_automoc_parser.exe --cmake-autogen-cache-file F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/CMakeFiles/appFlaskOfRum_autogen.dir/ParseCache.txt --cmake-autogen-info-file F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/CMakeFiles/appFlaskOfRum_autogen.dir/AutogenInfo.json --output-file-path F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/meta_types/appFlaskOfRum_json_file_list.txt --timestamp-file-path F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/meta_types/appFlaskOfRum_json_file_list.txt.timestamp --cmake-autogen-include-dir-path F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appFlaskOfRum_autogen/include"
+  DESC = Running AUTOMOC file extraction for target appFlaskOfRum
   restat = 1
 
 
@@ -648,86 +516,30 @@ build Felgo_resources_1_autogen/timestamp Felgo_resources_1_autogen/mocs_compila
 
 
 #############################################
-# Phony custom command for CMakeFiles\appratatouile_qmltyperegistration
+# Phony custom command for CMakeFiles\appFlaskOfRum_qmltyperegistration
 
-build CMakeFiles/appratatouile_qmltyperegistration | ${cmake_ninja_workdir}CMakeFiles/appratatouile_qmltyperegistration: phony appratatouile_qmltyperegistrations.cpp ratatouile/appratatouile.qmltypes || appratatouile_autogen_timestamp_deps appratatouile_qmlimportscan appratatouile_tooling
-
-
-#############################################
-# Custom command for CMakeFiles\appratatouile_qmllint
-
-build CMakeFiles/appratatouile_qmllint | ${cmake_ninja_workdir}CMakeFiles/appratatouile_qmllint: CUSTOM_COMMAND C$:/Felgo/Felgo/mingw_64/bin/qmllint.exe F$:/programas/git/ratatouille/Game_Log/qml/BottonBar.qml F$:/programas/git/ratatouille/Game_Log/qml/slotGame/SlotMachine.qml F$:/programas/git/ratatouille/Game_Log/qml/slotGame/Symbol.qml F$:/programas/git/ratatouille/Game_Log/qml/slotGame/Ratatouille.qml || all_qmltyperegistrations appratatouile_autogen_timestamp_deps appratatouile_qmlimportscan appratatouile_qmltyperegistration appratatouile_tooling
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log && F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release\.qt\bin\qt_setup_tool_path.bat C:/Felgo/Felgo/mingw_64/bin/qmllint.exe --bare -I F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release -I C:/Felgo/Felgo/mingw_64/./qml --resource F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmake_ratatouile.qrc --resource F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmake_ratatouile_copy.qrc --resource F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/appratatouile_raw_qml_0.qrc F:/programas/git/ratatouille/Game_Log/qml/BottonBar.qml F:/programas/git/ratatouille/Game_Log/qml/slotGame/SlotMachine.qml F:/programas/git/ratatouille/Game_Log/qml/slotGame/Symbol.qml F:/programas/git/ratatouille/Game_Log/qml/slotGame/Ratatouille.qml"
+build CMakeFiles/appFlaskOfRum_qmltyperegistration | ${cmake_ninja_workdir}CMakeFiles/appFlaskOfRum_qmltyperegistration: phony appflaskofrum_qmltyperegistrations.cpp FlaskOfRum/appFlaskOfRum.qmltypes || appFlaskOfRum_autogen_timestamp_deps appFlaskOfRum_qmlimportscan
 
 
 #############################################
-# Custom command for CMakeFiles\appratatouile_qmllint_json
+# Phony custom command for CMakeFiles\appFlaskOfRum_qmlimportscan
 
-build CMakeFiles/appratatouile_qmllint_json | ${cmake_ninja_workdir}CMakeFiles/appratatouile_qmllint_json: CUSTOM_COMMAND C$:/Felgo/Felgo/mingw_64/bin/qmllint.exe F$:/programas/git/ratatouille/Game_Log/qml/BottonBar.qml F$:/programas/git/ratatouille/Game_Log/qml/slotGame/SlotMachine.qml F$:/programas/git/ratatouille/Game_Log/qml/slotGame/Symbol.qml F$:/programas/git/ratatouille/Game_Log/qml/slotGame/Ratatouille.qml || all_qmltyperegistrations appratatouile_autogen_timestamp_deps appratatouile_qmlimportscan appratatouile_qmltyperegistration appratatouile_tooling
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log && F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release\.qt\bin\qt_setup_tool_path.bat C:/Felgo/Felgo/mingw_64/bin/qmllint.exe --bare -I F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release -I C:/Felgo/Felgo/mingw_64/./qml --resource F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmake_ratatouile.qrc --resource F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmake_ratatouile_copy.qrc --resource F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/appratatouile_raw_qml_0.qrc F:/programas/git/ratatouille/Game_Log/qml/BottonBar.qml F:/programas/git/ratatouille/Game_Log/qml/slotGame/SlotMachine.qml F:/programas/git/ratatouille/Game_Log/qml/slotGame/Symbol.qml F:/programas/git/ratatouille/Game_Log/qml/slotGame/Ratatouille.qml --json F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appratatouile_qmllint.json"
+build CMakeFiles/appFlaskOfRum_qmlimportscan | ${cmake_ninja_workdir}CMakeFiles/appFlaskOfRum_qmlimportscan: phony .qt_plugins/Qt6_QmlPlugins_Imports_appFlaskOfRum.cmake
 
 
 #############################################
-# Custom command for ratatouile\qml\BottonBar.qml
+# Custom command for .qt_plugins\Qt6_QmlPlugins_Imports_appFlaskOfRum.cmake
 
-build ratatouile/qml/BottonBar.qml | ${cmake_ninja_workdir}ratatouile/qml/BottonBar.qml: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/qml/BottonBar.qml
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E copy F:/programas/git/ratatouille/Game_Log/qml/BottonBar.qml F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/ratatouile/qml/BottonBar.qml"
-  DESC = Generating ratatouile/qml/BottonBar.qml
+build .qt_plugins/Qt6_QmlPlugins_Imports_appFlaskOfRum.cmake | ${cmake_ninja_workdir}.qt_plugins/Qt6_QmlPlugins_Imports_appFlaskOfRum.cmake: CUSTOM_COMMAND C$:/Felgo/Felgo/mingw_64/bin/qmlimportscanner.exe .rcc/qmake_FlaskOfRum.qrc .rcc/qmake_FlaskOfRum_copy.qrc
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log && F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release\.qt\bin\qt_setup_tool_path.bat C:/Felgo/Felgo/mingw_64/./bin/qmlimportscanner.exe @F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.qt_plugins/Qt6_QmlPlugins_Imports_appFlaskOfRum.rsp"
+  DESC = Running qmlimportscanner for appFlaskOfRum
   restat = 1
 
 
 #############################################
-# Custom command for ratatouile\qml\slotGame\SlotMachine.qml
+# Phony custom command for CMakeFiles\appFlaskOfRum_autogen
 
-build ratatouile/qml/slotGame/SlotMachine.qml | ${cmake_ninja_workdir}ratatouile/qml/slotGame/SlotMachine.qml: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/qml/slotGame/SlotMachine.qml
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E copy F:/programas/git/ratatouille/Game_Log/qml/slotGame/SlotMachine.qml F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/ratatouile/qml/slotGame/SlotMachine.qml"
-  DESC = Generating ratatouile/qml/slotGame/SlotMachine.qml
-  restat = 1
-
-
-#############################################
-# Custom command for ratatouile\qml\slotGame\Symbol.qml
-
-build ratatouile/qml/slotGame/Symbol.qml | ${cmake_ninja_workdir}ratatouile/qml/slotGame/Symbol.qml: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/qml/slotGame/Symbol.qml
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E copy F:/programas/git/ratatouille/Game_Log/qml/slotGame/Symbol.qml F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/ratatouile/qml/slotGame/Symbol.qml"
-  DESC = Generating ratatouile/qml/slotGame/Symbol.qml
-  restat = 1
-
-
-#############################################
-# Custom command for ratatouile\qml\slotGame\Ratatouille.qml
-
-build ratatouile/qml/slotGame/Ratatouille.qml | ${cmake_ninja_workdir}ratatouile/qml/slotGame/Ratatouille.qml: CUSTOM_COMMAND F$:/programas/git/ratatouille/Game_Log/qml/slotGame/Ratatouille.qml
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log && C:\Felgo\Tools\CMake_64\bin\cmake.exe -E copy F:/programas/git/ratatouille/Game_Log/qml/slotGame/Ratatouille.qml F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/ratatouile/qml/slotGame/Ratatouille.qml"
-  DESC = Generating ratatouile/qml/slotGame/Ratatouille.qml
-  restat = 1
-
-
-#############################################
-# Phony custom command for CMakeFiles\appratatouile_qmlimportscan
-
-build CMakeFiles/appratatouile_qmlimportscan | ${cmake_ninja_workdir}CMakeFiles/appratatouile_qmlimportscan: phony .qt_plugins/Qt6_QmlPlugins_Imports_appratatouile.cmake
-
-
-#############################################
-# Custom command for .qt_plugins\Qt6_QmlPlugins_Imports_appratatouile.cmake
-
-build .qt_plugins/Qt6_QmlPlugins_Imports_appratatouile.cmake | ${cmake_ninja_workdir}.qt_plugins/Qt6_QmlPlugins_Imports_appratatouile.cmake: CUSTOM_COMMAND C$:/Felgo/Felgo/mingw_64/bin/qmlimportscanner.exe .rcc/qmake_ratatouile.qrc .rcc/qmake_ratatouile_copy.qrc .rcc/appratatouile_raw_qml_0.qrc F$:/programas/git/ratatouille/Game_Log/qml/BottonBar.qml F$:/programas/git/ratatouille/Game_Log/qml/slotGame/SlotMachine.qml F$:/programas/git/ratatouille/Game_Log/qml/slotGame/Symbol.qml F$:/programas/git/ratatouille/Game_Log/qml/slotGame/Ratatouille.qml
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\programas\git\ratatouille\Game_Log && F:\programas\git\ratatouille\Game_Log\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release\.qt\bin\qt_setup_tool_path.bat C:/Felgo/Felgo/mingw_64/./bin/qmlimportscanner.exe @F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.qt_plugins/Qt6_QmlPlugins_Imports_appratatouile.rsp"
-  DESC = Running qmlimportscanner for appratatouile
-  restat = 1
-
-
-#############################################
-# Phony custom command for CMakeFiles\appratatouile_autogen_timestamp_deps
-
-build CMakeFiles/appratatouile_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/appratatouile_autogen_timestamp_deps: phony .rcc/qmlcache/appratatouile_qmlcache_loader.cpp || appratatouile_qmlimportscan appratatouile_tooling
-
-
-#############################################
-# Phony custom command for CMakeFiles\appratatouile_autogen
-
-build CMakeFiles/appratatouile_autogen | ${cmake_ninja_workdir}CMakeFiles/appratatouile_autogen: phony appratatouile_autogen/timestamp || appratatouile_autogen_timestamp_deps appratatouile_qmlimportscan appratatouile_tooling
+build CMakeFiles/appFlaskOfRum_autogen | ${cmake_ninja_workdir}CMakeFiles/appFlaskOfRum_autogen: phony appFlaskOfRum_autogen/timestamp || appFlaskOfRum_autogen_timestamp_deps appFlaskOfRum_qmlimportscan
 
 
 #############################################
@@ -738,7 +550,7 @@ build CMakeFiles/Felgo_resources_1_autogen | ${cmake_ninja_workdir}CMakeFiles/Fe
 # =============================================================================
 # Target aliases.
 
-build appratatouile: phony appratatouile.exe
+build appFlaskOfRum: phony appFlaskOfRum.exe
 
 # =============================================================================
 # Folder targets.
@@ -748,7 +560,7 @@ build appratatouile: phony appratatouile.exe
 #############################################
 # Folder: F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release
 
-build all: phony appratatouile.exe Felgo_resources_1 appratatouile_tooling
+build all: phony appFlaskOfRum.exe Felgo_resources_1
 
 # =============================================================================
 # Built-in targets

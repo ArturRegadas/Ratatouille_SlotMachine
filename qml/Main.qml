@@ -13,36 +13,42 @@ GameWindow{
     height: 640
 
     Scene {
-         id: scene
-         width: 480
-         height: 320
+        id: scene
+        width: 480
+        height: 320
 
-         property int betStack: 5 // valor da bet
-         property int creditStack: 400 // quantia na carteira
-
-         //Possível imagem de fundo
-         // Image{
-         //    anchors.centerIn: scene.Center
-         //    width: scene.gameWindowAnchorItem.width
-         //    height: scene.gameWindowAnchorItem.height
-         //    source: "../assets/backgroundMain.jpg"
-         // }
+        property int betStack: 5 // valor da bet
+        property int creditStack: 400 // quantia na carteira
 
         Rectangle {
             anchors.fill: scene.gameWindowAnchorItem
             color: "#722F37"
         }
-         TopBar {
+        //Possíveis imagens de fundo
+        Image{  //Possível imagem de fundo principal
+            anchors.fill: scene
+            width: scene.gameWindowAnchorItem.width
+            height: scene.gameWindowAnchorItem.height
+            source: "../assets/backgroundMain.png"
+            x:30
+        }
+        Image{ //Possível imagem de fundo lateral esquerda
+            anchors.left: scene.left
+            // source: "../assets/backgroundLeftMain.jpg"
+        }
+        //
+        Ratatouille{ //Roleta
+            // anchors.verticalCenter:
+            y:47
+            defaultItemHeight: 80
+            defaultReelWidth: 67
+        }
+        TopBar {
            id: topBar
            width: scene.gameWindowAnchorItem.width
            anchors.top: scene.gameWindowAnchorItem.top
            anchors.horizontalCenter: scene.gameWindowAnchorItem.horizontalCenter
-         }
-         Ratatouille{
-             anchors.centerIn: parent
-             defaultItemHeight: 80
-             defaultReelWidth: 67
-         }
+        }
     }
     // configurar top bar
 

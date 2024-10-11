@@ -39,24 +39,24 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "C:/Program Files (x86)/ratatouile/appratatouile.exe")
+   "C:/Program Files (x86)/ratatouile/appFlaskOfRum.exe")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "C:/Program Files (x86)/ratatouile" TYPE EXECUTABLE FILES "F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appratatouile.exe")
-  if(EXISTS "$ENV{DESTDIR}/C:/Program Files (x86)/ratatouile/appratatouile.exe" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/C:/Program Files (x86)/ratatouile/appratatouile.exe")
+  file(INSTALL DESTINATION "C:/Program Files (x86)/ratatouile" TYPE EXECUTABLE FILES "F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appFlaskOfRum.exe")
+  if(EXISTS "$ENV{DESTDIR}/C:/Program Files (x86)/ratatouile/appFlaskOfRum.exe" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/C:/Program Files (x86)/ratatouile/appFlaskOfRum.exe")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "C:/Felgo/Tools/mingw1120_64/bin/strip.exe" "$ENV{DESTDIR}/C:/Program Files (x86)/ratatouile/appratatouile.exe")
+      execute_process(COMMAND "C:/Felgo/Tools/mingw1120_64/bin/strip.exe" "$ENV{DESTDIR}/C:/Program Files (x86)/ratatouile/appFlaskOfRum.exe")
     endif()
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/CMakeFiles/appratatouile.dir/install-cxx-module-bmi-Release.cmake" OPTIONAL)
+  include("F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/CMakeFiles/appFlaskOfRum.dir/install-cxx-module-bmi-Release.cmake" OPTIONAL)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -96,6 +96,14 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/backgroundMain.jpg")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets/slotMachine" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/slotMachine/back.png")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets/slotMachine" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/slotMachine/bancinha.png")
 endif()
 
@@ -112,10 +120,6 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/qml" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/qml/Main.qml~RF32930b0d.TMP")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/qml" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/qml/config.json")
 endif()
 
@@ -128,135 +132,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/qml/config" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/qml/config/SymbolRats.qml.autosave")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/qml/config" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/qml/config/SymbolRats.qml~RF32e73afe.TMP")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/qml/config" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/qml/config/qmldir")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/qml/slotGame" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/qml/slotGame/Ratatouille.qml.autosave~RF328bea58.TMP")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/qml/slotGame" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/qml/slotGame/Ratatouille.qml~RF3286c554.TMP")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/qml/slotGame" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/qml/slotGame/Ratatouille.qml~RF3290594b.TMP")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/qml/slotGame" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/qml/slotGame/Ratatouille.qml~RF32987cbb.TMP")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/qml/slotGame" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/qml/slotGame/Ratatouille.qml~RF329c6af4.TMP")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/qml/slotGame" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/qml/slotGame/Ratatouille.qml~RF329e7154.TMP")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/qml/slotGame" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/qml/slotGame/Ratatouille.qml~RF329ec8ab.TMP")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/qml/slotGame" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/qml/slotGame/Ratatouille.qml~RF32a56b66.TMP")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/qml/slotGame" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/qml/slotGame/Ratatouille.qml~RF32a5c58c.TMP")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/qml/slotGame" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/qml/slotGame/Ratatouille.qml~RF32ac24e5.TMP")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/qml/slotGame" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/qml/slotGame/Ratatouille.qml~RF32aca88c.TMP")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/qml/slotGame" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/qml/slotGame/Ratatouille.qml~RF32b25936.TMP")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/qml/slotGame" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/qml/slotGame/Ratatouille.qml~RF32b57cae.TMP")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/qml/slotGame" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/qml/slotGame/Ratatouille.qml~RF32b5f70e.TMP")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/qml/slotGame" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/qml/slotGame/Ratatouille.qml~RF32b64a6e.TMP")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/qml/slotGame" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/qml/slotGame/Ratatouille.qml~RF32b69e6a.TMP")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/qml/slotGame" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/qml/slotGame/Ratatouille.qml~RF32b70ded.TMP")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/qml/slotGame" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/qml/slotGame/Ratatouille.qml~RF32b8f3b4.TMP")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/qml/slotGame" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/qml/slotGame/Ratatouille.qml~RF32bafd6f.TMP")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/qml/slotGame" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/qml/slotGame/SlotMachine.qml.autosave~RF3275087f.TMP")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/qml/slotGame" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/qml/slotGame/SlotRat.qml~RF32a847e2.TMP")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/qml/slotGame" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/qml/slotGame/SlotRat.qml~RF32a8db77.TMP")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/qml/slotGame" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/qml/slotGame/SlotRat.qml~RF32ad2fae.TMP")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/qml/slotGame" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/qml/slotGame/SlotRat.qml~RF32af6470.TMP")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/qml/slotGame" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/qml/slotGame/Symbol.qml~RF3280ca91.TMP")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/qml/slotGame" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/qml/slotGame/Symbol.qml~RF32908a5e.TMP")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/qml/slotGame" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/qml/slotGame/Symbol.qml~RF329d87af.TMP")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/qml/slotGame" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/qml/slotGame/Symbol.qml~RF32bd256f.TMP")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/qml/slotMachine" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/qml/slotMachine/Ratatouille.qml~RF32ee93da.TMP")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/qml/slotMachine" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/qml/slotMachine/Symbol.qml~RF32ed4513.TMP")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
