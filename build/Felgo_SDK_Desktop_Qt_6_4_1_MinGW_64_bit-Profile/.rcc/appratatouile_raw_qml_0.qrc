@@ -1,6 +1,6 @@
 <RCC>
   <qresource prefix="/">
-    <file alias="qml/BottonBar.qml">C:/Users/ahlre/Documents/ratatouile/qml/BottonBar.qml</file>
+    <file alias="qml/ButtonBottonBar.qml">C:/Users/ahlre/Documents/ratatouile/qml/ButtonBottonBar.qml</file>
   </qresource>
 </RCC>
 
