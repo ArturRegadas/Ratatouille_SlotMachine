@@ -1,0 +1,3 @@
+F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-MinSizeRel/CMakeFiles/CMakeScratch/TryCompile-thu8ze/CMakeFiles/cmTC_9bd08.dir
+F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-MinSizeRel/CMakeFiles/CMakeScratch/TryCompile-thu8ze/CMakeFiles/edit_cache.dir
+F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-MinSizeRel/CMakeFiles/CMakeScratch/TryCompile-thu8ze/CMakeFiles/rebuild_cache.dir
