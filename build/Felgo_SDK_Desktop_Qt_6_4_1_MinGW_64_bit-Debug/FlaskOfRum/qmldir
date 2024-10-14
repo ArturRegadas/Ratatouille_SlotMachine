@@ -1,0 +1,7 @@
+module FlaskOfRum
+typeinfo appFlaskOfRum.qmltypes
+prefer :/
+WinningLine 1.0 qml/slotMachine/WinningLine.qml
+WinCheck 1.0 qml/slotMachine/WinCheck.qml
+LineSymbol 1.0 qml/slotMachine/LineSymbol.qml
+

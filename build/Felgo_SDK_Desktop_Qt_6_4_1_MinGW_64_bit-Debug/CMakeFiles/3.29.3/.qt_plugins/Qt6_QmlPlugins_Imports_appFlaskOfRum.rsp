@@ -1,0 +1,15 @@
+-rootPath
+F:/programas/git/ratatouille/Game_Log
+-cmake-output
+-output-file
+F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Debug/CMakeFiles/3.29.3/.qt_plugins/Qt6_QmlPlugins_Imports_appFlaskOfRum.cmake
+-importPath
+F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Debug/CMakeFiles/3.29.3/FlaskOfRum
+-importPath
+F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Debug/CMakeFiles/3.29.3
+-importPath
+C:/Felgo/Felgo/mingw_64/./qml
+-qrcFiles
+F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Debug/CMakeFiles/3.29.3/.rcc/qmake_FlaskOfRum.qrc
+F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Debug/CMakeFiles/3.29.3/.rcc/qmake_FlaskOfRum_copy.qrc
+F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Debug/CMakeFiles/3.29.3/.rcc/appFlaskOfRum_raw_qml_0.qrc

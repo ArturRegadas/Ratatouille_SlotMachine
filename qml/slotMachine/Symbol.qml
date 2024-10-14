@@ -3,7 +3,7 @@ import Felgo 4.0
 
 Item{
     id: blocks
-    property alias imageSouce: image.source // generalizar a criação de imagens para os blocos do caça-níquel(?)
+    property alias imageSouce: image.source // generalizar a criação de imagens para os blocos do caça-níque
     Image{ //Fundo gradiente
         anchors.fill: blocks
         source: Qt.resolvedUrl("../../assets/slotMachine/gradient.png")
@@ -23,7 +23,7 @@ Item{
     Image { //Borda
         id: borda
         anchors.fill: parent
-        source: "../../assets/slotMachine/border.png"
+        source: "../../assets/slotMachine/SymbolBorder.png"
         width: 2; height: 2
     }
 }
