@@ -13,14 +13,21 @@ GameWindow{
     height: 640
     Scene {
         id: scene
-        // anchors.fill: parent
-        width: 500
+        width: 570
         height: 360
         property int betStack: 5 // valor da bet
         property int creditStack: 400 // quantia na carteira
 
+        //Animação do crédito caindo
+        Behavior on creditStack{
+            PropertyAnimation{
+                duration: scene.betStack*50
+            }
+        }
+
         Rectangle{ // Para caso da janela ser maior que a scene, esse gradiente irá prencher o fundo
-            anchors.fill: scene.gameWindowAnchorItem
+            //anchors.fill: scene.gameWindowAnchorItem
+            anchors.fill:parent
             gradient: Gradient{
                 GradientStop{
                     position: 0.0
@@ -30,20 +37,27 @@ GameWindow{
                     position: 1.0
                     color: "#1859c9"
                 }
-            }
+            } 
         }
-        //Possíveis imagens de fundo
-        Image{  //Possível imagem de fundo principal
-            anchors.fill: scene
-            width: scene.gameWindowAnchorItem
-            source: "../assets/backgroundMain.png"
-            x:30
+        Image{ // Imagem da lateral esquerda
+            x:-20
+            y: parent.verticalCenter
+            source: "../assets/backgroundLeftMain.jpg"
+            height: scene.gameWindowAnchorItem.height
+            width: (Math.round(Math.round(slotMachine.height/slotMachine.rowCount)/80*67)*5)/2
         }
-        //
+        Image{
+            x:parent.width-150 // Imagem da lateral direita
+            y: parent.verticalCenter
+            source: "../assets/backgroundRightMain.jpg"
+            height: scene.gameWindowAnchorItem.height
+            width: (Math.round(Math.round(slotMachine.height/slotMachine.rowCount)/80*67)*5)/2
+        }
         Ratatouille{ //Roleta
             id: slotMachine
-            y:47
-            anchors.centerIn: scene
+            anchors.verticalCenter: scene.verticalCenter
+            anchors.horizontalCenter: scene.horizontalCenter
+            anchors.topMargin: -10
             //
             height: scene.gameWindowAnchorItem.height-topBar.height-bottomBar.height-10
             defaultItemHeight: Math.round(slotMachine.height/slotMachine.rowCount)
@@ -56,12 +70,12 @@ GameWindow{
             }
         }
         WinAnalysis{
+            anchors.verticalCenter: slotMachine.verticalCenter
+            anchors.horizontalCenter: slotMachine.horizontalCenter
             id:winCheck
             height: slotMachine.height
             width: Math.round(height/240*408)
-            anchors.centerIn:slotMachine
         }
-
         TopBar { // Aba acima da roleta
            id: topBar
            width: scene.gameWindowAnchorItem.width
@@ -84,7 +98,7 @@ GameWindow{
         // Gira a caça-níquel
         function startSlotMachine(){
             if(!slotMachine.spinning&&scene.betStack<=scene.creditStack){
-                bottomBar.startActive=true
+                bottomBar.startActive= !bottomBar.autoActive
                 scene.creditStack-=scene.betStack
                 winCheck.reset()
                 slotMachine.spin(utils.generateRandomValueBetween(500,1000))
@@ -94,10 +108,13 @@ GameWindow{
         //Função achamada após o termino da rodada
         function endedSlotMachine(){
             bottomBar.startActive=false
-            var award=winCheck.validate(slotMachine)
-            if(award){
+            var won=winCheck.validate(slotMachine)
+            if(won){
                 winCheck.displayWinningLines()
+                bottomBar.autoActive=false
+                bottomBar.startActive=false
             } else if(bottomBar.autoActive){
+
                 startSlotMachine()
             }
         }

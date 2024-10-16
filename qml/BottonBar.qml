@@ -107,8 +107,6 @@ Item {
                 anchors.fill: parent
                 onClicked: decrementClicked()
             }
-
-
         }
 
         Image { //Sinal de mais
@@ -121,8 +119,6 @@ Item {
                 anchors.fill: parent
                 onClicked: incrementClicked()
             }
-
-
         }
 
         Image { // Botão máximo
@@ -135,8 +131,6 @@ Item {
                 anchors.fill: parent
                 onClicked: maxValueClicked()
             }
-
-
         }
     }
 }

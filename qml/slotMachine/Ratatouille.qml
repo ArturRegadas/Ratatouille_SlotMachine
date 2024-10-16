@@ -10,10 +10,4 @@ SlotMachine{
     delegate: Symbol{ // forma genérica de colocar as imagens dos items
         imageSouce: Qt.resolvedUrl("../../assets/slotMachine/")+modelData.data.source
     }
-    Image{
-        anchors.fill: parent
-        id: seperator
-        source: Qt.resolvedUrl("../../assets/slotMachine/seperator.png")
-        z:1
-    }
 }

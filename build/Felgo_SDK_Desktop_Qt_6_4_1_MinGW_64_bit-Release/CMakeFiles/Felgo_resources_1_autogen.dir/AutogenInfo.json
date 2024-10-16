@@ -1090,10 +1090,10 @@
 	"MOC_SKIP" : 
 	[
 		"F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qrc_FelgoResources.cpp",
-		"F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qrc_qmake_FlaskOfRum.cpp",
-		"F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qrc_qmake_FlaskOfRum_copy.cpp",
-		"F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appFlaskOfRum_autogen/mocs_compilation.cpp",
-		"F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appflaskofrum_qmltyperegistrations.cpp"
+		"F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qrc_qmake_ratatouile.cpp",
+		"F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qrc_qmake_ratatouile_copy.cpp",
+		"F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appratatouile_autogen/mocs_compilation.cpp",
+		"F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appratatouile_qmltyperegistrations.cpp"
 	],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 2,

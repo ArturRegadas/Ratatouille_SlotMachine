@@ -17,12 +17,12 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "Felgo_resources_1_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"id" : "appratatouile_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "Felgo_resources_1_autogen::@6890427a1f51a3e7e1df",
+	"id" : "appratatouile_autogen::@6890427a1f51a3e7e1df",
 	"isGeneratorProvided" : true,
-	"name" : "Felgo_resources_1_autogen",
+	"name" : "appratatouile_autogen",
 	"paths" : 
 	{
 		"build" : ".",
@@ -51,19 +51,19 @@
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/CMakeFiles/Felgo_resources_1_autogen",
+			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/CMakeFiles/appratatouile_autogen",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/CMakeFiles/Felgo_resources_1_autogen.rule",
+			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/CMakeFiles/appratatouile_autogen.rule",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/Felgo_resources_1_autogen/timestamp.rule",
+			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appratatouile_autogen/timestamp.rule",
 			"sourceGroupIndex" : 1
 		}
 	],

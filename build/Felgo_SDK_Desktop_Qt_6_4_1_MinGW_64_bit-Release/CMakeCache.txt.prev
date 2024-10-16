@@ -309,6 +309,15 @@ FELGO_BLUETOOTH:BOOL=ON
 //The directory containing a CMake configuration file for Felgo.
 Felgo_DIR:PATH=C:/Felgo/Felgo/mingw_64/lib/cmake/Felgo
 
+//Value Computed by CMake
+FlaskOfRum_BINARY_DIR:STATIC=F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release
+
+//Value Computed by CMake
+FlaskOfRum_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+FlaskOfRum_SOURCE_DIR:STATIC=F:/programas/git/ratatouille/Game_Log
+
 //App bundle identifier
 PRODUCT_BUNDLE_IDENTIFIER:STRING=${PRODUCT_BUNDLE_IDENTIFIER}
 

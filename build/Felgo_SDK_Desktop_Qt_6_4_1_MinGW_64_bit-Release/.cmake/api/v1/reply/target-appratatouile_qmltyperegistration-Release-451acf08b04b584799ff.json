@@ -48,11 +48,11 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "appFlaskOfRum_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"id" : "appratatouile_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "appFlaskOfRum_qmltyperegistration::@6890427a1f51a3e7e1df",
-	"name" : "appFlaskOfRum_qmltyperegistration",
+	"id" : "appratatouile_qmltyperegistration::@6890427a1f51a3e7e1df",
+	"name" : "appratatouile_qmltyperegistration",
 	"paths" : 
 	{
 		"build" : ".",
@@ -84,37 +84,37 @@
 		{
 			"backtrace" : 4,
 			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/CMakeFiles/appFlaskOfRum_qmltyperegistration",
+			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/CMakeFiles/appratatouile_qmltyperegistration",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/CMakeFiles/appFlaskOfRum_qmltyperegistration.rule",
+			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/CMakeFiles/appratatouile_qmltyperegistration.rule",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appflaskofrum_qmltyperegistrations.cpp.rule",
+			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appratatouile_qmltyperegistrations.cpp.rule",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/meta_types/qt6appflaskofrum_relase_metatypes.json.gen.rule",
+			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/meta_types/qt6appratatouile_release_metatypes.json.gen.rule",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/meta_types/appFlaskOfRum_json_file_list.txt.rule",
+			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/meta_types/appratatouile_json_file_list.txt.rule",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appFlaskOfRum_autogen/timestamp.rule",
+			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appratatouile_autogen/timestamp.rule",
 			"sourceGroupIndex" : 1
 		}
 	],

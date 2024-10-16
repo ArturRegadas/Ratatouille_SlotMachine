@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "appFlaskOfRum.exe"
+			"path" : "appratatouile.exe"
 		},
 		{
-			"path" : "appFlaskOfRum.pdb"
+			"path" : "appratatouile.pdb"
 		}
 	],
 	"backtrace" : 4,
@@ -651,7 +651,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-fdiagnostics-color=always"
+					"fragment" : "-O3 -DNDEBUG -fdiagnostics-color=always"
 				}
 			],
 			"defines" : 
@@ -757,7 +757,7 @@
 			[
 				{
 					"backtrace" : 0,
-					"path" : "F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appFlaskOfRum_autogen/include"
+					"path" : "F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appratatouile_autogen/include"
 				},
 				{
 					"backtrace" : 87,
@@ -875,8 +875,8 @@
 			[
 				0,
 				1,
-				144,
-				145
+				62,
+				63
 			]
 		},
 		{
@@ -983,7 +983,7 @@
 			[
 				{
 					"backtrace" : 0,
-					"path" : "F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appFlaskOfRum_autogen/include"
+					"path" : "F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appratatouile_autogen/include"
 				},
 				{
 					"backtrace" : 87,
@@ -1099,14 +1099,14 @@
 			"language" : "RC",
 			"sourceIndexes" : 
 			[
-				141
+				59
 			]
 		},
 		{
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-fdiagnostics-color=always"
+					"fragment" : "-O3 -DNDEBUG -fdiagnostics-color=always"
 				},
 				{
 					"backtrace" : 93,
@@ -1216,7 +1216,7 @@
 			[
 				{
 					"backtrace" : 0,
-					"path" : "F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appFlaskOfRum_autogen/include"
+					"path" : "F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appratatouile_autogen/include"
 				},
 				{
 					"backtrace" : 87,
@@ -1332,29 +1332,29 @@
 			"language" : "CXX",
 			"sourceIndexes" : 
 			[
-				143
+				61
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
+			"id" : "appratatouile_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 85,
+			"id" : "appratatouile_qmlimportscan::@6890427a1f51a3e7e1df"
+		},
+		{
 			"backtrace" : 13,
 			"id" : "Felgo_resources_1::@6890427a1f51a3e7e1df"
 		},
 		{
-			"backtrace" : 85,
-			"id" : "appFlaskOfRum_qmlimportscan::@6890427a1f51a3e7e1df"
-		},
-		{
-			"id" : "appFlaskOfRum_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 0,
-			"id" : "appFlaskOfRum_autogen::@6890427a1f51a3e7e1df"
+			"id" : "appratatouile_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "appFlaskOfRum::@6890427a1f51a3e7e1df",
+	"id" : "appratatouile::@6890427a1f51a3e7e1df",
 	"install" : 
 	{
 		"destinations" : 
@@ -1373,6 +1373,10 @@
 	{
 		"commandFragments" : 
 		[
+			{
+				"fragment" : "-O3 -DNDEBUG",
+				"role" : "flags"
+			},
 			{
 				"fragment" : "-mwindows",
 				"role" : "flags"
@@ -1519,8 +1523,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "appFlaskOfRum",
-	"nameOnDisk" : "appFlaskOfRum.exe",
+	"name" : "appratatouile",
+	"nameOnDisk" : "appratatouile.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -1534,10 +1538,10 @@
 			[
 				0,
 				1,
-				141,
-				143,
-				144,
-				145
+				59,
+				61,
+				62,
+				63
 			]
 		},
 		{
@@ -1553,24 +1557,15 @@
 				8,
 				9,
 				10,
+				52,
 				53,
 				54,
 				55,
 				56,
 				57,
 				58,
-				59,
 				60,
-				61,
-				62,
-				63,
 				64,
-				65,
-				66,
-				67,
-				68,
-				69,
-				70,
 				71,
 				72,
 				73,
@@ -1584,79 +1579,7 @@
 				81,
 				82,
 				83,
-				84,
-				85,
-				86,
-				87,
-				88,
-				89,
-				90,
-				91,
-				92,
-				93,
-				94,
-				95,
-				96,
-				97,
-				98,
-				99,
-				100,
-				101,
-				102,
-				103,
-				104,
-				105,
-				106,
-				107,
-				108,
-				109,
-				110,
-				111,
-				112,
-				113,
-				114,
-				115,
-				116,
-				117,
-				118,
-				119,
-				120,
-				121,
-				122,
-				123,
-				124,
-				125,
-				126,
-				127,
-				128,
-				129,
-				130,
-				131,
-				132,
-				133,
-				134,
-				135,
-				136,
-				137,
-				138,
-				139,
-				140,
-				142,
-				146,
-				153,
-				154,
-				155,
-				156,
-				157,
-				158,
-				159,
-				160,
-				161,
-				162,
-				163,
-				164,
-				165,
-				166
+				84
 			]
 		},
 		{
@@ -1703,20 +1626,19 @@
 				48,
 				49,
 				50,
-				51,
-				52
+				51
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				147,
-				148,
-				149,
-				150,
-				151,
-				152
+				65,
+				66,
+				67,
+				68,
+				69,
+				70
 			]
 		}
 	],
@@ -1726,7 +1648,7 @@
 			"backtrace" : 0,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appFlaskOfRum_autogen/mocs_compilation.cpp",
+			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appratatouile_autogen/mocs_compilation.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -1987,11 +1909,6 @@
 		},
 		{
 			"backtrace" : 4,
-			"path" : "assets/slotMachine/seperator.png",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 4,
 			"path" : "qml/..gitignore.un~",
 			"sourceGroupIndex" : 1
 		},
@@ -2002,145 +1919,8 @@
 		},
 		{
 			"backtrace" : 4,
-			"path" : "qml/Main.qml.autosave",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
 			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/Main.qml.autosave~RF352fbaf.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/Main.qml~RF17c7e4f.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/Main.qml~RF17d3df6.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/Main.qml~RF18067d6.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/Main.qml~RF1986f72.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/Main.qml~RF19bfa9d.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/Main.qml~RF342eac5.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/Main.qml~RF34a6e0c.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/Main.qml~RFa11454.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/Main.qml~RFb84854.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/Main.qml~RFb91a98.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/Main.qml~RFba90ae.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/Main.qml~RFbb5602.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/Main.qml~RFbbbe41.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/Main.qml~RFbd0fa8.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/Main.qml~RFbec670.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/Main.qml~RFc03e0c.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/Main.qml~RFc0f372.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/Main.qml~RFc284e0.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/Main.qml~RFc85372.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/Main.qml~RFc985b8.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/Main.qml~RFcca7e8.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/Main.qml~RFcd76d0.TMP",
+			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/Main.qml~RF94f1025.TMP",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -2160,355 +1940,7 @@
 		},
 		{
 			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/config/SymbolRats.qml~RF3606fa7.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/config/SymbolRats.qml~RF8f1cb8.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
 			"path" : "qml/config/qmldir",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/LineSymbol.qml~RFb43126.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/LineSymbol.qml~RFb4664f.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/Ratatouille.qml~RF3453234.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/Ratatouille.qml~RF34623f7.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/Ratatouille.qml~RF34712db.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/Ratatouille.qml~RF347704d.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/Symbol.qml~RF1878a40.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/Symbol.qml~RF188417b.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/Symbol.qml~RF192fe42.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/Symbol.qml~RF3568812.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/Symbol.qml~RF3571f9f.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/Symbol.qml~RF372e6e3.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/Symbol.qml~RFb495bc.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/Symbol.qml~RFb4ccab.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/Symbol.qml~RFc23d86.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/Symbol.qml~RFc30d3a.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/Symbol.qml~RFc3d608.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/Symbol.qml~RFc7ec8a.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/WinAnalysis.qml~RF17fd460.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/WinAnalysis.qml~RF1835ae7.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/WinAnalysis.qml~RF183dd26.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/WinAnalysis.qml~RF18a25bb.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/WinAnalysis.qml~RF193409a.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/WinAnalysis.qml~RF1941669.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/WinAnalysis.qml~RF1942ed3.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/WinAnalysis.qml~RF194c343.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/WinAnalysis.qml~RF1a049b3.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/WinAnalysis.qml~RF36ee4c3.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/WinAnalysis.qml~RF3711c06.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/WinAnalysis.qml~RF74dd2c.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/WinAnalysis.qml~RF758767.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/WinAnalysis.qml~RF75defc.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/WinAnalysis.qml~RF76958b.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/WinAnalysis.qml~RF77b533.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/WinAnalysis.qml~RF7eb2ff.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/WinAnalysis.qml~RF9b77ae.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/WinAnalysis.qml~RFa90f9a.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/WinAnalysis.qml~RFaa281e.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/WinAnalysis.qml~RFaf1f6b.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/WinAnalysis.qml~RFafafe4.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/WinAnalysis.qml~RFb12405.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/WinAnalysis.qml~RFb4f91a.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/WinAnalysis.qml~RFb58116.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/WinAnalysis.qml~RFb5cb00.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/WinAnalysis.qml~RFc710f0.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/WinningLine.qml.autosave~RF8a1e27.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/WinningLine.qml~RF7273dd.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/WinningLine.qml~RF73f628.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/WinningLine.qml~RF772fc7.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/WinningLine.qml~RF798d4f.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/WinningLine.qml~RF79e16a.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/WinningLine.qml~RF8e0963.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/WinningLine.qml~RF93f503.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/WinningLine.qml~RF9e14df.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/WinningLine.qml~RFadd519.TMP",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/qml/slotMachine/WinningLine.qml~RFb2fae8.TMP",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -2520,70 +1952,70 @@
 		{
 			"backtrace" : 91,
 			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/meta_types/qt6appflaskofrum_relase_metatypes.json.gen",
+			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/meta_types/qt6appratatouile_release_metatypes.json.gen",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 92,
 			"compileGroupIndex" : 2,
 			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appflaskofrum_qmltyperegistrations.cpp",
+			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appratatouile_qmltyperegistrations.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 97,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qrc_qmake_FlaskOfRum.cpp",
+			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qrc_qmake_ratatouile.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 101,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qrc_qmake_FlaskOfRum_copy.cpp",
+			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qrc_qmake_ratatouile_copy.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appFlaskOfRum_autogen/timestamp",
+			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appratatouile_autogen/timestamp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/meta_types/qt6appflaskofrum_relase_metatypes.json.gen.rule",
+			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/meta_types/qt6appratatouile_release_metatypes.json.gen.rule",
 			"sourceGroupIndex" : 3
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appflaskofrum_qmltyperegistrations.cpp.rule",
+			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appratatouile_qmltyperegistrations.cpp.rule",
 			"sourceGroupIndex" : 3
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qrc_qmake_FlaskOfRum.cpp.rule",
+			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qrc_qmake_ratatouile.cpp.rule",
 			"sourceGroupIndex" : 3
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qrc_qmake_FlaskOfRum_copy.cpp.rule",
+			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qrc_qmake_ratatouile_copy.cpp.rule",
 			"sourceGroupIndex" : 3
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appFlaskOfRum_autogen/timestamp.rule",
+			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appratatouile_autogen/timestamp.rule",
 			"sourceGroupIndex" : 3
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/meta_types/appFlaskOfRum_json_file_list.txt.rule",
+			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/meta_types/appratatouile_json_file_list.txt.rule",
 			"sourceGroupIndex" : 3
 		},
 		{
