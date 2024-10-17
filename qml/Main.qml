@@ -15,19 +15,20 @@ GameWindow{
         id: scene
         width: 570
         height: 360
+        // Bet
         property int betStack: 5 // valor da bet
+        property int previous_betStack
         property int creditStack: 400 // quantia na carteira
 
         //Animação do crédito caindo
         Behavior on creditStack{
             PropertyAnimation{
-                duration: scene.betStack*50
+                duration: 1000
             }
         }
 
         Rectangle{ // Para caso da janela ser maior que a scene, esse gradiente irá prencher o fundo
-            //anchors.fill: scene.gameWindowAnchorItem
-            anchors.fill:parent
+            anchors.fill: scene.gameWindowAnchorItem
             gradient: Gradient{
                 GradientStop{
                     position: 0.0
@@ -98,24 +99,27 @@ GameWindow{
         // Gira a caça-níquel
         function startSlotMachine(){
             if(!slotMachine.spinning&&scene.betStack<=scene.creditStack){
+                scene.previous_betStack=scene.betStack
                 bottomBar.startActive= !bottomBar.autoActive
                 scene.creditStack-=scene.betStack
                 winCheck.reset()
-                slotMachine.spin(utils.generateRandomValueBetween(500,1000))
+                slotMachine.spin(utils.generateRandomValueBetween(bottomBar.fastActive?2:500,bottomBar.fastActive?0: 1000))
             }
         }
 
         //Função achamada após o termino da rodada
         function endedSlotMachine(){
             bottomBar.startActive=false
-            var won=winCheck.validate(slotMachine)
+            var won=winCheck.validate(slotMachine,scene.previous_betStack)
             if(won){
                 winCheck.displayWinningLines()
+                scene.creditStack+=winCheck.award
                 bottomBar.autoActive=false
                 bottomBar.startActive=false
-            } else if(bottomBar.autoActive){
-
+            } else if(bottomBar.autoActive&&scene.betStack<=scene.creditStack){
                 startSlotMachine()
+            } else{
+                bottomBar.autoActive=false
             }
         }
 
@@ -128,9 +132,6 @@ GameWindow{
         // Modo rápido
         function fastSlotMachine(){
             bottomBar.fastActive = !bottomBar.fastActive
-            if(bottomBar.fastActive)
-                console.log("fast active")
-
         }
 
         // Aumento o valor apostado

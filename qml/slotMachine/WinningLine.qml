@@ -74,7 +74,7 @@ Item {
         }
         winningLine.__lineSymbols=[]
     }
-    function check(machine){ // Verifica se as linhas são vencedoras
+    function check(machine,bet){ // Verifica se as linhas são vencedoras
         var currentType=machine.getItemData(positions[0].reel,positions[0].row).type
         __winningPositions=[]
         __winningTypes=[]
@@ -85,9 +85,8 @@ Item {
             // console.log(symbol.type) Caso de teste
             //
             // Caso a linha possua a o mesmo tipo da anterior ou
-            // ela é do tipo "Remy", caso seja verdade, ele continuára a
-            // verificação
-            if(currentType!==symbol.type&&currentType!=="Remy"&&symbol.type!=="Remy")
+            // ela é do tipo "Remy" ele continuará a verificação
+            if(currentType!==symbol.type&&symbol.type!=="Remy"&&currentType!=="Remy")
                 break
             currentType=symbol.type
             __winningPositions.push(pos)
@@ -96,9 +95,9 @@ Item {
         // Caso haja, ao menos, três blocos combinados. ele irá contar a recompensa
         if(__winningPositions.length<3)
             return false
-        console.log(SymbolRats.getSymbolData(currentType).source) // Caso de teste
-        scene.creditStack+=scene.betStack*SymbolRats.getWinFactor(currentType,__winningPositions.length) // Adiciona ao crédito final
-        winAmount=scene.betStack*SymbolRats.getWinFactor(currentType,__winningPositions.length)
+        scene.creditStack+=bet*SymbolRats.getWinFactor(currentType,__winningPositions.length) // Adiciona ao crédito final
+        console.log(bet) // Caso de teste
+        winAmount=bet*SymbolRats.getWinFactor(currentType,__winningPositions.length)
         winningLine.drawLineSymbols(machine) // Faz o molde da linha
         return true
     }
