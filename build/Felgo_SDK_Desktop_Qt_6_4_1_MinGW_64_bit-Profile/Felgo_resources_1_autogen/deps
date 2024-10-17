@@ -693,6 +693,7 @@ Felgo_resources_1_autogen/timestamp: \
 	C:/Felgo/Felgo/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateConfigVersionImpl.cmake \
 	C:/Felgo/Felgo/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateTargets.cmake \
 	C:/Felgo/Felgo/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateVersionlessTargets.cmake \
+<<<<<<< HEAD
 	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/CMakeCXXCompiler.cmake.in \
 	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp \
 	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake \
@@ -707,10 +708,16 @@ Felgo_resources_1_autogen/timestamp: \
 	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/CMakeDetermineRCCompiler.cmake \
 	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake \
 	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/CMakeFindBinUtils.cmake \
+=======
+	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake \
+	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
+	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake \
+>>>>>>> 8a420301aa5991d7cd63e5f75b5bc8cafc92da0d
 	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake \
 	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake \
 	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake \
 	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake \
+<<<<<<< HEAD
 	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/CMakeNinjaFindMake.cmake \
 	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/CMakeParseImplicitIncludeInfo.cmake \
 	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/CMakeParseImplicitLinkInfo.cmake \
@@ -723,10 +730,16 @@ Felgo_resources_1_autogen/timestamp: \
 	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake \
 	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/CMakeTestCompilerCommon.cmake \
 	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/CMakeTestRCCompiler.cmake \
+=======
+	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/CMakeRCInformation.cmake \
+	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake \
+	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake \
+>>>>>>> 8a420301aa5991d7cd63e5f75b5bc8cafc92da0d
 	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/CheckCXXCompilerFlag.cmake \
 	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/CheckCXXSourceCompiles.cmake \
 	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/CheckIncludeFileCXX.cmake \
 	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/CheckLibraryExists.cmake \
+<<<<<<< HEAD
 	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/ADSP-DetermineCompiler.cmake \
 	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/ARMCC-DetermineCompiler.cmake \
 	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/ARMClang-DetermineCompiler.cmake \
@@ -770,17 +783,28 @@ Felgo_resources_1_autogen/timestamp: \
 	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/XL-CXX-DetermineCompiler.cmake \
 	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake \
 	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake \
+=======
+	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
+	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake \
+	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/GNU.cmake \
+>>>>>>> 8a420301aa5991d7cd63e5f75b5bc8cafc92da0d
 	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake \
 	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/FindPackageMessage.cmake \
 	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/FindThreads.cmake \
 	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/FindVulkan.cmake \
 	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/GNUInstallDirs.cmake \
+<<<<<<< HEAD
 	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake \
 	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/Internal/CheckCompilerFlag.cmake \
 	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/Internal/CheckFlagCommonConfig.cmake \
 	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake \
 	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/Internal/FeatureTesting.cmake \
 	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/Platform/Windows-Determine-CXX.cmake \
+=======
+	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/Internal/CheckCompilerFlag.cmake \
+	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/Internal/CheckFlagCommonConfig.cmake \
+	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake \
+>>>>>>> 8a420301aa5991d7cd63e5f75b5bc8cafc92da0d
 	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX-ABI.cmake \
 	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX.cmake \
 	C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/Platform/Windows-GNU.cmake \

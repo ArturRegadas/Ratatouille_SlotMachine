@@ -9,6 +9,7 @@
 	[
 		"C:/Users/ahlre/Documents/ratatouile/CMakeLists.txt",
 		"C:/Users/ahlre/Documents/ratatouile/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Profile/.qtc/package-manager/auto-setup.cmake",
+<<<<<<< HEAD
 		"C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake",
 		"C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/CMakeSystem.cmake.in",
 		"C:/Users/ahlre/Documents/ratatouile/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Profile/CMakeFiles/3.29.3/CMakeSystem.cmake",
@@ -65,6 +66,11 @@
 		"C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/CMakeFindBinUtils.cmake",
 		"C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/GNU-FindBinUtils.cmake",
 		"C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/CMakeCXXCompiler.cmake.in",
+=======
+		"C:/Users/ahlre/Documents/ratatouile/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Profile/CMakeFiles/3.29.3/CMakeSystem.cmake",
+		"C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake",
+		"C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake",
+>>>>>>> 8a420301aa5991d7cd63e5f75b5bc8cafc92da0d
 		"C:/Users/ahlre/Documents/ratatouile/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Profile/CMakeFiles/3.29.3/CMakeCXXCompiler.cmake",
 		"C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake",
 		"C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake",
@@ -78,6 +84,7 @@
 		"C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
 		"C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX.cmake",
 		"C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/Platform/Windows-GNU.cmake",
+<<<<<<< HEAD
 		"C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/CMakeDetermineRCCompiler.cmake",
 		"C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/CMakeRCCompiler.cmake.in",
 		"C:/Users/ahlre/Documents/ratatouile/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Profile/CMakeFiles/3.29.3/CMakeRCCompiler.cmake",
@@ -99,6 +106,13 @@
 		"C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/CMakeCXXCompiler.cmake.in",
 		"C:/Users/ahlre/Documents/ratatouile/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Profile/CMakeFiles/3.29.3/CMakeCXXCompiler.cmake",
 		"C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX-ABI.cmake",
+=======
+		"C:/Users/ahlre/Documents/ratatouile/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Profile/CMakeFiles/3.29.3/CMakeRCCompiler.cmake",
+		"C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/CMakeRCInformation.cmake",
+		"C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/Platform/Windows-windres.cmake",
+		"C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX-ABI.cmake",
+		"C:/Felgo/Tools/CMake_64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake",
+>>>>>>> 8a420301aa5991d7cd63e5f75b5bc8cafc92da0d
 		"C:/Felgo/Felgo/mingw_64/lib/cmake/Felgo/FelgoConfigVersion.cmake",
 		"C:/Felgo/Felgo/mingw_64/lib/cmake/Felgo/FelgoConfig.cmake",
 		"C:/Felgo/Felgo/mingw_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake",
