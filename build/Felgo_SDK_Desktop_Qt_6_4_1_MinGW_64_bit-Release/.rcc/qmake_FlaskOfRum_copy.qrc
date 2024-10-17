@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/FlaskOfRum">
+    <file alias="qmldir">F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/FlaskOfRum/qmldir</file>
+  </qresource>
+</RCC>
+

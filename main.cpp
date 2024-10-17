@@ -8,6 +8,7 @@
 
 int main(int argc, char *argv[])
 {
+
     QApplication app(argc, argv);
 
     FelgoApplication felgo;
@@ -27,10 +28,10 @@ int main(int argc, char *argv[])
     felgo.setMainQmlFileName(QStringLiteral("qml/Main.qml"));
 
     // use this instead of the above call to avoid deployment of the qml files and compile them into the binary with qt's resource system qrc
-    // this is the preferred deployment option for publishing apps to the app stores, because then your qml files and js files are protected
+    // this is the preferred deployment option for publishing games to the app stores, because then your qml files and js files are protected
     // to avoid deployment of your qml files and images, also comment the deploy_resources command in the CMakeLists file
     // also see the CMakeLists.txt file for more details
-    //felgo.setMainQmlFileName(QStringLiteral("qrc:/qml/Main.qml"));
+    // felgo.setMainQmlFileName(QStringLiteral("qrc:/qml/Main.qml"));
 
     engine.load(QUrl(felgo.mainQmlFileName()));
 

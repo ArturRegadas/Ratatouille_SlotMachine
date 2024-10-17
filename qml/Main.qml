@@ -1,101 +1,162 @@
 import Felgo 4.0
 import QtQuick 2.0
+import "slotMachine"
 
-GameWindow {
+GameWindow{
     id: gameWindow
 
-    // You get free licenseKeys from https://felgo.com/licenseKey
-    // With a licenseKey you can:
-    //  * Publish your games & apps for the app stores
-    //  * Remove the Felgo Splash Screen or set a custom one (available with the Pro Licenses)
-    //  * Add plugins to monetize, analyze & improve your apps (available with the Pro Licenses)
-    //licenseKey: "<generate one from https://felgo.com/licenseKey>"
-
+    //declare the scene as active
     activeScene: scene
 
-    // the size of the Window can be changed at runtime by pressing Ctrl (or Cmd on Mac) + the number keys 1-8
-    // the content of the logical scene size (480x320 for landscape mode by default) gets scaled to the window size based on the scaleMode
-    // you can set this size to any resolution you would like your project to start with, most of the times the one of your main target device
-    // this resolution is for iPhone 4 & iPhone 4S
-    screenWidth: 960
-    screenHeight: 640
-
+    //main window size
+    width: 920
+    height: 640
     Scene {
         id: scene
+        width: 570
+        height: 360
+        // Bet
+        property int betStack: 5 // valor da bet
+        property int previous_betStack
+        property int creditStack: 400 // quantia na carteira
 
-        // the "logical size" - the scene content is auto-scaled to match the GameWindow size
-        width: 480
-        height: 320
-
-        // background rectangle matching the logical scene size (= safe zone available on all devices)
-        // see here for more details on content scaling and safe zone: https://felgo.com/doc/felgo-different-screen-sizes/
-        Rectangle {
-            id: rectangle
-            anchors.fill: parent
-            color: "grey"
-
-            Text {
-                id: textElement
-                // qsTr() uses the internationalization feature for multi-language support
-                text: qsTr("Hello Felgo World")
-                color: "#ffffff"
-                anchors.centerIn: parent
-            }
-
-            MouseArea {
-                anchors.fill: parent
-
-                // when the rectangle that fits the whole scene is pressed, change the background color and the text
-                onPressed: mouse => {
-                               textElement.text = qsTr("Scene-Rectangle is pressed at position " + Math.round(mouse.x) + "," + Math.round(mouse.y))
-                               rectangle.color = "black"
-                               console.debug("pressed position:", mouse.x, mouse.y)
-                           }
-
-                onPositionChanged: mouse => {
-                                       textElement.text = qsTr("Scene-Rectangle is moved at position " + Math.round(mouse.x) + "," + Math.round(mouse.y))
-                                       console.debug("mouseMoved or touchDragged position:", mouse.x, mouse.y)
-                                   }
-
-                // revert the text & color after the touch/mouse button was released
-                // also States could be used for that - search for "QML States" in the doc
-                onReleased: mouse => {
-                                textElement.text = qsTr("Hello Felgo World")
-                                rectangle.color = "grey"
-                                console.debug("released position:", mouse.x, mouse.y)
-                            }
-            }
-        }// Rectangle with size of logical scene
-
-        Image {
-            id: felgoLogo
-            source: Qt.resolvedUrl("../assets/felgo-logo.png")
-
-            // 50px is the "logical size" of the image, based on the scene size 480x320
-            // on hd or hd2 displays, it will be shown at 100px (hd) or 200px (hd2)
-            // thus this image should be at least 200px big to look crisp on all resolutions
-            // for more details, see here: https://felgo.com/doc/felgo-different-screen-sizes/
-            width: 50
-            height: 50
-
-            // this positions it absolute right and top of the GameWindow
-            // change resolutions with Ctrl (or Cmd on Mac) + the number keys 1-8 to see the effect
-            anchors.right: scene.gameWindowAnchorItem.right
-            anchors.top: scene.gameWindowAnchorItem.top
-
-            // this animation sequence fades the Felgo logo in and out infinitely (by modifying its opacity property)
-            SequentialAnimation on opacity {
-                loops: Animation.Infinite
-                PropertyAnimation {
-                    to: 0
-                    duration: 1000 // 1 second for fade out
-                }
-                PropertyAnimation {
-                    to: 1
-                    duration: 1000 // 1 second for fade in
-                }
+        //Animação do crédito caindo
+        Behavior on creditStack{
+            PropertyAnimation{
+                duration: 1000
             }
         }
 
+        Rectangle{ // Para caso da janela ser maior que a scene, esse gradiente irá prencher o fundo
+            anchors.fill: scene.gameWindowAnchorItem
+            gradient: Gradient{
+                GradientStop{
+                    position: 0.0
+                    color: "#21b0db"
+                }
+                GradientStop{
+                    position: 1.0
+                    color: "#1859c9"
+                }
+            } 
+        }
+        Image{ // Imagem da lateral esquerda
+            x:-20
+            y: parent.verticalCenter
+            source: "../assets/backgroundLeftMain.jpg"
+            height: scene.gameWindowAnchorItem.height
+            width: (Math.round(Math.round(slotMachine.height/slotMachine.rowCount)/80*67)*5)/2
+        }
+        Image{
+            x:parent.width-150 // Imagem da lateral direita
+            y: parent.verticalCenter
+            source: "../assets/backgroundRightMain.jpg"
+            height: scene.gameWindowAnchorItem.height
+            width: (Math.round(Math.round(slotMachine.height/slotMachine.rowCount)/80*67)*5)/2
+        }
+        Ratatouille{ //Roleta
+            id: slotMachine
+            anchors.verticalCenter: scene.verticalCenter
+            anchors.horizontalCenter: scene.horizontalCenter
+            anchors.topMargin: -10
+            //
+            height: scene.gameWindowAnchorItem.height-topBar.height-bottomBar.height-10
+            defaultItemHeight: Math.round(slotMachine.height/slotMachine.rowCount)
+            defaultReelWidth: Math.round(defaultItemHeight/80*67)
+            spinVelocity: Math.round(defaultItemHeight/80*750)
+            //
+            onSpinEnded: scene.endedSlotMachine()
+            onSpinStarted: {
+                slotMachine.reelStopDelay=utils.generateRandomValueBetween(350,700)
+            }
+        }
+        WinAnalysis{
+            anchors.verticalCenter: slotMachine.verticalCenter
+            anchors.horizontalCenter: slotMachine.horizontalCenter
+            id:winCheck
+            height: slotMachine.height
+            width: Math.round(height/240*408)
+        }
+        TopBar { // Aba acima da roleta
+           id: topBar
+           width: scene.gameWindowAnchorItem.width
+           anchors.top: scene.gameWindowAnchorItem.top
+           anchors.horizontalCenter: scene.gameWindowAnchorItem.horizontalCenter
+        }
+        BottonBar{ // Aba abaixo da roleta
+                id: bottomBar
+                width: scene.gameWindowAnchorItem.width
+                anchors.bottom: scene.gameWindowAnchorItem.bottom
+                anchors.horizontalCenter: scene.gameWindowAnchorItem.horizontalCenter
+                onAutoClicked: scene.autoStartSlotMachine()
+                onFastClicked: scene.fastSlotMachine()
+                onStartClicked: scene.startSlotMachine()
+                onDecrementClicked: scene.decrementBetInSlotMachine()
+                onIncrementClicked: scene.incrementBetInSlotMachine()
+                onMaxValueClicked: scene.maxBetInSlotMachine()
+        }
+        // Funções
+        // Gira a caça-níquel
+        function startSlotMachine(){
+            if(!slotMachine.spinning&&scene.betStack<=scene.creditStack){
+                scene.previous_betStack=scene.betStack
+                bottomBar.startActive= !bottomBar.autoActive
+                scene.creditStack-=scene.betStack
+                winCheck.reset()
+                slotMachine.spin(utils.generateRandomValueBetween(bottomBar.fastActive?2:500,bottomBar.fastActive?0: 1000))
+            }
+        }
+
+        //Função achamada após o termino da rodada
+        function endedSlotMachine(){
+            bottomBar.startActive=false
+            var won=winCheck.validate(slotMachine,scene.previous_betStack)
+            if(won){
+                winCheck.displayWinningLines()
+                scene.creditStack+=winCheck.award
+                bottomBar.autoActive=false
+                bottomBar.startActive=false
+            } else if(bottomBar.autoActive&&scene.betStack<=scene.creditStack){
+                startSlotMachine()
+            } else{
+                bottomBar.autoActive=false
+            }
+        }
+
+        //Gira automaticamente a caça níquel
+        function autoStartSlotMachine() {
+            bottomBar.autoActive = !bottomBar.autoActive
+            startSlotMachine()
+        }
+
+        // Modo rápido
+        function fastSlotMachine(){
+            bottomBar.fastActive = !bottomBar.fastActive
+        }
+
+        // Aumento o valor apostado
+        function incrementBetInSlotMachine(){
+            if (betStack+5 <= creditStack)
+                betStack+=5
+        }
+
+
+        // Domunui o valor a ser apostado
+        function decrementBetInSlotMachine(){
+            if (betStack-5 >= 5)
+                betStack-=5
+        }
+
+        // Define o valor apostado para a quantia da carteira
+        function maxBetInSlotMachine(){
+            let current_value = creditStack
+            for(let i = current_value; i>current_value-6; i--){
+                if (i%5===0)
+                    betStack=i
+                    break
+            }
+        }
     }
+
 }
+
