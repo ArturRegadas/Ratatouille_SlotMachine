@@ -39,24 +39,24 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "C:/Program Files (x86)/ratatouile/appFlaskOfRum.exe")
+   "C:/Program Files (x86)/ratatouile/appratatouile.exe")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "C:/Program Files (x86)/ratatouile" TYPE EXECUTABLE FILES "F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appFlaskOfRum.exe")
-  if(EXISTS "$ENV{DESTDIR}/C:/Program Files (x86)/ratatouile/appFlaskOfRum.exe" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/C:/Program Files (x86)/ratatouile/appFlaskOfRum.exe")
+  file(INSTALL DESTINATION "C:/Program Files (x86)/ratatouile" TYPE EXECUTABLE FILES "F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appratatouile.exe")
+  if(EXISTS "$ENV{DESTDIR}/C:/Program Files (x86)/ratatouile/appratatouile.exe" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/C:/Program Files (x86)/ratatouile/appratatouile.exe")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "C:/Felgo/Tools/mingw1120_64/bin/strip.exe" "$ENV{DESTDIR}/C:/Program Files (x86)/ratatouile/appFlaskOfRum.exe")
+      execute_process(COMMAND "C:/Felgo/Tools/mingw1120_64/bin/strip.exe" "$ENV{DESTDIR}/C:/Program Files (x86)/ratatouile/appratatouile.exe")
     endif()
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/CMakeFiles/appFlaskOfRum.dir/install-cxx-module-bmi-Release.cmake" OPTIONAL)
+  include("F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/CMakeFiles/appratatouile.dir/install-cxx-module-bmi-Release.cmake" OPTIONAL)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -76,6 +76,10 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/qml/slotMachine" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/qml/slotMachine/LineSymbol.qml")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/qml/slotMachine" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/qml/slotMachine/Ratatouille.qml")
 endif()
 
@@ -84,7 +88,31 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/qml/slotMachine" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/qml/slotMachine/WinAnalysis.qml")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/qml/slotMachine" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/qml/slotMachine/WinningLine.qml")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/BGbottonbar.png")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/BGtopbar.png")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/BetText.png")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/ButtonMinus.png")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/ButtonPlus.png")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -96,19 +124,139 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/backgroundMain.jpg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets/Lines" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/Lines/Line1.png")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets/slotMachine" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/slotMachine/back.png")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets/Lines" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/Lines/Line2.png")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets/slotMachine" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/slotMachine/bancinha.png")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets/Lines" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/Lines/Line3.png")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets/slotMachine" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/slotMachine/remy.png")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets/Lines" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/Lines/Line4.png")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets/Lines" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/Lines/Line5.png")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets/Lines" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/Lines/Line6.png")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets/Lines" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/Lines/Line7.png")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets/Lines" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/Lines/Line8.png")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets/Lines" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/Lines/Line9.png")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/MaxText.png")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/NormalAutoButton.png")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/NormalFastButton.png")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/NormalStartButton.png")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/PrecessedFastButton.png")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/PrecessedStartButton.png")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/PressedAutoButton.png")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/backgroundLeftMain.jpg")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/backgroundMain.png")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets/scenes_loader" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/scenes_loader/scene_five.jpeg")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets/scenes_loader" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/scenes_loader/scene_four.jpeg")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets/scenes_loader" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/scenes_loader/scene_one.jpg")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets/scenes_loader" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/scenes_loader/scene_six.jpg")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets/scenes_loader" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/scenes_loader/scene_tree.png")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets/scenes_loader" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/scenes_loader/scene_two.jpeg")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets/slotMachine" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/slotMachine/SymbolAuguste.png")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets/slotMachine" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/slotMachine/SymbolBorder.png")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets/slotMachine" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/slotMachine/SymbolColette.png")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets/slotMachine" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/slotMachine/SymbolDjango.png")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets/slotMachine" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/slotMachine/SymbolEmile.png")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets/slotMachine" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/slotMachine/SymbolLinguini.png")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets/slotMachine" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/slotMachine/SymbolLogo.png")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets/slotMachine" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/slotMachine/SymbolRemy.png")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets/slotMachine" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/slotMachine/SymbolSkinner.png")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/assets/slotMachine" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/assets/slotMachine/gradient.png")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -116,7 +264,11 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/qml" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/qml/.gitignore")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/qml" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/qml/Main.qml.VwxBJI")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/qml" TYPE FILE FILES "F:/programas/git/ratatouille/Game_Log/qml/Main.qml~RF94f1025.TMP")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)

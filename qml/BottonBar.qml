@@ -25,7 +25,7 @@ Item {
 
     }
 
-    Image {
+    Image { // Botão auto
         id : autobutton
         width: 61
         height: 31
@@ -40,7 +40,7 @@ Item {
         }
     }
 
-    Image {
+    Image { //Botão rápido
         id : fastbutton
         width: 61
         height: 31
@@ -55,7 +55,7 @@ Item {
         }
     }
 
-    Image {
+    Image { //Começo
         id : startbutton
         width: 61
         height: 31
@@ -78,7 +78,7 @@ Item {
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.bottomMargin:8
 
-        Image{
+        Image{ // Texto bet
             id: betText
             width: 35
             height: 19
@@ -87,7 +87,7 @@ Item {
 
         }
 
-        Text {
+        Text { //Valor atual a ser apostado
             id: currentBetText
             width: 35
             text: scene.betStack
@@ -97,7 +97,7 @@ Item {
         }
 
 
-        Image {
+        Image { //Sinal de menos
             id: minus
             width: 27
             height: 23
@@ -107,11 +107,9 @@ Item {
                 anchors.fill: parent
                 onClicked: decrementClicked()
             }
-
-
         }
 
-        Image {
+        Image { //Sinal de mais
             id: plus
             width: 30
             height: 23
@@ -121,11 +119,9 @@ Item {
                 anchors.fill: parent
                 onClicked: incrementClicked()
             }
-
-
         }
 
-        Image {
+        Image { // Botão máximo
             id: max
             width: 50
             height: 23
@@ -135,8 +131,6 @@ Item {
                 anchors.fill: parent
                 onClicked: maxValueClicked()
             }
-
-
         }
     }
 }

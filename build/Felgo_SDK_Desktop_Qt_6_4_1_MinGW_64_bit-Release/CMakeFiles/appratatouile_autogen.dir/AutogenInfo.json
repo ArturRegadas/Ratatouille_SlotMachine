@@ -1027,7 +1027,6 @@
 		"C:/Felgo/Felgo/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
 		"C:/Felgo/Felgo/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
 		"C:/Felgo/Felgo/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
-		"C:/Felgo/Felgo/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
 		"C:/Felgo/Felgo/mingw_64/lib/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in"
 	],
 	"CMAKE_SOURCE_DIR" : "F:/programas/git/ratatouille/Game_Log",
@@ -1126,15 +1125,7 @@
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : 
 	[
-		"F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmlcache/appratatouile_qml/BottonBar_qml.cpp",
-		"F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmlcache/appratatouile_qml/config/SymbolRats_qml.cpp",
-		"F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmlcache/appratatouile_qml/slotGame/Ratatouille_qml.cpp",
-		"F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmlcache/appratatouile_qml/slotGame/SlotMachine_qml.cpp",
-		"F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmlcache/appratatouile_qml/slotGame/Symbol_qml.cpp",
-		"F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmlcache/appratatouile_qml/slotMachine/Ratatouille_qml.cpp",
-		"F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmlcache/appratatouile_qml/slotMachine/Symbol_qml.cpp",
 		"F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qrc_FelgoResources.cpp",
-		"F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qrc_appratatouile_raw_qml_0.cpp",
 		"F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qrc_qmake_ratatouile.cpp",
 		"F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qrc_qmake_ratatouile_copy.cpp",
 		"F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/appratatouile_qmltyperegistrations.cpp"
@@ -1149,11 +1140,6 @@
 	"SETTINGS_FILE" : "F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/CMakeFiles/appratatouile_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[
-			"F:/programas/git/ratatouille/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release/.rcc/qmlcache/appratatouile_qmlcache_loader.cpp",
-			"Mu",
-			null
-		],
 		[ "F:/programas/git/ratatouille/Game_Log/main.cpp", "Mu", null ]
 	],
 	"USE_BETTER_GRAPH" : false,

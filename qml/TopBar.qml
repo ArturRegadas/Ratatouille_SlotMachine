@@ -33,10 +33,10 @@ Item {
     }
 
     Text {
-         text: scene.creditStack
-         color: "white"
-         font.pixelSize: 12
-         anchors.verticalCenter: moneyImg.verticalCenter
-         anchors.right: moneyImg.left
-       }
+        text: scene.creditStack
+        color: "white"
+        font.pixelSize: 12
+        anchors.verticalCenter: moneyImg.verticalCenter
+        anchors.right: moneyImg.left
+    }
 }
