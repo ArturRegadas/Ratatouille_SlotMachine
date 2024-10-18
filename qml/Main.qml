@@ -19,7 +19,7 @@ GameWindow{
          source: Qt.resolvedUrl("../assets/Sounds/musicTest.wav")
          loops: SoundEffect.Infinite
        }
-        // command to play the sound clickSound.play()
+        //command to play the sound clickSound.play()
 
 
 
