@@ -1,6 +1,7 @@
 import Felgo 4.0
 import QtQuick 2.0
 import "slotMachine"
+import QtMultimedia 6
 
 GameWindow{
     id: gameWindow
@@ -11,23 +12,34 @@ GameWindow{
     //main window size
     width: 920
     height: 640
+
+
+       GameSoundEffect {
+         id: clickSound
+         source: Qt.resolvedUrl("../assets/Sounds/musicTest.wav")
+         loops: SoundEffect.Infinite
+       }
+        // command to play the sound clickSound.play()
+
+
+
     Scene {
         id: scene
         width: 570
         height: 360
         // Bet
-        property int betStack: 5 // valor da bet
+        property int betStack: 5 // bet value
         property int previous_betStack
-        property int creditStack: 400 // quantia na carteira
+        property int creditStack: 400 // amount in wallet
 
-        //Animação do crédito caindo
+        //Falling Credit Animation
         Behavior on creditStack{
             PropertyAnimation{
                 duration: 1000
             }
         }
 
-        Rectangle{ // Para caso da janela ser maior que a scene, esse gradiente irá prencher o fundo
+        Rectangle{ // In case the window is larger than the scene, this gradient will fill the background
             anchors.fill: scene.gameWindowAnchorItem
             gradient: Gradient{
                 GradientStop{
@@ -40,7 +52,7 @@ GameWindow{
                 }
             } 
         }
-        Image{ // Imagem da lateral esquerda
+        Image{ // Left side image
             x:-20
             y: parent.verticalCenter
             source: "../assets/backgroundLeftMain.jpg"
@@ -48,13 +60,13 @@ GameWindow{
             width: (Math.round(Math.round(slotMachine.height/slotMachine.rowCount)/80*67)*5)/2
         }
         Image{
-            x:parent.width-150 // Imagem da lateral direita
+            x:parent.width-150 // Right side image
             y: parent.verticalCenter
             source: "../assets/backgroundRightMain.jpg"
             height: scene.gameWindowAnchorItem.height
             width: (Math.round(Math.round(slotMachine.height/slotMachine.rowCount)/80*67)*5)/2
         }
-        Ratatouille{ //Roleta
+        Ratatouille{ //Roulette
             id: slotMachine
             anchors.verticalCenter: scene.verticalCenter
             anchors.horizontalCenter: scene.horizontalCenter
@@ -77,13 +89,13 @@ GameWindow{
             height: slotMachine.height
             width: Math.round(height/240*408)
         }
-        TopBar { // Aba acima da roleta
+        TopBar { // Tab above the roulette
            id: topBar
            width: scene.gameWindowAnchorItem.width
            anchors.top: scene.gameWindowAnchorItem.top
            anchors.horizontalCenter: scene.gameWindowAnchorItem.horizontalCenter
         }
-        BottonBar{ // Aba abaixo da roleta
+        BottonBar{ // Tab below the roulette
                 id: bottomBar
                 width: scene.gameWindowAnchorItem.width
                 anchors.bottom: scene.gameWindowAnchorItem.bottom
@@ -95,8 +107,8 @@ GameWindow{
                 onIncrementClicked: scene.incrementBetInSlotMachine()
                 onMaxValueClicked: scene.maxBetInSlotMachine()
         }
-        // Funções
-        // Gira a caça-níquel
+        // funcrions
+        // Spin the slot machine
         function startSlotMachine(){
             if(!slotMachine.spinning&&scene.betStack<=scene.creditStack){
                 scene.previous_betStack=scene.betStack
@@ -123,31 +135,31 @@ GameWindow{
             }
         }
 
-        //Gira automaticamente a caça níquel
+        //Automatically spin the slot machine
         function autoStartSlotMachine() {
             bottomBar.autoActive = !bottomBar.autoActive
             startSlotMachine()
         }
 
-        // Modo rápido
+        // Fast mode
         function fastSlotMachine(){
             bottomBar.fastActive = !bottomBar.fastActive
         }
 
-        // Aumento o valor apostado
+        // Increase the amount bet
         function incrementBetInSlotMachine(){
             if (betStack+5 <= creditStack)
                 betStack+=5
         }
 
 
-        // Domunui o valor a ser apostado
+        // Decreases the amount to be bet
         function decrementBetInSlotMachine(){
             if (betStack-5 >= 5)
                 betStack-=5
         }
 
-        // Define o valor apostado para a quantia da carteira
+        // Sets the bet amount to the wallet amount
         function maxBetInSlotMachine(){
             let current_value = creditStack
             for(let i = current_value; i>current_value-6; i--){
