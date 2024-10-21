@@ -11,6 +11,14 @@ GameWindow{
     //main window size
     width: 920
     height: 640
+
+    ameSoundEffect {
+         id: clickSound
+         source: Qt.resolvedUrl("../assets/Sounds/musicTest.wav")
+         loops: SoundEffect.Infinite
+       }
+        // command to play the sound clickSound.play()
+
     Scene {
         id: scene
         width: 570
