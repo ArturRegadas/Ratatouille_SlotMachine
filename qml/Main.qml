@@ -12,12 +12,82 @@ GameWindow{
     width: 920
     height: 640
 
-    ameSoundEffect {
-         id: clickSound
-         source: Qt.resolvedUrl("../assets/Sounds/musicTest.wav")
-         loops: SoundEffect.Infinite
+
+    //Usar GameSoundEffect no web
+    //BackgroundMusic no resto
+    //verificar se tem como rodar 2 BackgroundMusic ao mesmo tempo
+    //Fazer 2 versoes do jogo, uma web e uma resto
+
+
+    //o som ta brasileirado
+    //a pura grambiarra
+
+    //chat gpt é muito ruim no jogo da velha puta merda
+
+    // chat O
+    // Eu X
+
+    //|X| |O|
+    //| |X| |
+    //| |O|X|
+
+    //Vai entender :/
+
+    /*/
+      Lista de sons:
+      bgSound = musica de fundo do rataotuille
+      clickEffect = efeito ao clickar nos botoes
+      stopLine = efeito ao cada linha parar
+      moneyEffect = ao ganhar qualquer quantia
+      bgGameSound = musica de fundo ao iniciar
+      popUpMoney = som ao comecar de dinheiro do popUp
+      popUpBG = musica de fundo do pop up
+      extraBGusic = musica do fundo do entra Game
+
+    /*/
+
+    //NA versao web trocar para GameSoundEffect
+    //Dai em diante os sons
+    //cleancode o krl, foi mal cris
+
+
+    BackgroundMusic{
+         id: bgSound
+         source: Qt.resolvedUrl("../assets/Sounds/LaFestin.wav")
+         autoPlay: true
+         //loops: 1
        }
         // command to play the sound clickSound.play()
+
+
+    BackgroundMusic{
+         id: clickEffect
+         source: Qt.resolvedUrl("../assets/Sounds/.wav")
+         autoPlay: false
+         loops: 1
+       }
+
+
+    BackgroundMusic{
+         id: stopLine
+         source: Qt.resolvedUrl("../assets/Sounds/.wav")
+         autoPlay: false
+         loops: 1
+       }
+
+    BackgroundMusic{
+         id: moeneyEffect
+         source: Qt.resolvedUrl("../assets/Sounds/.wav")
+         autoPlay: false
+         loops: 1
+       }
+
+
+
+    MouseArea{
+        anchors.fill: parent
+        //onClicked: clickSound.play()
+    }
 
     Scene {
         id: scene
@@ -91,6 +161,11 @@ GameWindow{
            anchors.top: scene.gameWindowAnchorItem.top
            anchors.horizontalCenter: scene.gameWindowAnchorItem.horizontalCenter
         }
+
+        /*/
+
+
+        /*/
         BottonBar{ // Aba abaixo da roleta
                 id: bottomBar
                 width: scene.gameWindowAnchorItem.width
