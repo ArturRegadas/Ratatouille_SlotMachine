@@ -168,7 +168,7 @@ Item {
                 currentLines.push(list[i])
             }
         }
-        console.log(award)
+        console.log(award,"\n")
         displayWinningLines() // Exibe as lihas vencedoras
         return currentLines.length>0
     }

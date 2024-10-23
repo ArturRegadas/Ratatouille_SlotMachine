@@ -12,10 +12,11 @@ Item {
     property var positions:[] // Declara uma lista para as posiões a sere analisadas
     //
     property int winAmount // Prêmio total para ser exibido
+    property int multiplication //O valor a ser multiplicado
     //
     property var __winningPositions: [] // Posições vencedoras
     property var __winningTypes: [] // O tipo das posições vencedoras
-    property var __lineSymbols: [] // Armazemna a linha venvedora para ser exibida
+    property var __lineSymbols: [] // Armazemna a linha venvedora para ser exibido
     //
     Image{ // Símbolo da linha
         id: lineImage
@@ -74,30 +75,91 @@ Item {
         }
         winningLine.__lineSymbols=[]
     }
+
+    function inArray(ar1,ar2){
+        if(!ar2.length|!ar1.length)
+            return 0
+        for(var i=0;i<ar1.length;++i){
+            if(ar2.includes(ar1[i]))
+                return 1
+        }
+        return 0
+    }
+
+    function specialCart(category,special,symbol1,symbol2,repetition,arraySpecialCarts){// Retorna se a rodada é válida ou não
+        console.log(category)
+        if(symbol1==="Poison"|symbol2==="Poison")
+            return -1
+        var win=1
+        if(symbol1===symbol2){
+            win=(special[0])?SymbolRats.getWinFactor(symbol1,repetition):1
+            return win
+        }
+        if(special[0]===special[1]&&symbol1!==symbol2)
+            return 0
+        for(var i=0;i<2;++i){
+            var change=i==0?1:0
+            for(var j=0;j<category[change].length;++j){
+                if(category[i].includes(category[change][j])){
+                    win=(special[0])?SymbolRats.getWinFactor(symbol1,repetition):1
+                    var bool=(special[0]&&arraySpecialCarts.length)?inArray(category[0],arraySpecialCarts):(special[1]&&arraySpecialCarts.length)?inArray(category[1],arraySpecialCarts):1
+                    console.log(arraySpecialCarts,bool)
+                    if(!bool)
+                        return 0
+                    return win
+                }
+            }
+        }
+        return 0
+    }
+
     function check(machine,bet){ // Verifica se as linhas são vencedoras
-        var currentType=machine.getItemData(positions[0].reel,positions[0].row).type
-        __winningPositions=[]
-        __winningTypes=[]
+        __winningPositions=[] // Reseta a variável __winningPositions
+        __winningTypes=[] // Reseta a variácel __winningTypes
+        var previousType="" // Símbolo anterior
+        var typeNormalCarts=[] // Veja as regras do jogo
+        var typeSpecialCarts=[] // Veja a regras do Jogo
+        var multiplier=1 // multiplicador
+        var repetitionNormalCarts=0 // Vezes que as cartas normais se repetem
+        var repetitionSpecialCarts=0 // Vezes que as cartas especiais se repetem
+        var typeName="" // Nome da carta que será retirado o winFactor
         //
         for(var i=0;i<positions.length;++i){
             var pos=positions[i]
-            var symbol=machine.getItemData(pos.reel,pos.row)
-            // console.log(symbol.type) Caso de teste
+            var symbol=machine.getItemData(pos.reel,pos.row).type
+            if(i==0)
+                previousType=symbol
+            var special=[SymbolRats.isSpecial(symbol),SymbolRats.isSpecial(previousType)]
+            var category=[SymbolRats.getCategory(symbol),SymbolRats.getCategory(previousType)]
+            var result=specialCart(category,special,symbol,previousType,repetitionSpecialCarts,repetitionSpecialCarts,typeSpecialCarts)
+            // console.log(symbol,result,typeNormalCarts,typeSpecialCarts) // Caso de teste
             //
-            // Caso a linha possua a o mesmo tipo da anterior ou
-            // ela é do tipo "Remy" ele continuará a verificação
-            if(currentType!==symbol.type&&symbol.type!=="Remy"&&currentType!=="Remy")
+            if(result===-1|(!inArray(category[0],typeNormalCarts)&&typeNormalCarts.length>0)|(!inArray(category[0],typeSpecialCarts)&&typeSpecialCarts.length>0)|(!result&&symbol!==previousType)){
+                previousType=symbol
                 break
-            currentType=symbol.type
+            }
+            if(!special[0])++repetitionNormalCarts
+            else ++repetitionSpecialCarts
+            if(result===1&&!typeNormalCarts.length){
+                typeNormalCarts=category[0]
+                typeName=symbol
+            } else if(result>1){
+                if(!typeSpecialCarts.length) typeSpecialCarts=category[0]
+                multiplier*=result
+            }
+            previousType=symbol
             __winningPositions.push(pos)
-            __winningTypes.push(symbol.type)
+            __winningTypes.push(symbol)
         }
-        // Caso haja, ao menos, três blocos combinados. ele irá contar a recompensa
-        if(__winningPositions.length<3)
+        //
+        if(currentType==="Poison"|__winningPositions.length<3)
             return false
-        scene.creditStack+=bet*SymbolRats.getWinFactor(currentType,__winningPositions.length) // Adiciona ao crédito final
-        console.log(bet) // Caso de teste
-        winAmount=bet*SymbolRats.getWinFactor(currentType,__winningPositions.length)
+        repetitionSpecialCarts%=3
+        repetitionNormalCarts%=3
+        if(typeName==="")typeName=currentType
+        scene.creditStack+=bet*SymbolRats.getWinFactor(typeName,repetitionNormalCarts)*multiplier // Adiciona ao crédito final
+        winAmount=bet*SymbolRats.getWinFactor(typeName,repetitionNormalCarts)*multiplier
+        // console.log(winAmount,multiplier) // Caso de teste
         winningLine.drawLineSymbols(machine) // Faz o molde da linha
         return true
     }
