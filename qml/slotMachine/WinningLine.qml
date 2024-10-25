@@ -87,7 +87,7 @@ Item {
     }
 
     function specialCart(category,special,symbol1,symbol2,repetition,arraySpecialCarts){// Retorna se a rodada é válida ou não
-        console.log(category) // Caso de teste
+        // console.log(category) // Caso de teste
         if(symbol1==="Poison"|symbol2==="Poison")
             return -1
         var win=1
@@ -124,6 +124,7 @@ Item {
         var repetitionNormalCarts=-1 // Vezes que as cartas normais se repetem
         var repetitionSpecialCarts=0 // Vezes que as cartas especiais se repetem
         var typeName="" // Nome da carta que será retirado o winFactor
+        var sequentialCarts=0
         //
         for(var i=0;i<positions.length;++i){
             var pos=positions[i]
@@ -133,14 +134,18 @@ Item {
             var special=[SymbolRats.isSpecial(symbol),SymbolRats.isSpecial(previousType)]
             var category=[SymbolRats.getCategory(symbol),SymbolRats.getCategory(previousType)]
             var result=specialCart(category,special,symbol,previousType,repetitionSpecialCarts,typeSpecialCarts)
-            console.log(symbol,result,typeNormalCarts,typeSpecialCarts) // Caso de teste
+            // console.log(symbol,result,typeNormalCarts,typeSpecialCarts) // Caso de teste
             //
-            if(result===-1|(!inArray(category[0],typeNormalCarts)&&typeNormalCarts.length>0&&!special[0]&&!typeNormalCarts.includes(symbol))|(!inArray(category[0],typeSpecialCarts)&&typeSpecialCarts.length&&special[0]&&!typeSpecialCarts.includes(symbol))|(!result&&symbol!==previousType)){
+            if(result===-1|(!inArray(category[0],typeNormalCarts)&&typeNormalCarts.length&&!special[0]&&!typeNormalCarts.includes(symbol))|(!inArray(category[0],typeSpecialCarts)&&typeSpecialCarts.length&&special[0]&&!typeSpecialCarts.includes(symbol))|(!result&&symbol!==previousType)){
                 previousType=symbol
                 break
             }
+            //
             if(!special[0])++repetitionNormalCarts
             else ++repetitionSpecialCarts
+            //
+            if(symbol===previousType)++sequentialCarts
+            else sequentialCarts=0
             if(result===1&&!typeNormalCarts.length){
                 typeNormalCarts=category[0]
                 typeName=symbol
@@ -153,14 +158,20 @@ Item {
             __winningTypes.push(symbol)
         }
         //
-        console.log()
         if(previousType==="Poison"|__winningPositions.length<3|repetitionNormalCarts<0)
             return false
+        //
+        if(sequentialCarts>2){
+            scene.additionalSpin+=10*(sequentialCarts-2)+1
+            // console.log("Great Winer!") // Caso de teste
+        }
+        //
         repetitionNormalCarts%=SymbolRats.getSymbolData(previousType).winFactor.length
+        //
         if(typeName==="")typeName=previousType
-        scene.creditStack+=bet*SymbolRats.getWinFactor(typeName,repetitionNormalCarts)*multiplier // Adiciona ao crédito final
+        scene.previous_creditStack+=bet*SymbolRats.getWinFactor(typeName,repetitionNormalCarts)*multiplier // Adiciona ao crédito final
         winAmount=bet*SymbolRats.getWinFactor(typeName,repetitionNormalCarts)*multiplier
-        console.log(winAmount,SymbolRats.getSymbolData(previousType).winFactor.length,multiplier) // Caso de teste
+        //console.log(winAmount,multiplier,sequentialCarts,scene.additionalSpin) // Caso de teste
         winningLine.drawLineSymbols(machine) // Faz o molde da linha
         return true
     }

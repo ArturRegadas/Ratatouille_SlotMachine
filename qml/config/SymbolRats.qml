@@ -8,7 +8,7 @@ SlotMachineModel {
             frequency: 1, // Vezes que aparece por coluna
             data:{
                 source:"SymbolRemy.png", // Código fonte
-                winFactor: [1,2,5,20,35], // Caso haja uma combinação, o prêmio será multiplicado a depender da posição detse na roleita
+                winFactor: [10,20,30,50,100], // Caso haja uma combinação, o prêmio será multiplicado a depender da posição detse na roleita
                 category: ["Linguini","Kitchen","Auguste"], // Categorias combinatórias
                 special: false, // Especifica se é uma carta especial
             }
@@ -17,7 +17,7 @@ SlotMachineModel {
             frequency: 1,
             data: {
                 source:"SymbolAuguste.png",
-                winFactor: [1,2,2,10,30],
+                winFactor: [4,5,10,20,30],
                 category: ["Universal","Kitchen"],
                 special: false,
             }
@@ -53,8 +53,8 @@ SlotMachineModel {
             frequency: 3,
             data:{
                 source: "SymbolLinguini.png",
-                winFactor: [1,2,4.9,15],
-                category: ["Remy","Collet","Auguste","Human","Food"],
+                winFactor: [1,2,4,9,15],
+                category: ["Remy","Collet","Auguste","Food"],
                 special: false,
             }
         }, 
@@ -101,7 +101,7 @@ SlotMachineModel {
             data:{
                 source: "SymbolPoison.png",
                 winFractor:[0,0,0],
-                category: ["Poison","Universal"],
+                category: ["Poison"],
                 special: true,
             }
         },
