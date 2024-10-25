@@ -53,7 +53,7 @@ GameWindow{
 
     BackgroundMusic{
          id: bgSound
-         source: Qt.resolvedUrl("../assets/Sounds/LaFestin.wav")
+         source: Qt.resolvedUrl("../assets/Sounds/MainMenuBG.wav")
          autoPlay: true
          //loops: 1
        }
@@ -62,7 +62,7 @@ GameWindow{
 
     BackgroundMusic{
          id: clickEffect
-         source: Qt.resolvedUrl("../assets/Sounds/.wav")
+         source: Qt.resolvedUrl("../assets/Sounds/ClickSoundEffect.wav")
          autoPlay: false
          loops: 1
        }
@@ -76,8 +76,8 @@ GameWindow{
        }
 
     BackgroundMusic{
-         id: moeneyEffect
-         source: Qt.resolvedUrl("../assets/Sounds/.wav")
+         id: moneyEffect
+         source: Qt.resolvedUrl("../assets/Sounds/startGameMusic.wav")
          autoPlay: false
          loops: 1
        }
@@ -178,9 +178,20 @@ GameWindow{
                 onIncrementClicked: scene.incrementBetInSlotMachine()
                 onMaxValueClicked: scene.maxBetInSlotMachine()
         }
+
         // Funções
+        function playClickSoundEffect(){
+            clickEffect.play()
+        }
+
+
+
+
+
+
         // Gira a caça-níquel
         function startSlotMachine(){
+            playClickSoundEffect()
             if(!slotMachine.spinning&&scene.betStack<=scene.creditStack){
                 scene.previous_betStack=scene.betStack
                 bottomBar.startActive= !bottomBar.autoActive
@@ -208,17 +219,20 @@ GameWindow{
 
         //Gira automaticamente a caça níquel
         function autoStartSlotMachine() {
+            playClickSoundEffect()
             bottomBar.autoActive = !bottomBar.autoActive
             startSlotMachine()
         }
 
         // Modo rápido
         function fastSlotMachine(){
+            playClickSoundEffect()
             bottomBar.fastActive = !bottomBar.fastActive
         }
 
         // Aumento o valor apostado
         function incrementBetInSlotMachine(){
+            playClickSoundEffect()
             if (betStack+5 <= creditStack)
                 betStack+=5
         }
@@ -226,12 +240,14 @@ GameWindow{
 
         // Domunui o valor a ser apostado
         function decrementBetInSlotMachine(){
+            playClickSoundEffect()
             if (betStack-5 >= 5)
                 betStack-=5
         }
 
         // Define o valor apostado para a quantia da carteira
         function maxBetInSlotMachine(){
+            playClickSoundEffect()
             let current_value = creditStack
             for(let i = current_value; i>current_value-6; i--){
                 if (i%5===0)
