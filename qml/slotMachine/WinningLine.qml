@@ -96,7 +96,7 @@ Item {
 
 
         //verifica se houve lucro
-        moneyEffect.play()
+        functionSounds.stopMoneyEffect()
 
         if(__winningPositions.length<3)
             return false

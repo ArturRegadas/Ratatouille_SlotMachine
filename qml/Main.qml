@@ -8,6 +8,7 @@ GameWindow{
     //declare the scene as active
     activeScene: scene
 
+
     //main window size
     width: 920
     height: 640
@@ -51,36 +52,16 @@ GameWindow{
     //cleancode o krl, foi mal cris
 
 
-    BackgroundMusic{
-         id: bgSound
-         source: Qt.resolvedUrl("../assets/Sounds/MainMenuBG.wav")
-         autoPlay: true
-         //loops: 1
-       }
-        // command to play the sound clickSound.play()
+    Sounds{
+        id: functionSounds
+    }
 
-
-    BackgroundMusic{
-         id: clickEffect
-         source: Qt.resolvedUrl("../assets/Sounds/ClickSoundEffect.wav")
-         autoPlay: false
-         loops: 1
-       }
-
-
-    BackgroundMusic{
-         id: stopLine
-         source: Qt.resolvedUrl("../assets/Sounds/.wav")
-         autoPlay: false
-         loops: 1
-       }
-
-    BackgroundMusic{
-         id: moneyEffect
-         source: Qt.resolvedUrl("../assets/Sounds/startGameMusic.wav")
-         autoPlay: false
-         loops: 1
-       }
+    Chronometer{
+        id: firstTimer
+    }
+    Chronometer{
+        id: restTimer
+    }
 
 
 
@@ -133,6 +114,8 @@ GameWindow{
             width: (Math.round(Math.round(slotMachine.height/slotMachine.rowCount)/80*67)*5)/2
         }
         Ratatouille{ //Roleta
+            property bool firtColumnRun: true
+
             id: slotMachine
             anchors.verticalCenter: scene.verticalCenter
             anchors.horizontalCenter: scene.horizontalCenter
@@ -143,9 +126,16 @@ GameWindow{
             defaultReelWidth: Math.round(defaultItemHeight/80*67)
             spinVelocity: Math.round(defaultItemHeight/80*750)
             //
-            onSpinEnded: scene.endedSlotMachine()
+            onSpinEnded:{
+                scene.endedSlotMachine()
+            }
             onSpinStarted: {
-                slotMachine.reelStopDelay=utils.generateRandomValueBetween(350,700)
+                restTimer.interval = 1000//utils.generateRandomValueBetween(350,700)
+                restTimer.qtdRepeat = 5
+                slotMachine.reelStopDelay= restTimer.interval
+                // mudar para primeira rolada ser 1000 ms e o resto ser x
+                restTimer.playAudTimer()
+                restTimer.playCount = 0
             }
         }
         WinAnalysis{
@@ -180,18 +170,11 @@ GameWindow{
         }
 
         // Funções
-        function playClickSoundEffect(){
-            clickEffect.play()
-        }
-
-
-
-
-
 
         // Gira a caça-níquel
         function startSlotMachine(){
-            playClickSoundEffect()
+            functionSounds.playClickSoundEffect()
+            functionSounds.playStartMusicBG()
             if(!slotMachine.spinning&&scene.betStack<=scene.creditStack){
                 scene.previous_betStack=scene.betStack
                 bottomBar.startActive= !bottomBar.autoActive
@@ -203,6 +186,7 @@ GameWindow{
 
         //Função achamada após o termino da rodada
         function endedSlotMachine(){
+            //playClickSoundEffect()
             bottomBar.startActive=false
             var won=winCheck.validate(slotMachine,scene.previous_betStack)
             if(won){
@@ -219,20 +203,20 @@ GameWindow{
 
         //Gira automaticamente a caça níquel
         function autoStartSlotMachine() {
-            playClickSoundEffect()
+            functionSounds.playClickSoundEffect()
             bottomBar.autoActive = !bottomBar.autoActive
             startSlotMachine()
         }
 
         // Modo rápido
         function fastSlotMachine(){
-            playClickSoundEffect()
+            functionSounds.playClickSoundEffect()
             bottomBar.fastActive = !bottomBar.fastActive
         }
 
         // Aumento o valor apostado
         function incrementBetInSlotMachine(){
-            playClickSoundEffect()
+           functionSounds. playClickSoundEffect()
             if (betStack+5 <= creditStack)
                 betStack+=5
         }
@@ -240,14 +224,15 @@ GameWindow{
 
         // Domunui o valor a ser apostado
         function decrementBetInSlotMachine(){
-            playClickSoundEffect()
+            functionSounds.playClickSoundEffect()
             if (betStack-5 >= 5)
                 betStack-=5
         }
 
         // Define o valor apostado para a quantia da carteira
         function maxBetInSlotMachine(){
-            playClickSoundEffect()
+            functionSounds.playClickSoundEffect()
+
             let current_value = creditStack
             for(let i = current_value; i>current_value-6; i--){
                 if (i%5===0)
