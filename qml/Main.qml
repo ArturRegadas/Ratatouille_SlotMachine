@@ -1,4 +1,4 @@
-import Felgo 4.0
+    import Felgo 4.0
 import QtQuick 2.0
 import "slotMachine"
 
@@ -130,12 +130,20 @@ GameWindow{
                 scene.endedSlotMachine()
             }
             onSpinStarted: {
-                restTimer.interval = 1000//utils.generateRandomValueBetween(350,700)
-                restTimer.qtdRepeat = 5
-                slotMachine.reelStopDelay= restTimer.interval
-                // mudar para primeira rolada ser 1000 ms e o resto ser x
-                restTimer.playAudTimer()
-                restTimer.playCount = 0
+                /*/
+
+                  Aqui o clean code deu merda
+                  Sinceramente eu nao sei como e nem porque esta funcionando
+                  nao mexer, se der merda chatgpt vai pocar
+
+                /*/
+                let timeMs = 1000 //.......................................................tempo em ms
+                restTimer.intervalval = timeMs //.....................................atribui à classe
+                //utils.generateRandomValueBetween(350,700)...........................Numero Aleatorio
+                restTimer.qtdRepeat = 4 //...A 1 repeticao tem 1000 ms as outras 4 tem timeMs de tempo
+                slotMachine.reelStopDelay= timeMs //................Atribuição a classe da slotMachine
+                restTimer.playAudTimer() //.............................funcao que faz umas proezas ai
+                restTimer.playCount = 0 //......................reseta o contador de audios -repetica-
             }
         }
         WinAnalysis{
