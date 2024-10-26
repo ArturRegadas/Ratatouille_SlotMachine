@@ -56,9 +56,7 @@ GameWindow{
         id: functionSounds
     }
 
-    Chronometer{
-        id: firstTimer
-    }
+
     Chronometer{
         id: restTimer
     }
@@ -137,7 +135,7 @@ GameWindow{
                   nao mexer, se der merda chatgpt vai pocar
 
                 /*/
-                let timeMs = 1000 //.......................................................tempo em ms
+                let timeMs = 500 //.......................................................tempo em ms
                 restTimer.intervalval = timeMs //.....................................atribui à classe
                 //utils.generateRandomValueBetween(350,700)...........................Numero Aleatorio
                 restTimer.qtdRepeat = 4 //...A 1 repeticao tem 1000 ms as outras 4 tem timeMs de tempo
@@ -181,11 +179,10 @@ GameWindow{
 
         // Gira a caça-níquel
         function startSlotMachine(){
-            functionSounds.playClickSoundEffect()
             functionSounds.playStartMusicBG()
             if(!slotMachine.spinning&&scene.betStack<=scene.creditStack){
                 scene.previous_betStack=scene.betStack
-                bottomBar.startActive= !bottomBar.autoActive
+                //bottomBar.startActive= !bottomBar.autoActive
                 scene.creditStack-=scene.betStack
                 winCheck.reset()
                 slotMachine.spin(utils.generateRandomValueBetween(bottomBar.fastActive?2:500,bottomBar.fastActive?0: 1000))
@@ -200,25 +197,56 @@ GameWindow{
             if(won){
                 winCheck.displayWinningLines()
                 scene.creditStack+=winCheck.award
-                bottomBar.autoActive=false
+                bottomBar.autoActive=true
                 bottomBar.startActive=false
-            } else if(bottomBar.autoActive&&scene.betStack<=scene.creditStack){
-                startSlotMachine()
+
+            // o delay tava dando conflito com os audios, entao ao inves de recomecar automaticamente, isso fica dentro
+            // de um timer, que so vai parar quando o estado do autobuttom estiver false
+            //a gente faz o que faz e refaz o que tem que refazer
+            // mas assim, poderia tar pior, deus meu perdoe
+            //} else if(bottomBar.autoActive&&scene.betStack<=scene.creditStack){
+                //startSlotMachine()
             } else{
-                bottomBar.autoActive=false
+                bottomBar.autoActive=true
+            }
+            autoStartTimer.start()
+        }
+
+
+
+        Timer{
+            id: autoStartTimer
+            interval: 1000 // Intervalo de 500 ms (0.5 segundos)
+            repeat: false // Define o timer como repetitivo
+            running: false // Inicialmente parado
+
+
+            onTriggered: {
+                if (bottomBar.autoActive){
+                    scene.startSlotMachine()
+
+                }
+                else{
+                    autoStartTimer.stop()
+                }
+
+
             }
         }
 
         //Gira automaticamente a caça níquel
         function autoStartSlotMachine() {
-            functionSounds.playClickSoundEffect()
+            //functionSounds.playClickSoundEffect()
             bottomBar.autoActive = !bottomBar.autoActive
             startSlotMachine()
+            autoStartTimer.start()
+
+
+
         }
 
         // Modo rápido
         function fastSlotMachine(){
-            functionSounds.playClickSoundEffect()
             bottomBar.fastActive = !bottomBar.fastActive
         }
 

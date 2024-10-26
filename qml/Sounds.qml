@@ -22,14 +22,22 @@ Item {
          loops: 1
        }
 
-    /*/
+
     BackgroundMusic{
          id: stopLine
-         source: Qt.resolvedUrl("../assets/Sounds/.wav")
+         source: Qt.resolvedUrl("../assets/Sounds/stopLine.wav")
          autoPlay: false
          loops: 1
        }
-    /*/
+
+    BackgroundMusic{
+         id: startCoin
+         source: Qt.resolvedUrl("../assets/Sounds/startCoin.wav")
+         autoPlay: false
+         loops: 1
+       }
+
+
 
     BackgroundMusic{
          id: moneyEffect
@@ -50,6 +58,14 @@ Item {
     function stopMoneyEffect(){
         moneyEffect.stop()
 
+    }
+
+    function playStartCoin(){
+        startCoin.play()
+    }
+
+    function playStopLine(){
+        stopLine.play()
     }
 
 

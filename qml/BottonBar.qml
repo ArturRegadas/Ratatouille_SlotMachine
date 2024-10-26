@@ -51,7 +51,10 @@ Item {
         anchors.leftMargin: 8
         MouseArea{
             anchors.fill:parent
-            onClicked: fastClicked()
+            onClicked:{
+                functionSounds.playClickSoundEffect()
+                fastClicked()
+            }
         }
     }
 
@@ -66,7 +69,10 @@ Item {
         anchors.rightMargin: 8
         MouseArea{
             anchors.fill:parent
-            onClicked: startClicked()
+            onClicked: {
+                functionSounds.playClickSoundEffect()
+                startClicked()
+            }
         }
     }
 

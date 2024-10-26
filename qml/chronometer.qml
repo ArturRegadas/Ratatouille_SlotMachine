@@ -14,7 +14,7 @@ Item {
 
 
         onTriggered: {
-            functionSounds.playClickSoundEffect()
+            functionSounds.playStopLine()
             audioTimer.start()
         }
 
@@ -30,7 +30,7 @@ Item {
 
             onTriggered: {
                 if (playCount < qtdRepeat) {
-                    functionSounds.playClickSoundEffect()
+                    functionSounds.playStopLine()
                     playCount++
                 } else {
                     audioTimer.stop() // Para o timer após 4 repetições
