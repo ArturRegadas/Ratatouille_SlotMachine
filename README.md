@@ -1,35 +1,3 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Tabela de Cartas</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            text-align: center;
-        }
-        th, td {
-            border: 1px solid #333;
-            padding: 8px;
-        }
-        th {
-            background-color: #4CAF50;
-            color: white;
-        }
-        .blue {
-            background-color: #CFE2FF;
-        }
-        .red {
-            background-color: #F8D7DA;
-        }
-        .yellow {
-            background-color: #FFF3CD;
-        }
-    </style>
-</head>
-<body>
-
 <h2>Tabela de Cartas</h2>
 
 <table>
@@ -170,7 +138,4 @@
         <td>1</td>
     </tr>
 </table>
-
-</body>
-</html>
 
