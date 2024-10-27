@@ -112,19 +112,19 @@
         <td>2X</td>
         <td>2X</td>
         <td>1</td>
-OBOBOBOBOB    </tr>
+</tr>
     <tr class="yellow">
         <td>Seasoning</td>
-OBOBOBOBOB        <td>["Food", "Universal"]</td>
+<td>["Food", "Universal"]</td>
         <td>2X</td>
         <td>5X</td>
-OBOBOBOBOB        <td>10X</td>
+<td>10X</td>
         <td>2</td>
     </tr>
     <tr class="yellow">
         <td>Donut</td>
         <td>["Food", "Universal"]</td>
-OBOBOBOBOB        <td>2X</td>
+<td>2X</td>
         <td>2X</td>
         <td>5X</td>
         <td>2</td>
