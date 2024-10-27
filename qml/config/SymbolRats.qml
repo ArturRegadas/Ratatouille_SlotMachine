@@ -105,7 +105,7 @@ SlotMachineModel {
                 special: true,
             }
         },
-        "Horrst":{
+        "Horst":{
             frequency: 2,
             data:{
                 source: "SymbolHorst.png",

@@ -20,18 +20,37 @@ GameWindow{
         property int previous_betStack:5
         //
         property int creditStack: 400 // quantia na carteira
-        property int previous_creditStack:0
-        property int additionalSpin:0
+        property int previous_creditStack:0// última quantidade anterior da carteira antes do spin
+        property int additionalSpin:0 // Spins adicionais
+        property int sumCreditStack:0 // Soma total de vitórias adiquiridas entre os prêmios 
         //
-        property int visibelIndex:0
-        //
+        property int visibelIndex:0 // Index de exibição as linhas
         //Animação do crédito caindo
         Behavior on creditStack{
             PropertyAnimation{
                 duration: 1000
             }
         }
-
+        //
+        Timer{
+            id: sleep
+            interval:700
+            onTriggered: {
+                if(scene.visibelIndex>winCheck.currentLines.length-1){
+                    sleep.stop()
+                    scene.visibelIndex=0
+                    winCheck.hideLines()
+                    if(scene.additionalSpin)scene.startSlotMachine()
+                } else{
+                    winCheck.hideLines()
+                    winCheck.currentLines[scene.visibelIndex].visible=true
+                    ++scene.visibelIndex
+                    sleep.restart()
+                }
+                // console.log(scene.visibelIndex,winCheck.currentLines.length) // Caso teste
+            }
+        }
+        //
         Rectangle{ // Para caso da janela ser maior que a scene, esse gradiente irá prencher o fundo
             anchors.fill: scene.gameWindowAnchorItem
             gradient: Gradient{
@@ -63,7 +82,6 @@ GameWindow{
             id: slotMachine
             anchors.verticalCenter: scene.verticalCenter
             anchors.horizontalCenter: scene.horizontalCenter
-            anchors.topMargin: -10
             //
             height: scene.gameWindowAnchorItem.height-topBar.height-bottomBar.height-10
             defaultItemHeight: Math.round(slotMachine.height/slotMachine.rowCount)
@@ -87,45 +105,38 @@ GameWindow{
            anchors.horizontalCenter: scene.gameWindowAnchorItem.horizontalCenter
         }
         BottonBar{ // Aba abaixo da roleta
-                id: bottomBar
-                width: scene.gameWindowAnchorItem.width
-                anchors.bottom: scene.gameWindowAnchorItem.bottom
-                anchors.horizontalCenter: scene.gameWindowAnchorItem.horizontalCenter
-                onAutoClicked: scene.autoStartSlotMachine()
-                onFastClicked: scene.fastSlotMachine()
-                onStartClicked:scene.startSlotMachine()
-                onDecrementClicked: scene.decrementBetInSlotMachine()
-                onIncrementClicked: scene.incrementBetInSlotMachine()
-                onMaxValueClicked: scene.maxBetInSlotMachine()
-        }
-        //
-        Timer{
-            id: sleep
-            interval:700
-            onTriggered: {
-                if(scene.visibelIndex>winCheck.currentLines.length-1){
-                    sleep.stop()
-                    scene.visibelIndex=0
-                    winCheck.hideLines()
-                    if(scene.additionalSpin)scene.startSlotMachine()
-                } else{
-                    winCheck.hideLines()
-                    winCheck.currentLines[scene.visibelIndex].visible=true
-                    ++scene.visibelIndex
-                    sleep.restart()
-                }
-                // console.log(scene.visibelIndex,winCheck.currentLines.length) // Caso teste
-            }
+            id: bottomBar
+            width: scene.gameWindowAnchorItem.width
+            anchors.bottom: scene.gameWindowAnchorItem.bottom
+            anchors.horizontalCenter: scene.gameWindowAnchorItem.horizontalCenter
+            onAutoClicked: scene.autoStartSlotMachine()
+            onFastClicked: scene.fastSlotMachine()
+            onStartClicked:scene.startSlotMachine()
+            onDecrementClicked: scene.decrementBetInSlotMachine()
+            onIncrementClicked: scene.incrementBetInSlotMachine()
+            onMaxValueClicked: scene.maxBetInSlotMachine()
+            intTotalAward: scene.previous_creditStack
         }
         // Funções
         // Gira a caça-níquel
         function startSlotMachine(){
             if(!slotMachine.spinning&&scene.betStack<=scene.creditStack){
-                scene.previous_betStack=scene.betStack
-                bottomBar.startActive= !bottomBar.autoActive
+                scene.sumCreditStack+=scene.previous_creditStack-scene.sumCreditStack
                 if(!scene.additionalSpin){
-                    scene.creditStack-=scene.previous_betStack
+                    scene.previous_creditStack=0;
+                    scene.previous_betStack=scene.betStack
+                    //
+                    scene.sumCreditStack-=scene.previous_betStack
+                    if(scene.sumCreditStack%2)scene.sumCreditStack-=5
+                    scene.creditStack+=scene.sumCreditStack
                 }
+                bottomBar.startActive= !bottomBar.autoActive
+                //
+                if(!scene.previous_creditStack){
+                    bottomBar.intTotalAward=0
+                    bottomBar.resetAnimations()
+                }
+                //
                 winCheck.reset()
                 slotMachine.spin(utils.generateRandomValueBetween(300,750))
             }
@@ -140,11 +151,11 @@ GameWindow{
                     winCheck.currentLines[0].visible=true
                     scene.visibelIndex=1
                     sleep.start()
-                } else{
-                    scene.creditStack+=scene.previous_creditStack
                 }
                 bottomBar.autoActive=false
                 bottomBar.startActive=false
+                bottomBar.resetAnimations()
+                bottomBar.intTotalAward+=scene.previous_creditStack-bottomBar.intTotalAward
             } else if((bottomBar.autoActive&&scene.previous_betStack<=scene.creditStack)|scene.additionalSpin>1){
                 startSlotMachine()
             } else{
@@ -152,15 +163,13 @@ GameWindow{
             }
             if(scene.additionalSpin){
                 --scene.additionalSpin
+                if(!additionalSpin)scene.sumCreditStack=0
                 bottomBar.autoActive=false
             }
             if(!scene.additionalSpin){
+                // bottomBar.intTotalAward+=scene.previous_creditStack-bottomBar.intTotalAward
                 bottomBar.startActive=false
-                if(scene.previous_creditStack){
-                    scene.creditStack+=scene.previous_creditStack;
-                }
                 // console.log(scene.creditStack,scene.previous_creditStack,scene.betStack); // Caso de teste
-                scene.previous_creditStack=0;
             }
         }
 

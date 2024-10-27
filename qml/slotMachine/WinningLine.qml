@@ -86,12 +86,12 @@ Item {
         return 1
     }
 
-    function specialCart(category,special,symbol1,symbol2,repetition,arraySpecialCarts){// Retorna se a rodada é válida ou não
+    function specialCart(category,special,symbol1,symbol2,repetition,arraySpecialCarts,arrayComumCarts){// Retorna se a rodada é válida ou não
         // console.log(category) // Caso de teste
         if(symbol1==="Poison"|symbol2==="Poison")
             return -1
         var win=1
-        if(symbol1===symbol2){
+        if(symbol1===symbol2|(arrayComumCarts.includes(symbol1)&&arrayComumCarts.length&&special[0])|(arraySpecialCarts.includes(symbol1)&&arraySpecialCarts.length)){
             win=(special[0])?SymbolRats.getWinFactor(symbol1,repetition):1
             return win
         }
@@ -133,7 +133,7 @@ Item {
                 previousType=symbol
             var special=[SymbolRats.isSpecial(symbol),SymbolRats.isSpecial(previousType)]
             var category=[SymbolRats.getCategory(symbol),SymbolRats.getCategory(previousType)]
-            var result=specialCart(category,special,symbol,previousType,repetitionSpecialCarts,typeSpecialCarts)
+            var result=specialCart(category,special,symbol,previousType,repetitionSpecialCarts,typeSpecialCarts,typeNormalCarts)
             // console.log(symbol,result,typeNormalCarts,typeSpecialCarts) // Caso de teste
             //
             if(result===-1|(!inArray(category[0],typeNormalCarts)&&typeNormalCarts.length&&!special[0]&&!typeNormalCarts.includes(symbol))|(!inArray(category[0],typeSpecialCarts)&&typeSpecialCarts.length&&special[0]&&!typeSpecialCarts.includes(symbol))|(!result&&symbol!==previousType)){
