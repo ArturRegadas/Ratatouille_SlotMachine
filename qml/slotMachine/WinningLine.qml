@@ -116,6 +116,7 @@ Item {
     }
 
     function check(machine,bet){ // Verifica se as linhas são vencedoras
+
         __winningPositions=[] // Reseta a variável __winningPositions
          __winningTypes=[] // Reseta a variácel __winningTypes
         var previousType="" // Símbolo anterior
@@ -173,6 +174,7 @@ Item {
         //
         repetitionNormalCarts%=SymbolRats.getSymbolData(previousType).winFactor.length
         //
+
         if(typeName==="")typeName=previousType
         scene.previous_creditStack+=bet*SymbolRats.getWinFactor(typeName,repetitionNormalCarts)*multiplier // Adiciona ao crédito final
         winAmount=bet*SymbolRats.getWinFactor(typeName,repetitionNormalCarts)*multiplier

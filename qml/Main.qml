@@ -164,7 +164,7 @@ GameWindow{
             height: scene.gameWindowAnchorItem.height-topBar.height-bottomBar.height-10
             defaultItemHeight: Math.round(slotMachine.height/slotMachine.rowCount)
             defaultReelWidth: Math.round(defaultItemHeight/80*67)
-            spinVelocity: Math.round(defaultItemHeight/80*750)
+            spinVelocity: !bottomBar.fastActive&&!scene.additionalSpin?350:bottomBar.fastActive&&!scene.additionalSpin?100:250,!bottomBar.fastActive&&!scene.additionalSpin?750:bottomBar.fastActive&&!scene.additionalSpin?1900:1200
             //
             onSpinEnded: scene.endedSlotMachine()
             
@@ -271,19 +271,18 @@ GameWindow{
                     myPopup.openPopup()
 
                 }
-            } else if(((bottomBar.autoActive&&scene.previous_betStack<=scene.creditStack)|scene.additionalSpin)&&!scene.combinationsNames.length){ // Mexer aqui
+                //perdao pela sua obra prima
+            } //else if(((bottomBar.autoActive&&scene.previous_betStack<=scene.creditStack)|scene.additionalSpin)&&!scene.combinationsNames.length){ // Mexer aqui
               // o delay tava dando conflito com os audios, entao ao inves de recomecar automaticamente, isso fica dentro
               // de um timer, que so vai parar quando o estado do autobuttom estiver false
               //a gente faz o que faz e refaz o que tem que refazer
               // mas assim, poderia tar pior, deus meu perdoe
-                startSlotMachine()
-            }else{
-                bottomBar.autoActive=false
-                // bottomBar.autoActive=bottomBar.autoActive
+
+            else{
+                //bottomBar.autoActive=false
+                 bottomBar.autoActive=bottomBar.autoActive
             }
-            // bottomBar.startActive=false
-            autoStartTimer.start()
-            fastartTimer.start()
+
             if(scene.combinationsNames.length){
                 boxWinning.visible=true
                 for(var i=0;i<combinationsNames.length;++i){
@@ -304,6 +303,10 @@ GameWindow{
                 bottomBar.startActive=false
                 // console.log(scene.creditStack,scene.previous_creditStack,scene.betStack); // Caso de teste
             }
+            bottomBar.startActive=false
+            autoStartTimer.start()
+            fastartTimer.start()
+    }
         Timer{
             id: fastartTimer
             interval: 500 // Intervalo de 500 ms (0.5 segundos)
@@ -318,6 +321,7 @@ GameWindow{
 
 
 
+
         Timer{
             id: autoStartTimer
             interval: 1000 // Intervalo de 500 ms (0.5 segundos)
@@ -326,13 +330,14 @@ GameWindow{
 
 
             onTriggered: {
-                if (bottomBar.autoActive){
+                if ((((bottomBar.autoActive&&scene.previous_betStack<=scene.creditStack)|scene.additionalSpin)&&!scene.combinationsNames.length)){
                     scene.startSlotMachine()
 
                 }
                 else{
                     autoStartTimer.stop()
                 }
+            }
         }
 
         //Gira automaticamente a caça níquel
