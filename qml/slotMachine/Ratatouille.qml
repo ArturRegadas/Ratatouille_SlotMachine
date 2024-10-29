@@ -10,6 +10,6 @@ SlotMachine{
     delegate: Symbol{ // forma genérica de colocar as imagens dos items
         imageSouce: Qt.resolvedUrl("../../assets/slotMachine/")+modelData.data.source
         symbolIsSpecial: modelData.data.special
-        symbolIsPoison: modelData.data.category[0]==="Poison"
+
     }
 }
