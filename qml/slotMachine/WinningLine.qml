@@ -92,13 +92,20 @@ Item {
             __winningPositions.push(pos)
             __winningTypes.push(symbol.type)
         }
-        // Caso haja, ao menos, três blocos combinados. ele irá contar a recompensa
+        //Caso haja, ao menos, três blocos combinados. ele irá contar a recompensa
+
+
+        //verifica se houve lucro
+        functionSounds.stopMoneyEffect()
+
         if(__winningPositions.length<3)
             return false
         scene.creditStack+=bet*SymbolRats.getWinFactor(currentType,__winningPositions.length) // Adiciona ao crédito final
         console.log(bet) // Caso de teste
         winAmount=bet*SymbolRats.getWinFactor(currentType,__winningPositions.length)
         winningLine.drawLineSymbols(machine) // Faz o molde da linha
+
+
         return true
     }
 }
