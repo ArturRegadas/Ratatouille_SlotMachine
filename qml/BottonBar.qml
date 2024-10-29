@@ -9,8 +9,9 @@ Item {
     property bool autoActive
     property bool fastActive
     property bool startActive
-    //
-    property int intTotalAward:10000
+    property int intTotalAward:0
+    property bool delay: true
+    
     //functions -signals-
     signal autoClicked()
     signal fastClicked()
@@ -57,7 +58,22 @@ Item {
         anchors.leftMargin: 8
         MouseArea{
             anchors.fill:parent
-            onClicked: fastClicked()
+            onClicked:{
+                functionSounds.playClickSoundEffect()
+                fastClicked()
+            }
+        }
+    }
+
+    Timer{
+        id: fastartTimer
+        interval: 1000 // Intervalo de 500 ms (0.5 segundos)
+        repeat: false // Define o timer como repetitivo
+        running: false // Inicialmente parado
+
+
+        onTriggered: {
+            delay = true
         }
     }
     //Exibe o prêmio total
@@ -215,7 +231,13 @@ Item {
         source: bottomBar.startActive ? "../assets/PrecessedStartButton" : "../assets/NormalStartButton.png"
         MouseArea{
             anchors.fill:parent
-            onClicked: startClicked()
+            onClicked: {
+                if (delay){
+                    startClicked()
+                    delay = false
+                    functionSounds.playClickSoundEffect()
+                }
+            }
         }
     }
 

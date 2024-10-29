@@ -1,6 +1,8 @@
 import Felgo 4.0
 import QtQuick 2.0
 import "slotMachine"
+import QtQuick.Controls 2.15
+
 
 GameWindow{
     id: gameWindow
@@ -8,21 +10,88 @@ GameWindow{
     //declare the scene as active
     activeScene: scene
 
+
     //main window size
     width: 920
     height: 640
+
+
+    //Usar GameSoundEffect no web
+    //BackgroundMusic no resto
+    //verificar se tem como rodar 2 BackgroundMusic ao mesmo tempo
+    //Fazer 2 versoes do jogo, uma web e uma resto
+
+
+    //o som ta brasileirado
+    //a pura grambiarra
+
+    //chat gpt é muito ruim no jogo da velha puta merda
+
+    // chat O
+    // Eu X
+
+    //|X| |O|
+    //| |X| |
+    //| |O|X|
+
+    //Vai entender :/
+
+    /*/
+      Lista de sons:
+      bgSound = musica de fundo do rataotuille
+      clickEffect = efeito ao clickar nos botoes
+      stopLine = efeito ao cada linha parar
+      moneyEffect = ao ganhar qualquer quantia
+      bgGameSound = musica de fundo ao iniciar
+      popUpMoney = som ao comecar de dinheiro do popUp
+      popUpBG = musica de fundo do pop up
+      extraBGusic = musica do fundo do entra Game
+
+    /*/
+
+    //NA versao web trocar para GameSoundEffect
+    //Dai em diante os sons
+    //cleancode o krl, foi mal cris
+
+
+    Sounds{
+        id: functionSounds
+    }
+
+
+    Chronometer{
+        id: restTimer
+    }
+
+    PopUpWin{
+        id: myPopup
+    }
+
+
+
+    MouseArea{
+        anchors.fill: parent
+        onClicked:{
+            functionSounds.stopJackPot()
+            //myPopup.openPopup()
+        }
+        // Define o popup como visível ao clicar no botão
+        //onClicked: clickSound.play()
+    }
+
     Scene {
         id: scene
         width: 570
         height: 360
         // Bet
-        property int betStack: 5 // valor da bet
+        property int betStack: 100 // valor da bet
         property int previous_betStack:5
         //
-        property int creditStack: 400 // quantia na carteira
+        property int creditStack: 10000 // quantia na carteira
         property int previous_creditStack:0// última quantidade anterior da carteira antes do spin
         property int additionalSpin:0 // Spins adicionais
         property int sumCreditStack:0 // Soma total de vitórias adiquiridas entre os prêmios 
+        property int minbet: 100
         //
         property int visibelIndex:0 // Index de exibição as linhas
         //
@@ -86,6 +155,8 @@ GameWindow{
         }
 
         Ratatouille{ //Roleta
+            property bool firtColumnRun: true
+
             id: slotMachine
             anchors.verticalCenter: scene.verticalCenter
             anchors.horizontalCenter: scene.horizontalCenter
@@ -96,7 +167,23 @@ GameWindow{
             spinVelocity: Math.round(defaultItemHeight/80*750)
             //
             onSpinEnded: scene.endedSlotMachine()
-            onSpinStarted:slotMachine.reelStopDelay=utils.generateRandomValueBetween(!bottomBar.fastActive&&!scene.additionalSpin?350:bottomBar.fastActive&&!scene.additionalSpin?100:250,!bottomBar.fastActive&&!scene.additionalSpin?750:bottomBar.fastActive&&!scene.additionalSpin?100:250)
+            
+            onSpinStarted: {
+                /*/
+
+                  Aqui o clean code deu merda
+                  Sinceramente eu nao sei como e nem porque esta funcionando
+                  nao mexer, se der merda chatgpt vai pocar
+
+                /*/
+                let timeMs = utils.generateRandomValueBetween(!bottomBar.fastActive&&!scene.additionalSpin?350:bottomBar.fastActive&&!scene.additionalSpin?100:250,!bottomBar.fastActive&&!scene.additionalSpin?750:bottomBar.fastActive&&!scene.additionalSpin?100:250) //.......................................................tempo em ms
+                restTimer.intervalval = timeMs //.....................................atribui à classe
+                //utils.generateRandomValueBetween(350,700)...........................Numero Aleatorio
+                restTimer.qtdRepeat = 4 //...A 1 repeticao tem 1000 ms as outras 4 tem timeMs de tempo
+                slotMachine.reelStopDelay= timeMs //................Atribuição a classe da slotMachine
+                restTimer.playAudTimer() //.............................funcao que faz umas proezas ai
+                restTimer.playCount = 0 //......................reseta o contador de audios -repetica-
+            }
         }
 
         WinAnalysis{
@@ -113,7 +200,7 @@ GameWindow{
            anchors.top: scene.gameWindowAnchorItem.top
            anchors.horizontalCenter: scene.gameWindowAnchorItem.horizontalCenter
         }
-
+        
         BottonBar{ // Aba abaixo da roleta
             id: bottomBar
             width: scene.gameWindowAnchorItem.width
@@ -127,7 +214,7 @@ GameWindow{
             onMaxValueClicked: scene.maxBetInSlotMachine()
             intTotalAward: scene.previous_creditStack
         }
-
+        
         BoxWinning{
             id:boxWinning
             anchors.centerIn: parent
@@ -135,10 +222,11 @@ GameWindow{
             height:scene.gameWindowAnchorItem.height
             visible: false
         }
-
         // Funções
+
         // Gira a caça-níquel
         function startSlotMachine(){
+            functionSounds.playStartMusicBG()
             if(!slotMachine.spinning&&scene.betStack<=scene.creditStack){
                 scene.sumCreditStack+=scene.previous_creditStack-scene.sumCreditStack
                 if(!scene.additionalSpin){
@@ -175,11 +263,27 @@ GameWindow{
                 bottomBar.startActive=false
                 bottomBar.resetAnimations()
                 bottomBar.intTotalAward+=scene.previous_creditStack-bottomBar.intTotalAward
-            } else if(((bottomBar.autoActive&&scene.previous_betStack<=scene.creditStack)|scene.additionalSpin)&&!scene.combinationsNames.length){
+                functionSounds.playSimpleWin()
+                if (won >= scene.betStack*5){
+                    functionSounds.playJackPot()
+                    myPopup.flyMoney=0
+                    myPopup.flyMoney=won
+                    myPopup.openPopup()
+
+                }
+            } else if(((bottomBar.autoActive&&scene.previous_betStack<=scene.creditStack)|scene.additionalSpin)&&!scene.combinationsNames.length){ // Mexer aqui
+              // o delay tava dando conflito com os audios, entao ao inves de recomecar automaticamente, isso fica dentro
+              // de um timer, que so vai parar quando o estado do autobuttom estiver false
+              //a gente faz o que faz e refaz o que tem que refazer
+              // mas assim, poderia tar pior, deus meu perdoe
                 startSlotMachine()
             }else{
                 bottomBar.autoActive=false
+                // bottomBar.autoActive=bottomBar.autoActive
             }
+            // bottomBar.startActive=false
+            autoStartTimer.start()
+            fastartTimer.start()
             if(scene.combinationsNames.length){
                 boxWinning.visible=true
                 for(var i=0;i<combinationsNames.length;++i){
@@ -200,12 +304,46 @@ GameWindow{
                 bottomBar.startActive=false
                 // console.log(scene.creditStack,scene.previous_creditStack,scene.betStack); // Caso de teste
             }
+        Timer{
+            id: fastartTimer
+            interval: 500 // Intervalo de 500 ms (0.5 segundos)
+            repeat: false // Define o timer como repetitivo
+            running: false // Inicialmente parado
+
+
+            onTriggered: {
+                bottomBar.delay = true
+            }
+        }
+
+
+
+        Timer{
+            id: autoStartTimer
+            interval: 1000 // Intervalo de 500 ms (0.5 segundos)
+            repeat: false // Define o timer como repetitivo
+            running: false // Inicialmente parado
+
+
+            onTriggered: {
+                if (bottomBar.autoActive){
+                    scene.startSlotMachine()
+
+                }
+                else{
+                    autoStartTimer.stop()
+                }
         }
 
         //Gira automaticamente a caça níquel
         function autoStartSlotMachine() {
+            //functionSounds.playClickSoundEffect()
             bottomBar.autoActive = !bottomBar.autoActive
             startSlotMachine()
+            autoStartTimer.start()
+
+
+
         }
         //
         // Modo rápido
@@ -215,22 +353,26 @@ GameWindow{
 
         // Aumento o valor apostado
         function incrementBetInSlotMachine(){
-            if (betStack+5 <= creditStack)
-                betStack+=5
+           functionSounds. playClickSoundEffect()
+            if (betStack+scene.minbet <= creditStack)
+                betStack+=scene.minbet
         }
 
 
         // Domunui o valor a ser apostado
         function decrementBetInSlotMachine(){
-            if (betStack-5 >= 5)
-                betStack-=5
+            functionSounds.playClickSoundEffect()
+            if (betStack-scene.minbet >= scene.minbet)
+                betStack-=scene.minbet
         }
 
         // Define o valor apostado para a quantia da carteira
         function maxBetInSlotMachine(){
+            functionSounds.playClickSoundEffect()
+
             let current_value = creditStack
-            for(let i = current_value; i>current_value-6; i--){
-                if (i%5===0)
+            for(let i = current_value; i>current_value-scene.minbet-1; i--){
+                if (i%scene.minbet===0)
                     betStack=i
                     break
             }                

@@ -162,6 +162,7 @@ Item {
         currentLines=[]
         //
         for(var i=0;i<list.length;++i){
+
             // Para cada vez que esta for verdadeira,
             // a remcompensa é acresentada ao prêmio final
             if(list[i].check(machine,bet)){
@@ -171,7 +172,7 @@ Item {
         }
         // console.log(award,"\n") // Caso de teste
         displayWinningLines() // Exibe as lihas vencedoras
-        return currentLines.length>0
+        return award
     }
     function reset(){ // Reinicia a contagem de linhas
         showTimer.stop()

@@ -162,6 +162,8 @@ Item {
         if(previousType==="Poison"|__winningPositions.length<3|repetitionNormalCarts<0)
             return false
         //
+        //verifica se houve lucro
+        functionSounds.stopMoneyEffect()
         if(sequentialCarts>2){
             scene.additionalSpin+=10*(sequentialCarts-2)+1
             scene.combinationsNames.push(typeName)
@@ -176,6 +178,8 @@ Item {
         winAmount=bet*SymbolRats.getWinFactor(typeName,repetitionNormalCarts)*multiplier
         //console.log(winAmount,multiplier,sequentialCarts,scene.additionalSpin) // Caso de teste
         winningLine.drawLineSymbols(machine) // Faz o molde da linha
+
+
         return true
     }
 }
