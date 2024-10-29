@@ -5,16 +5,12 @@ O projeto implementa um jogo de combinações baseado em probabilidades, possuin
 
 # Summary
 
-<a href="">1 ………………………………………………..Introdução</a><br>
-<a href="">2 ………………………………………………..Requisitos</a><br>
-<a href="">3 ………………………………………………..Instalação</a><br>
-<a href="">4 ………..…………………………………….Arquitetura</a><br>
-<a href="">5 ………………………………………Funcionalidades</a><br>
-<a href="">6 ……………………………………Introdução ao uso</a><br>
-<a href="">7 .....Probabilidades e lógica de pagamento</a><br>
-<a href="">8 …………………………………Gráficos e interface</a><br>
-<a href="">9 ………………………………….......……………Licença</a><br>
-<a href="">10 ………………………………………………….Contato</a><br>
+<a href="#1-introdução">1 ………………………………………………..Introdução</a><br>
+<a href="#2-requesitos">2 ………………………………………………..Requisitos</a><br>
+<a href="#3-instalação">3 ………………………………………………..Instalação</a><br>
+<a href="#4-arquitetura">4 ………..…………………………………….Arquitetura</a><br>
+<a href="#5-funcionalidades">5 ………………………………………Funcionalidades</a><br>
+<a href="#6-introdução-ao-uso">6 ……………………………………Introdução ao uso</a><br>
 
 ## 1 Introdução
 ### 1.1 Trabalho
@@ -82,7 +78,7 @@ Segue abaixo uma tabela de combinações possíveis para melhor entendimento dos
     <tr>
         <th>Carta</th>
         <th>Combinações</th>
-        <th>1 Carta<th>
+        <th>1 Carta</th>
         <th>2 Cartas</th>
         <th>3 Cartas</th>
         <th>4 Cartas</th>
@@ -181,7 +177,7 @@ Segue abaixo uma tabela de combinações possíveis para melhor entendimento dos
     </tr>
     <tr class="blue">
         <td>Skinner</td>
-        <td>[]</td>
+        <td>[ ]</td>
         <td>1X</td>
         <td>1X</td>
         <td>2X</td>
@@ -192,8 +188,8 @@ Segue abaixo uma tabela de combinações possíveis para melhor entendimento dos
     <tr class="red">
         <td>Poison</td>
         <td>["Poison"]</td>
-        <td></td>
-        <td></td>
+        <td>0X</td>
+        <td>0XX</td>
         <td>0X</td>
         <td>0X</td>
         <td>0X</td>
@@ -202,9 +198,9 @@ Segue abaixo uma tabela de combinações possíveis para melhor entendimento dos
     <tr class="yellow">
         <td>Horst</td>
         <td>["Human", "Universal"]</td>
-        <td></td>
-        <td></td>
         <td>2X</td>
+        <td>2X</td>
+        <td>4X</td>
         <td>2X</td>
         <td>2X</td>
         <td>2</td>
@@ -212,9 +208,9 @@ Segue abaixo uma tabela de combinações possíveis para melhor entendimento dos
     <tr class="yellow">
         <td>Larousse</td>
         <td>["Human", "Universal"]</td>
-        <td></td>
-        <td></td>
         <td>2X</td>
+        <td>2X</td>
+        <td>4X</td>
         <td>2X</td>
         <td>2X</td>
         <td>2</td>
@@ -222,31 +218,31 @@ Segue abaixo uma tabela de combinações possíveis para melhor entendimento dos
     <tr class="yellow">
         <td>Seasoning</td>
         <td>["Food", "Universal"]</td>
-        <td></td>
-        <td></td>
+        <td>2X</td>
         <td>2X</td>
         <td>5X</td>
-        <td>10X</td>
+        <td>2X</td>
+        <td>2X</td>
         <td>1</td>
     </tr>
     <tr class="yellow">
         <td>Donut</td>
         <td>["Food", "Universal"]</td>
-        <td></td>
-        <td></td>
         <td>2X</td>
         <td>2X</td>
         <td>5X</td>
+        <td>2X</td>
+        <td>2X</td>
         <td>1</td>
     </tr>
     <tr class="yellow">
         <td>WoodenSpoon</td>
         <td>["Kitchen"]</td>
-        <td></td>
-        <td></td>
         <td>5X</td>
         <td>10X</td>
         <td>15X</td>
+        <td>5X</td>
+        <td>10X</td>
         <td>1</td>
     </tr>
 </table>
