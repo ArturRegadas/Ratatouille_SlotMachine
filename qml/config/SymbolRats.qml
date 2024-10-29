@@ -9,11 +9,11 @@ SlotMachineModel {
             data:{
                 source:"SymbolRemy.png", // Código fonte
                 winFactor: [10,20,30,50,100], // Caso haja uma combinação, o prêmio será multiplicado a depender da posição detse na roleita
-                category: ["Linguini","Kitchen","Auguste"], // Categorias combinatórias
+                category: ["Linguini","Kitchen","AugustGusteau"], // Categorias combinatórias
                 special: false, // Especifica se é uma carta especial
             }
         },
-        "Auguste":{
+        "Gusteau":{
             frequency: 1,
             data: {
                 source:"SymbolAuguste.png",
@@ -86,7 +86,7 @@ SlotMachineModel {
                 special: false,
             }
         },
-        "Skinner":{
+        "Skiner":{
             frequency: 5,
             data:{
                 source: "SymbolSkinner.png",

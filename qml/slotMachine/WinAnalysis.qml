@@ -4,9 +4,10 @@ import QtQuick 2.0
 Item {
     id: winAnalysis
     //
-    property var currentLines
     property int visibleIndex
     property int award
+    //
+    property var currentLines
     //
     WinningLine { // Declara uma linha a ser analisada
         id: line0
@@ -157,8 +158,8 @@ Item {
     property var list:[line0,line1,line2,line3,line4,line5,line6,line7,line8]
     //
     function validate(machine,bet){ // Verifica as linhas
-        currentLines=[]
         award=0
+        currentLines=[]
         //
         for(var i=0;i<list.length;++i){
             // Para cada vez que esta for verdadeira,

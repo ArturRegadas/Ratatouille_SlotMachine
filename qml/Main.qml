@@ -25,6 +25,10 @@ GameWindow{
         property int sumCreditStack:0 // Soma total de vitórias adiquiridas entre os prêmios 
         //
         property int visibelIndex:0 // Index de exibição as linhas
+        //
+        property var combinationsColors:[]
+        property var combinationsNames:[]
+        property var combinationsInt:[]
         //Animação do crédito caindo
         Behavior on creditStack{
             PropertyAnimation{
@@ -64,6 +68,7 @@ GameWindow{
                 }
             } 
         }
+
         Image{ // Imagem da lateral esquerda
             x:-20
             y: parent.verticalCenter
@@ -71,6 +76,7 @@ GameWindow{
             height: scene.gameWindowAnchorItem.height
             width: (Math.round(Math.round(slotMachine.height/slotMachine.rowCount)/80*67)*5)/2
         }
+
         Image{
             x:parent.width-150 // Imagem da lateral direita
             y: parent.verticalCenter
@@ -78,6 +84,7 @@ GameWindow{
             height: scene.gameWindowAnchorItem.height
             width: (Math.round(Math.round(slotMachine.height/slotMachine.rowCount)/80*67)*5)/2
         }
+
         Ratatouille{ //Roleta
             id: slotMachine
             anchors.verticalCenter: scene.verticalCenter
@@ -91,6 +98,7 @@ GameWindow{
             onSpinEnded: scene.endedSlotMachine()
             onSpinStarted:slotMachine.reelStopDelay=utils.generateRandomValueBetween(!bottomBar.fastActive&&!scene.additionalSpin?350:bottomBar.fastActive&&!scene.additionalSpin?100:250,!bottomBar.fastActive&&!scene.additionalSpin?750:bottomBar.fastActive&&!scene.additionalSpin?100:250)
         }
+
         WinAnalysis{
             id:winCheck
             anchors.verticalCenter: slotMachine.verticalCenter
@@ -98,12 +106,14 @@ GameWindow{
             height: slotMachine.height
             width: Math.round(height/240*408)
         }
+
         TopBar { // Aba acima da roleta
            id: topBar
            width: scene.gameWindowAnchorItem.width
            anchors.top: scene.gameWindowAnchorItem.top
            anchors.horizontalCenter: scene.gameWindowAnchorItem.horizontalCenter
         }
+
         BottonBar{ // Aba abaixo da roleta
             id: bottomBar
             width: scene.gameWindowAnchorItem.width
@@ -117,6 +127,15 @@ GameWindow{
             onMaxValueClicked: scene.maxBetInSlotMachine()
             intTotalAward: scene.previous_creditStack
         }
+
+        BoxWinning{
+            id:boxWinning
+            anchors.centerIn: parent
+            width:scene.gameWindowAnchorItem.width
+            height:scene.gameWindowAnchorItem.height
+            visible: false
+        }
+
         // Funções
         // Gira a caça-níquel
         function startSlotMachine(){
@@ -145,22 +164,32 @@ GameWindow{
         //Função achamada após o termino da rodada
         function endedSlotMachine(){
             var won=winCheck.validate(slotMachine,scene.previous_betStack)
-            // console.log(scene.additionalSpin,"/") // Caso de teste
+            console.log(scene.additionalSpin,"/") // Caso de teste
             if(won){
                 if(scene.additionalSpin>1){
                     winCheck.currentLines[0].visible=true
                     scene.visibelIndex=1
-                    sleep.start()
+                    if(!combinationsNames.length)sleep.start()
                 }
                 bottomBar.autoActive=false
                 bottomBar.startActive=false
                 bottomBar.resetAnimations()
                 bottomBar.intTotalAward+=scene.previous_creditStack-bottomBar.intTotalAward
-            } else if((bottomBar.autoActive&&scene.previous_betStack<=scene.creditStack)|scene.additionalSpin>1){
+            } else if(((bottomBar.autoActive&&scene.previous_betStack<=scene.creditStack)|scene.additionalSpin)&&!scene.combinationsNames.length){
                 startSlotMachine()
-            } else{
+            }else{
                 bottomBar.autoActive=false
             }
+            if(scene.combinationsNames.length){
+                boxWinning.visible=true
+                for(var i=0;i<combinationsNames.length;++i){
+                    boxWinning.createBlocks(combinationsNames[i],combinationsColors[i],combinationsInt[i])
+                }
+                combinationsNames=[]
+                combinationsInt=[]
+                combinationsColors=[]
+            }
+            console.log(combinationsNames,combinationsInt,combinationsInt)
             if(scene.additionalSpin){
                 --scene.additionalSpin
                 if(!additionalSpin)scene.sumCreditStack=0
@@ -204,9 +233,8 @@ GameWindow{
                 if (i%5===0)
                     betStack=i
                     break
-            }
+            }                
         }
     }
-
 }
 

@@ -69,6 +69,7 @@ Item {
             winText.y=winningLine.__lineSymbols[0].y-winText.height
         }
     }
+
     function removeLineSymbols(){ // Limpa a fila de linhas para serem exibidas
         for(var i=0;i<winningLine.__lineSymbols.length;++i){
             winningLine.__lineSymbols[i].destroy()
@@ -163,7 +164,9 @@ Item {
         //
         if(sequentialCarts>2){
             scene.additionalSpin+=10*(sequentialCarts-2)+1
-            // console.log("Great Winer!") // Caso de teste
+            scene.combinationsNames.push(typeName)
+            scene.combinationsInt.push(10*(sequentialCarts-2))
+            scene.combinationsColors.push(gradient_init)
         }
         //
         repetitionNormalCarts%=SymbolRats.getSymbolData(previousType).winFactor.length
