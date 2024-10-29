@@ -30,7 +30,7 @@ Item {
     MouseArea{
         anchors.fill: parent
         onClicked: {
-            console.log(visibleCartIndex,cartsArray.length)
+            // console.log(visibleCartIndex,cartsArray.length)
             if(boxWinning.visible&&boxWinning.visibleCartIndex<boxWinning.cartsArray.length){
                 advance(visibleCartIndex)
                 ++boxWinning.visibleCartIndex

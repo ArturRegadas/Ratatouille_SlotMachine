@@ -171,7 +171,6 @@ Item {
             }
         }
         // console.log(award,"\n") // Caso de teste
-        displayWinningLines() // Exibe as lihas vencedoras
         functionSounds.stopMoneyEffect()
         return award
     }
