@@ -55,6 +55,7 @@ qt_add_qml_module(appratatouile
     QML_FILES qml/Sounds.qml
     QML_FILES qml/chronometer.qml
     QML_FILES qml/Chronometer.qml
+    QML_FILES qml/PopUpWin.qml
 )
 
 # NOTE: for PUBLISHING, perform the following steps:

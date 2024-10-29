@@ -37,6 +37,9 @@ Item {
                 }
             }
         }
+
+
+
     function playAudTimer(){
         firstTimer.start()
     }

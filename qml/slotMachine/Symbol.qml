@@ -4,9 +4,11 @@ import Felgo 4.0
 Item{
     id: blocks
     property alias imageSouce: image.source // generalizar a criação de imagens para os blocos do caça-níque
+    property bool symbolIsSpecial
+    // categoria(?)
     Image{ //Fundo gradiente
         anchors.fill: blocks
-        source: Qt.resolvedUrl("../../assets/slotMachine/gradient.png")
+        source:(!symbolIsSpecial)?Qt.resolvedUrl("../../assets/slotMachine/gradientNotSpecial.png"):Qt.resolvedUrl("../../assets/slotMachine/gradientSpecial.png")
         anchors.topMargin: 3
         anchors.bottomMargin: 3
         anchors.leftMargin: 2
