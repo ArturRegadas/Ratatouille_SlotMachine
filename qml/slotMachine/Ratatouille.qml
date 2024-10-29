@@ -9,5 +9,6 @@ SlotMachine{
     model: SymbolRats // modelo do caça níquel
     delegate: Symbol{ // forma genérica de colocar as imagens dos items
         imageSouce: Qt.resolvedUrl("../../assets/slotMachine/")+modelData.data.source
+        symbolIsSpecial: modelData.data.special
     }
 }
