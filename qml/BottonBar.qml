@@ -9,6 +9,7 @@ Item {
     property bool autoActive
     property bool fastActive
     property bool startActive
+    property bool delay: true
 
     //functions -signals-
     signal autoClicked()
@@ -58,6 +59,18 @@ Item {
         }
     }
 
+    Timer{
+        id: fastartTimer
+        interval: 1000 // Intervalo de 500 ms (0.5 segundos)
+        repeat: false // Define o timer como repetitivo
+        running: false // Inicialmente parado
+
+
+        onTriggered: {
+            delay = true
+        }
+    }
+
     Image { //Começo
         id : startbutton
         width: 61
@@ -70,8 +83,11 @@ Item {
         MouseArea{
             anchors.fill:parent
             onClicked: {
-                functionSounds.playClickSoundEffect()
-                startClicked()
+                if (delay){
+                    startClicked()
+                    delay = false
+                    functionSounds.playClickSoundEffect()
+                }
             }
         }
     }

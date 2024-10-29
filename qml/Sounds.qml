@@ -45,6 +45,21 @@ Item {
          autoPlay: false
          loops: 1
        }
+    BackgroundMusic{
+         id: simpleWin
+         source: Qt.resolvedUrl("../assets/Sounds/CashRegister.wav")
+         autoPlay: false
+         loops: 1
+       }
+
+    BackgroundMusic{
+         id: jackPotwin
+         source: Qt.resolvedUrl("../assets/Sounds/jackpotMusic.wav")
+         autoPlay: false
+         //loops: 1
+       }
+
+
 
     function playClickSoundEffect(){
         clickEffect.play()
@@ -66,6 +81,17 @@ Item {
 
     function playStopLine(){
         stopLine.play()
+    }
+
+    function playSimpleWin(){
+        simpleWin.play()
+    }
+
+    function playJackPot(){
+        jackPotwin.play()
+    }
+    function stopJackPot(){
+        jackPotwin.stop()
     }
 
 

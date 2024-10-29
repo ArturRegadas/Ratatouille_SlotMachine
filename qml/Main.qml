@@ -1,6 +1,8 @@
-    import Felgo 4.0
+import Felgo 4.0
 import QtQuick 2.0
 import "slotMachine"
+import QtQuick.Controls 2.15
+
 
 GameWindow{
     id: gameWindow
@@ -61,10 +63,19 @@ GameWindow{
         id: restTimer
     }
 
+    PopUpWin{
+        id: myPopup
+    }
+
 
 
     MouseArea{
         anchors.fill: parent
+        onClicked:{
+            functionSounds.stopJackPot()
+            //myPopup.openPopup()
+        }
+        // Define o popup como visível ao clicar no botão
         //onClicked: clickSound.play()
     }
 
@@ -73,9 +84,15 @@ GameWindow{
         width: 570
         height: 360
         // Bet
-        property int betStack: 5 // valor da bet
+        property int betStack: 100 // valor da bet
+        property int previuscredit
         property int previous_betStack
-        property int creditStack: 400 // quantia na carteira
+        property int creditStack: 10000 // quantia na carteira
+
+
+        property int minbet: 100
+
+        //scene.minbet
 
         //Animação do crédito caindo
         Behavior on creditStack{
@@ -192,13 +209,23 @@ GameWindow{
         //Função achamada após o termino da rodada
         function endedSlotMachine(){
             //playClickSoundEffect()
-            bottomBar.startActive=false
+
             var won=winCheck.validate(slotMachine,scene.previous_betStack)
-            if(won){
+            if(won>0){
                 winCheck.displayWinningLines()
                 scene.creditStack+=winCheck.award
-                bottomBar.autoActive=true
+                bottomBar.autoActive=false
                 bottomBar.startActive=false
+
+                functionSounds.playSimpleWin()
+
+                if (won >= scene.betStack*5){
+                    functionSounds.playJackPot()
+                    myPopup.flyMoney=0
+                    myPopup.flyMoney=won
+                    myPopup.openPopup()
+
+                }
 
             // o delay tava dando conflito com os audios, entao ao inves de recomecar automaticamente, isso fica dentro
             // de um timer, que so vai parar quando o estado do autobuttom estiver false
@@ -207,9 +234,23 @@ GameWindow{
             //} else if(bottomBar.autoActive&&scene.betStack<=scene.creditStack){
                 //startSlotMachine()
             } else{
-                bottomBar.autoActive=true
+                bottomBar.autoActive=bottomBar.autoActive
             }
+            bottomBar.startActive=false
             autoStartTimer.start()
+            fastartTimer.start()
+        }
+
+        Timer{
+            id: fastartTimer
+            interval: 500 // Intervalo de 500 ms (0.5 segundos)
+            repeat: false // Define o timer como repetitivo
+            running: false // Inicialmente parado
+
+
+            onTriggered: {
+                bottomBar.delay = true
+            }
         }
 
 
@@ -253,16 +294,16 @@ GameWindow{
         // Aumento o valor apostado
         function incrementBetInSlotMachine(){
            functionSounds. playClickSoundEffect()
-            if (betStack+5 <= creditStack)
-                betStack+=5
+            if (betStack+scene.minbet <= creditStack)
+                betStack+=scene.minbet
         }
 
 
         // Domunui o valor a ser apostado
         function decrementBetInSlotMachine(){
             functionSounds.playClickSoundEffect()
-            if (betStack-5 >= 5)
-                betStack-=5
+            if (betStack-scene.minbet >= scene.minbet)
+                betStack-=scene.minbet
         }
 
         // Define o valor apostado para a quantia da carteira
@@ -270,8 +311,8 @@ GameWindow{
             functionSounds.playClickSoundEffect()
 
             let current_value = creditStack
-            for(let i = current_value; i>current_value-6; i--){
-                if (i%5===0)
+            for(let i = current_value; i>current_value-scene.minbet-1; i--){
+                if (i%scene.minbet===0)
                     betStack=i
                     break
             }
