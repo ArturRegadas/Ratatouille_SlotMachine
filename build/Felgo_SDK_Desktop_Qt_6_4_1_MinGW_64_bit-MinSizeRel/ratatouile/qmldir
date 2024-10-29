@@ -1,0 +1,9 @@
+module ratatouile
+typeinfo appratatouile.qmltypes
+prefer :/
+Sounds 1.0 qml/Sounds.qml
+Chronometer 1.0 qml/Chronometer.qml
+PopUpWin 1.0 qml/PopUpWin.qml
+BoxWining 1.0 qml/slotMachine/BoxWining.qml
+BlocksBoxWinning 1.0 qml/slotMachine/BlocksBoxWinning.qml
+
