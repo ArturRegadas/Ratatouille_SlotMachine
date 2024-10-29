@@ -62,7 +62,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = C:\Felgo\Tools\CMake_64\bin\cmake.exe --regenerate-during-build -SC:\Users\ahlre\Documents\Game_Log -BC:\Users\ahlre\Documents\ratatouile\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Debug
+  command = C:\Felgo\Tools\CMake_64\bin\cmake.exe --regenerate-during-build -SC:\Users\ahlre\Documents\ratatouile -BC:\Users\ahlre\Documents\ratatouile\build\Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Debug
   description = Re-running CMake...
   generator = 1
 
