@@ -69,6 +69,7 @@ Item {
             winText.y=winningLine.__lineSymbols[0].y-winText.height
         }
     }
+
     function removeLineSymbols(){ // Limpa a fila de linhas para serem exibidas
         for(var i=0;i<winningLine.__lineSymbols.length;++i){
             winningLine.__lineSymbols[i].destroy()
@@ -79,31 +80,32 @@ Item {
     function inArray(ar1,ar2){
         if(!ar2.length|!ar1.length)
             return 0
-        for(var i=0;i<ar1.length;++i){
-            if(ar2.includes(ar1[i]))
-                return 1
+        for(var i=0;i<ar2.length;++i){
+            if(!ar1.includes(ar2[i]))
+                return 0
         }
-        return 0
+        return 1
     }
 
-    function specialCart(category,special,symbol1,symbol2,repetition,arraySpecialCarts){// Retorna se a rodada é válida ou não
-        console.log(category)
+    function specialCart(category,special,symbol1,symbol2,repetition,arraySpecialCarts,arrayComumCarts){// Retorna se a rodada é válida ou não
+        // console.log(category) // Caso de teste
         if(symbol1==="Poison"|symbol2==="Poison")
             return -1
         var win=1
-        if(symbol1===symbol2){
+        if(symbol1===symbol2|(arrayComumCarts.includes(symbol1)&&arrayComumCarts.length&&special[0])|(arraySpecialCarts.includes(symbol1)&&arraySpecialCarts.length)){
             win=(special[0])?SymbolRats.getWinFactor(symbol1,repetition):1
             return win
         }
         if(special[0]===special[1]&&symbol1!==symbol2)
             return 0
+        repetition%=(special[0])?SymbolRats.getSymbolData(symbol1).winFactor.length:SymbolRats.getSymbolData(symbol2).winFactor.length
         for(var i=0;i<2;++i){
             var change=i==0?1:0
             for(var j=0;j<category[change].length;++j){
                 if(category[i].includes(category[change][j])){
                     win=(special[0])?SymbolRats.getWinFactor(symbol1,repetition):1
                     var bool=(special[0]&&arraySpecialCarts.length)?inArray(category[0],arraySpecialCarts):(special[1]&&arraySpecialCarts.length)?inArray(category[1],arraySpecialCarts):1
-                    console.log(arraySpecialCarts,bool)
+                    // console.log(arraySpecialCarts,bool) // Caso de teste
                     if(!bool)
                         return 0
                     return win
@@ -114,15 +116,17 @@ Item {
     }
 
     function check(machine,bet){ // Verifica se as linhas são vencedoras
+
         __winningPositions=[] // Reseta a variável __winningPositions
-        __winningTypes=[] // Reseta a variácel __winningTypes
+         __winningTypes=[] // Reseta a variácel __winningTypes
         var previousType="" // Símbolo anterior
         var typeNormalCarts=[] // Veja as regras do jogo
         var typeSpecialCarts=[] // Veja a regras do Jogo
         var multiplier=1 // multiplicador
-        var repetitionNormalCarts=0 // Vezes que as cartas normais se repetem
+        var repetitionNormalCarts=-1 // Vezes que as cartas normais se repetem
         var repetitionSpecialCarts=0 // Vezes que as cartas especiais se repetem
         var typeName="" // Nome da carta que será retirado o winFactor
+        var sequentialCarts=0
         //
         for(var i=0;i<positions.length;++i){
             var pos=positions[i]
@@ -131,15 +135,19 @@ Item {
                 previousType=symbol
             var special=[SymbolRats.isSpecial(symbol),SymbolRats.isSpecial(previousType)]
             var category=[SymbolRats.getCategory(symbol),SymbolRats.getCategory(previousType)]
-            var result=specialCart(category,special,symbol,previousType,repetitionSpecialCarts,repetitionSpecialCarts,typeSpecialCarts)
+            var result=specialCart(category,special,symbol,previousType,repetitionSpecialCarts,typeSpecialCarts,typeNormalCarts)
             // console.log(symbol,result,typeNormalCarts,typeSpecialCarts) // Caso de teste
             //
-            if(result===-1|(!inArray(category[0],typeNormalCarts)&&typeNormalCarts.length>0)|(!inArray(category[0],typeSpecialCarts)&&typeSpecialCarts.length>0)|(!result&&symbol!==previousType)){
+            if(result===-1|(!inArray(category[0],typeNormalCarts)&&typeNormalCarts.length&&!special[0]&&!typeNormalCarts.includes(symbol))|(!inArray(category[0],typeSpecialCarts)&&typeSpecialCarts.length&&special[0]&&!typeSpecialCarts.includes(symbol))|(!result&&symbol!==previousType)){
                 previousType=symbol
                 break
             }
+            //
             if(!special[0])++repetitionNormalCarts
             else ++repetitionSpecialCarts
+            //
+            if(symbol===previousType)++sequentialCarts
+            else sequentialCarts=0
             if(result===1&&!typeNormalCarts.length){
                 typeNormalCarts=category[0]
                 typeName=symbol
@@ -151,25 +159,26 @@ Item {
             __winningPositions.push(pos)
             __winningTypes.push(symbol)
         }
-<<<<<<< HEAD
-        //Caso haja, ao menos, três blocos combinados. ele irá contar a recompensa
-
-
+        //
+        if(previousType==="Poison"|__winningPositions.length<3|repetitionNormalCarts<0)
+            return false
+        //
         //verifica se houve lucro
         functionSounds.stopMoneyEffect()
-
-        if(__winningPositions.length<3)
-=======
+        if(sequentialCarts>2){
+            scene.additionalSpin+=10*(sequentialCarts-2)+1
+            scene.combinationsNames.push(typeName)
+            scene.combinationsInt.push(10*(sequentialCarts-2))
+            scene.combinationsColors.push(gradient_init)
+        }
         //
-        if(currentType==="Poison"|__winningPositions.length<3)
->>>>>>> 61af83f (sketching_PlusFeatures--subjectToChange--)
-            return false
-        repetitionSpecialCarts%=3
-        repetitionNormalCarts%=3
-        if(typeName==="")typeName=currentType
-        scene.creditStack+=bet*SymbolRats.getWinFactor(typeName,repetitionNormalCarts)*multiplier // Adiciona ao crédito final
+        repetitionNormalCarts%=SymbolRats.getSymbolData(previousType).winFactor.length
+        //
+
+        if(typeName==="")typeName=previousType
+        scene.previous_creditStack+=bet*SymbolRats.getWinFactor(typeName,repetitionNormalCarts)*multiplier // Adiciona ao crédito final
         winAmount=bet*SymbolRats.getWinFactor(typeName,repetitionNormalCarts)*multiplier
-        // console.log(winAmount,multiplier) // Caso de teste
+        //console.log(winAmount,multiplier,sequentialCarts,scene.additionalSpin) // Caso de teste
         winningLine.drawLineSymbols(machine) // Faz o molde da linha
 
 

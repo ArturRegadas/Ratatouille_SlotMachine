@@ -1,0 +1,6 @@
+..gitignore.un~
+.gitignore.un~
+.gitignore~
+*.un~
+qml/*
+!*.qml

@@ -8,17 +8,17 @@ SlotMachineModel {
             frequency: 1, // Vezes que aparece por coluna
             data:{
                 source:"SymbolRemy.png", // Código fonte
-                winFactor: [10, 20,35], // Caso haja uma combinação, o prêmio será multiplicado a depender da posição detse na roleita
-                category: ["Food","Linguini","Kitchen"],
-                special: false,
+                winFactor: [10,20,30,50,100], // Caso haja uma combinação, o prêmio será multiplicado a depender da posição detse na roleita
+                category: ["Linguini","Kitchen","AugustGusteau"], // Categorias combinatórias
+                special: false, // Especifica se é uma carta especial
             }
         },
-        "Auguste":{
+        "Gusteau":{
             frequency: 1,
             data: {
                 source:"SymbolAuguste.png",
-                winFactor: [5,10,30],
-                category: ["Universal"],
+                winFactor: [4,5,10,20,30],
+                category: ["Universal","Kitchen"],
                 special: false,
             }
         },
@@ -26,8 +26,8 @@ SlotMachineModel {
             frequency: 2,
             data:{
                 source: "SymbolColette.png",
-                winFactor: [3,6,9],
-                category: ["Universal"],
+                winFactor: [1,2,4,15,20],
+                category: ["Kitchen","Linguine","Human"],
                 special: false,
             }
         },
@@ -35,7 +35,7 @@ SlotMachineModel {
             frequency: 3,
             data: {
                 source: "SymbolEgon.png",
-                winFactor: [2,5,7],
+                winFactor: [1,2,2,10,17],
                 category: ["Universal"],
                 special: false,
             }
@@ -44,8 +44,36 @@ SlotMachineModel {
             frequency:3,
             data:{
                 source: "SymbolChefHat.png",
-                winFactor: [2,5,7],
+                winFactor: [1,5,5,10,15],
+                category: ["Human","Remy","Auguste"],
+                special: false,
+            }
+        },
+        "Linguini":{
+            frequency: 3,
+            data:{
+                source: "SymbolLinguini.png",
+                winFactor: [1,2,4,9,15],
+                category: ["Remy","Collet","Auguste","Food"],
+                special: false,
+            }
+        }, 
+        "Logo":{
+            frequency: 3,
+            data:{
+                source: "SymbolLogo.png",
+                winFactor: [1,1,2,9,17],
                 category: ["Universal"],
+                special: false,
+
+            }
+        },
+        "Django":{
+            frequency: 4,
+            data:{
+                source: "SymbolDjango.png",
+                winFactor: [1,2,4,7,10],
+                category: ["Food"],
                 special: false,
             }
         },
@@ -53,90 +81,62 @@ SlotMachineModel {
             frequency: 4,
             data: {
                 source: "SymbolEmile.png",
-                winFactor: [1,5,6],
+                winFactor: [1,2,4,7,10],
                 category: ["Food"],
                 special: false,
             }
         },
-        "Django":{
-            frequency: 4,
-            data:{
-                source: "SymbolDjango.png",
-                winFactor: [1,5,6],
-                category: ["Food"],
-                special: false,
-            }
-        },
-        "Linguini":{
-            frequency: 5,
-            data:{
-                source: "SymbolLinguini.png",
-                winFactor: [1,2,4],
-                category: ["Universal","Remy"],
-                special: false,
-            }
-        }, 
-        "Logo":{
-            frequency: 5,
-            data:{
-                source: "SymbolLogo.png",
-                winFactor: [1,2,4],
-                category: ["Universal"],
-                special: false,
-
-            }
-        }, 
-        "Skinner":{
+        "Skiner":{
             frequency: 5,
             data:{
                 source: "SymbolSkinner.png",
-                winFactor:[1,3,5],
-                category: ["Universal"],
+                winFactor:[1,1,2,6,10],
+                category: [],
                 special: false,
             }
         },
         //Cartas especiais
         "Poison":{
-            frequency: 6,
+            frequency: 5,
             data:{
                 source: "SymbolPoison.png",
                 winFractor:[0,0,0],
-                category: ["Poison","Universal"],
+                category: ["Poison"],
                 special: true,
             }
         },
-        "Horrst":{
-            frequency: 3,
+        "Horst":{
+            frequency: 2,
             data:{
                 source: "SymbolHorst.png",
-                winFactor:[2,4,8],
+                winFactor:[2,2,4],
                 category: ["Human","Universal"],
                 special: true,
             }
         },
         "Larousse":{
-            frequency:3,
+            frequency:2,
             data:{
                 source:"SymbolLarousse.png",
-                winFactor:[2,4,8],
+                winFactor:[2,2,4],
                 category: ["Human","Universal"],
                 special: true,
             }
         },
         "Seasoning":{
-            frequency: 2,
+            frequency: 1,
             data:{
                 source:"SymbolSeasoning.png",
-                winFactor:[2,5,10],
+                winFactor:[2,2,5],
                 category: ["Food","Universal"],
                 special: true,
             }
         },
         "Donut":{
-            frequency: 2,
+            frequency: 1,
             data:{
                 source: "SymbolDonut.png",
-                winFactor:[2,5,10],
+                winFactor:[2,2,5],
                 category: ["Food","Universal"],
                 special: true,
             }
