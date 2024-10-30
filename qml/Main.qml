@@ -1,6 +1,8 @@
-    import Felgo 4.0
+import Felgo 4.0
 import QtQuick 2.0
 import "slotMachine"
+import QtQuick.Controls 2.15
+
 
 GameWindow{
     id: gameWindow
@@ -61,10 +63,19 @@ GameWindow{
         id: restTimer
     }
 
+    PopUpWin{
+        id: myPopup
+    }
+
 
 
     MouseArea{
         anchors.fill: parent
+        onClicked:{
+            functionSounds.stopJackPot()
+            //myPopup.openPopup()
+        }
+        // Define o popup como visível ao clicar no botão
         //onClicked: clickSound.play()
     }
 
@@ -73,17 +84,46 @@ GameWindow{
         width: 570
         height: 360
         // Bet
-        property int betStack: 5 // valor da bet
-        property int previous_betStack
-        property int creditStack: 400 // quantia na carteira
-
+        property int betStack: 100 // valor da bet
+        property int previous_betStack:5
+        //
+        property int creditStack: 10000 // quantia na carteira
+        property int previous_creditStack:0// última quantidade anterior da carteira antes do spin
+        property int additionalSpin:0 // Spins adicionais
+        property int sumCreditStack:0 // Soma total de vitórias adiquiridas entre os prêmios 
+        property int minbet: 100
+        //
+        property int visibelIndex:0 // Index de exibição as linhas
+        //
+        property var combinationsColors:[]
+        property var combinationsNames:[]
+        property var combinationsInt:[]
         //Animação do crédito caindo
         Behavior on creditStack{
             PropertyAnimation{
                 duration: 1000
             }
         }
-
+        //
+        Timer{
+            id: sleep
+            interval:700
+            onTriggered: {
+                if(scene.visibelIndex>winCheck.currentLines.length-1){
+                    sleep.stop()
+                    scene.visibelIndex=0
+                    winCheck.hideLines()
+                    if(scene.additionalSpin)scene.startSlotMachine()
+                } else{
+                    winCheck.hideLines()
+                    winCheck.currentLines[scene.visibelIndex].visible=true
+                    ++scene.visibelIndex
+                    sleep.restart()
+                }
+                // console.log(scene.visibelIndex,winCheck.currentLines.length) // Caso teste
+            }
+        }
+        //
         Rectangle{ // Para caso da janela ser maior que a scene, esse gradiente irá prencher o fundo
             anchors.fill: scene.gameWindowAnchorItem
             gradient: Gradient{
@@ -97,6 +137,7 @@ GameWindow{
                 }
             } 
         }
+
         Image{ // Imagem da lateral esquerda
             x:-20
             y: parent.verticalCenter
@@ -104,6 +145,7 @@ GameWindow{
             height: scene.gameWindowAnchorItem.height
             width: (Math.round(Math.round(slotMachine.height/slotMachine.rowCount)/80*67)*5)/2
         }
+
         Image{
             x:parent.width-150 // Imagem da lateral direita
             y: parent.verticalCenter
@@ -111,22 +153,21 @@ GameWindow{
             height: scene.gameWindowAnchorItem.height
             width: (Math.round(Math.round(slotMachine.height/slotMachine.rowCount)/80*67)*5)/2
         }
+
         Ratatouille{ //Roleta
             property bool firtColumnRun: true
 
             id: slotMachine
             anchors.verticalCenter: scene.verticalCenter
             anchors.horizontalCenter: scene.horizontalCenter
-            anchors.topMargin: -10
             //
             height: scene.gameWindowAnchorItem.height-topBar.height-bottomBar.height-10
             defaultItemHeight: Math.round(slotMachine.height/slotMachine.rowCount)
             defaultReelWidth: Math.round(defaultItemHeight/80*67)
-            spinVelocity: Math.round(defaultItemHeight/80*750)
+            spinVelocity: !bottomBar.fastActive&&!scene.additionalSpin?350:bottomBar.fastActive&&!scene.additionalSpin?100:250,!bottomBar.fastActive&&!scene.additionalSpin?750:bottomBar.fastActive&&!scene.additionalSpin?1900:1200
             //
-            onSpinEnded:{
-                scene.endedSlotMachine()
-            }
+            onSpinEnded: scene.endedSlotMachine()
+            
             onSpinStarted: {
                 /*/
 
@@ -135,7 +176,7 @@ GameWindow{
                   nao mexer, se der merda chatgpt vai pocar
 
                 /*/
-                let timeMs = 500 //.......................................................tempo em ms
+                let timeMs = utils.generateRandomValueBetween(!bottomBar.fastActive&&!scene.additionalSpin?350:bottomBar.fastActive&&!scene.additionalSpin?100:250,!bottomBar.fastActive&&!scene.additionalSpin?750:bottomBar.fastActive&&!scene.additionalSpin?100:250) //.......................................................tempo em ms
                 restTimer.intervalval = timeMs //.....................................atribui à classe
                 //utils.generateRandomValueBetween(350,700)...........................Numero Aleatorio
                 restTimer.qtdRepeat = 4 //...A 1 repeticao tem 1000 ms as outras 4 tem timeMs de tempo
@@ -144,73 +185,137 @@ GameWindow{
                 restTimer.playCount = 0 //......................reseta o contador de audios -repetica-
             }
         }
+
         WinAnalysis{
+            id:winCheck
             anchors.verticalCenter: slotMachine.verticalCenter
             anchors.horizontalCenter: slotMachine.horizontalCenter
-            id:winCheck
             height: slotMachine.height
             width: Math.round(height/240*408)
         }
+
         TopBar { // Aba acima da roleta
            id: topBar
            width: scene.gameWindowAnchorItem.width
            anchors.top: scene.gameWindowAnchorItem.top
            anchors.horizontalCenter: scene.gameWindowAnchorItem.horizontalCenter
         }
-
-        /*/
-
-
-        /*/
+        
         BottonBar{ // Aba abaixo da roleta
-                id: bottomBar
-                width: scene.gameWindowAnchorItem.width
-                anchors.bottom: scene.gameWindowAnchorItem.bottom
-                anchors.horizontalCenter: scene.gameWindowAnchorItem.horizontalCenter
-                onAutoClicked: scene.autoStartSlotMachine()
-                onFastClicked: scene.fastSlotMachine()
-                onStartClicked: scene.startSlotMachine()
-                onDecrementClicked: scene.decrementBetInSlotMachine()
-                onIncrementClicked: scene.incrementBetInSlotMachine()
-                onMaxValueClicked: scene.maxBetInSlotMachine()
+            id: bottomBar
+            width: scene.gameWindowAnchorItem.width
+            anchors.bottom: scene.gameWindowAnchorItem.bottom
+            anchors.horizontalCenter: scene.gameWindowAnchorItem.horizontalCenter
+            onAutoClicked: scene.autoStartSlotMachine()
+            onFastClicked: scene.fastSlotMachine()
+            onStartClicked:scene.startSlotMachine()
+            onDecrementClicked: scene.decrementBetInSlotMachine()
+            onIncrementClicked: scene.incrementBetInSlotMachine()
+            onMaxValueClicked: scene.maxBetInSlotMachine()
+            intTotalAward: scene.previous_creditStack
         }
-
+        
+        BoxWinning{
+            id:boxWinning
+            anchors.centerIn: parent
+            width:scene.gameWindowAnchorItem.width
+            height:scene.gameWindowAnchorItem.height
+            visible: false
+        }
         // Funções
 
         // Gira a caça-níquel
         function startSlotMachine(){
             functionSounds.playStartMusicBG()
             if(!slotMachine.spinning&&scene.betStack<=scene.creditStack){
-                scene.previous_betStack=scene.betStack
-                //bottomBar.startActive= !bottomBar.autoActive
-                scene.creditStack-=scene.betStack
+                scene.sumCreditStack+=scene.previous_creditStack-scene.sumCreditStack
+                if(!scene.additionalSpin){
+                    scene.previous_creditStack=0;
+                    scene.previous_betStack=scene.betStack
+                    //
+                    scene.sumCreditStack-=scene.previous_betStack
+                    if(scene.sumCreditStack%2)scene.sumCreditStack-=5
+                    scene.creditStack+=scene.sumCreditStack
+                }
+                bottomBar.startActive= !bottomBar.autoActive
+                //
+                if(!scene.previous_creditStack){
+                    bottomBar.intTotalAward=0
+                    bottomBar.resetAnimations()
+                }
+                //
                 winCheck.reset()
-                slotMachine.spin(utils.generateRandomValueBetween(bottomBar.fastActive?2:500,bottomBar.fastActive?0: 1000))
+                slotMachine.spin(utils.generateRandomValueBetween(300,750))
             }
         }
 
         //Função achamada após o termino da rodada
         function endedSlotMachine(){
-            //playClickSoundEffect()
-            bottomBar.startActive=false
             var won=winCheck.validate(slotMachine,scene.previous_betStack)
+            // console.log(scene.additionalSpin,"/") // Caso de teste
             if(won){
-                winCheck.displayWinningLines()
-                scene.creditStack+=winCheck.award
-                bottomBar.autoActive=true
+                if(scene.additionalSpin>1){
+                    winCheck.currentLines[0].visible=true
+                    scene.visibelIndex=1
+                    if(!combinationsNames.length)sleep.start()
+                }
+                if(!combinationsNames.length)winCheck.displayWinningLines()
+                bottomBar.autoActive=false
                 bottomBar.startActive=false
+                bottomBar.resetAnimations()
+                bottomBar.intTotalAward+=scene.previous_creditStack-bottomBar.intTotalAward
+                functionSounds.playSimpleWin()
+                if (won >= scene.betStack*5){
+                    functionSounds.playJackPot()
+                    myPopup.flyMoney=0
+                    myPopup.flyMoney=won
+                    myPopup.openPopup()
 
-            // o delay tava dando conflito com os audios, entao ao inves de recomecar automaticamente, isso fica dentro
-            // de um timer, que so vai parar quando o estado do autobuttom estiver false
-            //a gente faz o que faz e refaz o que tem que refazer
-            // mas assim, poderia tar pior, deus meu perdoe
-            //} else if(bottomBar.autoActive&&scene.betStack<=scene.creditStack){
-                //startSlotMachine()
-            } else{
-                bottomBar.autoActive=true
+                }
+                //perdao pela sua obra prima
+            } //else if(((bottomBar.autoActive&&scene.previous_betStack<=scene.creditStack)|scene.additionalSpin)&&!scene.combinationsNames.length){ // Mexer aqui
+              // o delay tava dando conflito com os audios, entao ao inves de recomecar automaticamente, isso fica dentro
+              // de um timer, que so vai parar quando o estado do autobuttom estiver false
+              //a gente faz o que faz e refaz o que tem que refazer
+              // mas assim, poderia tar pior, deus meu perdoe
+
+            else{
+                //bottomBar.autoActive=false
+                 bottomBar.autoActive=bottomBar.autoActive
             }
+
+            if(scene.combinationsNames.length){
+                boxWinning.visible=true
+                for(var i=0;i<combinationsNames.length;++i){
+                    boxWinning.createBlocks(combinationsNames[i],combinationsColors[i],combinationsInt[i])
+                }            }
+            // console.log(combinationsNames,combinationsInt,combinationsInt)
+            if(scene.additionalSpin){
+                --scene.additionalSpin
+                if(!additionalSpin)scene.sumCreditStack=0
+                bottomBar.autoActive=false
+            }
+            if(!scene.additionalSpin){
+                // bottomBar.intTotalAward+=scene.previous_creditStack-bottomBar.intTotalAward
+                bottomBar.startActive=false
+                // console.log(scene.creditStack,scene.previous_creditStack,scene.betStack); // Caso de teste
+            }
+            bottomBar.startActive=false
             autoStartTimer.start()
+            fastartTimer.start()
+    }
+        Timer{
+            id: fastartTimer
+            interval: 500 // Intervalo de 500 ms (0.5 segundos)
+            repeat: false // Define o timer como repetitivo
+            running: false // Inicialmente parado
+
+
+            onTriggered: {
+                bottomBar.delay = true
+            }
         }
+
 
 
 
@@ -222,15 +327,15 @@ GameWindow{
 
 
             onTriggered: {
-                if (bottomBar.autoActive){
+                if ((((bottomBar.autoActive&&scene.previous_betStack<=scene.creditStack)|scene.additionalSpin)&&!scene.combinationsNames.length)){
                     scene.startSlotMachine()
-
                 }
                 else{
                     autoStartTimer.stop()
+                    scene.combinationsNames=[]
+                    scene.combinationsInt=[]
+                scene.combinationsColors=[]
                 }
-
-
             }
         }
 
@@ -244,7 +349,7 @@ GameWindow{
 
 
         }
-
+        //
         // Modo rápido
         function fastSlotMachine(){
             bottomBar.fastActive = !bottomBar.fastActive
@@ -253,16 +358,16 @@ GameWindow{
         // Aumento o valor apostado
         function incrementBetInSlotMachine(){
            functionSounds. playClickSoundEffect()
-            if (betStack+5 <= creditStack)
-                betStack+=5
+            if (betStack+scene.minbet <= creditStack)
+                betStack+=scene.minbet
         }
 
 
         // Domunui o valor a ser apostado
         function decrementBetInSlotMachine(){
             functionSounds.playClickSoundEffect()
-            if (betStack-5 >= 5)
-                betStack-=5
+            if (betStack-scene.minbet >= scene.minbet)
+                betStack-=scene.minbet
         }
 
         // Define o valor apostado para a quantia da carteira
@@ -270,13 +375,12 @@ GameWindow{
             functionSounds.playClickSoundEffect()
 
             let current_value = creditStack
-            for(let i = current_value; i>current_value-6; i--){
-                if (i%5===0)
+            for(let i = current_value; i>current_value-scene.minbet-1; i--){
+                if (i%scene.minbet===0)
                     betStack=i
                     break
-            }
+            }                
         }
     }
-
 }
 
