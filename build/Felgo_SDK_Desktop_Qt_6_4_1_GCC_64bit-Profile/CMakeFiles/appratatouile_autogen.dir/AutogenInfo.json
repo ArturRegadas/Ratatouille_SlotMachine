@@ -1202,7 +1202,6 @@
 		"/home/artur/Felgo/Felgo/gcc_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
 		"/home/artur/Felgo/Felgo/gcc_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
 		"/home/artur/Felgo/Felgo/gcc_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
-		"/home/artur/Felgo/Felgo/gcc_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
 		"/home/artur/Felgo/Felgo/gcc_64/lib/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in"
 	],
 	"CMAKE_SOURCE_DIR" : "/home/artur/Game_log",
@@ -1297,9 +1296,7 @@
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : 
 	[
-		"/home/artur/Game_log/build/Felgo_SDK_Desktop_Qt_6_4_1_GCC_64bit-Profile/.rcc/qmlcache/appratatouile_qml/Chronometer_qml.cpp",
 		"/home/artur/Game_log/build/Felgo_SDK_Desktop_Qt_6_4_1_GCC_64bit-Profile/.rcc/qrc_FelgoResources.cpp",
-		"/home/artur/Game_log/build/Felgo_SDK_Desktop_Qt_6_4_1_GCC_64bit-Profile/.rcc/qrc_appratatouile_raw_qml_0.cpp",
 		"/home/artur/Game_log/build/Felgo_SDK_Desktop_Qt_6_4_1_GCC_64bit-Profile/.rcc/qrc_qmake_ratatouile.cpp",
 		"/home/artur/Game_log/build/Felgo_SDK_Desktop_Qt_6_4_1_GCC_64bit-Profile/.rcc/qrc_qmake_ratatouile_copy.cpp",
 		"/home/artur/Game_log/build/Felgo_SDK_Desktop_Qt_6_4_1_GCC_64bit-Profile/appratatouile_qmltyperegistrations.cpp"
@@ -1314,11 +1311,6 @@
 	"SETTINGS_FILE" : "/home/artur/Game_log/build/Felgo_SDK_Desktop_Qt_6_4_1_GCC_64bit-Profile/CMakeFiles/appratatouile_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[
-			"/home/artur/Game_log/build/Felgo_SDK_Desktop_Qt_6_4_1_GCC_64bit-Profile/.rcc/qmlcache/appratatouile_qmlcache_loader.cpp",
-			"Mu",
-			null
-		],
 		[ "/home/artur/Game_log/main.cpp", "Mu", null ]
 	],
 	"USE_BETTER_GRAPH" : false,

@@ -4,11 +4,6 @@
 /home/artur/Game_log/build/Felgo_SDK_Desktop_Qt_6_4_1_GCC_64bit-Profile/CMakeFiles/appratatouile_qmltyperegistration.dir
 /home/artur/Game_log/build/Felgo_SDK_Desktop_Qt_6_4_1_GCC_64bit-Profile/CMakeFiles/all_qmltyperegistrations.dir
 /home/artur/Game_log/build/Felgo_SDK_Desktop_Qt_6_4_1_GCC_64bit-Profile/CMakeFiles/appratatouile_other_files.dir
-/home/artur/Game_log/build/Felgo_SDK_Desktop_Qt_6_4_1_GCC_64bit-Profile/CMakeFiles/appratatouile_qmllint.dir
-/home/artur/Game_log/build/Felgo_SDK_Desktop_Qt_6_4_1_GCC_64bit-Profile/CMakeFiles/appratatouile_qmllint_json.dir
-/home/artur/Game_log/build/Felgo_SDK_Desktop_Qt_6_4_1_GCC_64bit-Profile/CMakeFiles/all_qmllint.dir
-/home/artur/Game_log/build/Felgo_SDK_Desktop_Qt_6_4_1_GCC_64bit-Profile/CMakeFiles/all_qmllint_json.dir
-/home/artur/Game_log/build/Felgo_SDK_Desktop_Qt_6_4_1_GCC_64bit-Profile/CMakeFiles/appratatouile_tooling.dir
 /home/artur/Game_log/build/Felgo_SDK_Desktop_Qt_6_4_1_GCC_64bit-Profile/CMakeFiles/appratatouile_qmlimportscan.dir
 /home/artur/Game_log/build/Felgo_SDK_Desktop_Qt_6_4_1_GCC_64bit-Profile/CMakeFiles/edit_cache.dir
 /home/artur/Game_log/build/Felgo_SDK_Desktop_Qt_6_4_1_GCC_64bit-Profile/CMakeFiles/rebuild_cache.dir

@@ -736,6 +736,12 @@
 				"file" : 0,
 				"line" : 133,
 				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 133,
+				"parent" : 3
 			}
 		]
 	},
@@ -750,7 +756,7 @@
 				"appratatouile.run"
 			],
 			"targetId" : "appratatouile::@6890427a1f51a3e7e1df",
-			"targetIndex" : 7,
+			"targetIndex" : 5,
 			"type" : "target"
 		},
 		{
@@ -759,7 +765,7 @@
 			"cxxModuleBmiTarget" : 
 			{
 				"id" : "appratatouile::@6890427a1f51a3e7e1df",
-				"index" : 7
+				"index" : 5
 			},
 			"destination" : "/usr/local",
 			"type" : "cxxModuleBmi"
@@ -1917,6 +1923,16 @@
 		{
 			"backtrace" : 119,
 			"component" : "Unspecified",
+			"destination" : "qml",
+			"paths" : 
+			[
+				"qml/config.json"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 120,
+			"component" : "Unspecified",
 			"destination" : "qml/config",
 			"paths" : 
 			[
@@ -1925,7 +1941,7 @@
 			"type" : "file"
 		},
 		{
-			"backtrace" : 120,
+			"backtrace" : 121,
 			"component" : "Unspecified",
 			"destination" : "qml/config",
 			"paths" : 

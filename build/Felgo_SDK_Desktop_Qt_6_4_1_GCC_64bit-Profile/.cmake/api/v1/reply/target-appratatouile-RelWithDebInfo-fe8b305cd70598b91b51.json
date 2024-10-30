@@ -32,7 +32,6 @@
 			"qt6_add_qml_module",
 			"qt_add_qml_module",
 			"add_dependencies",
-			"qt6_target_qml_sources",
 			"_qt_internal_scan_qml_imports",
 			"_qt_internal_generate_deploy_qml_imports_script",
 			"cmake_language",
@@ -42,8 +41,7 @@
 			"target_include_directories",
 			"_qt_internal_qml_type_registration",
 			"target_sources",
-			"qt6_extract_metatypes",
-			"_qt_internal_target_enable_qmlcachegen"
+			"qt6_extract_metatypes"
 		],
 		"files" : 
 		[
@@ -149,7 +147,7 @@
 			{
 				"command" : 6,
 				"file" : 1,
-				"line" : 71,
+				"line" : 70,
 				"parent" : 0
 			},
 			{
@@ -429,99 +427,87 @@
 				"parent" : 2
 			},
 			{
-				"command" : 22,
-				"file" : 19,
-				"line" : 611,
-				"parent" : 62
-			},
-			{
-				"command" : 21,
-				"file" : 19,
-				"line" : 2187,
-				"parent" : 65
-			},
-			{
 				"file" : 1,
 				"line" : -1,
 				"parent" : 0
 			},
 			{
-				"command" : 27,
+				"command" : 26,
 				"file" : 20,
 				"line" : 1,
-				"parent" : 67
-			},
-			{
-				"command" : 26,
-				"file" : 0,
-				"line" : 705,
-				"parent" : 68
+				"parent" : 65
 			},
 			{
 				"command" : 25,
 				"file" : 0,
-				"line" : 640,
-				"parent" : 69
+				"line" : 705,
+				"parent" : 66
 			},
 			{
 				"command" : 24,
 				"file" : 0,
 				"line" : 640,
-				"parent" : 70
+				"parent" : 67
 			},
 			{
 				"command" : 23,
+				"file" : 0,
+				"line" : 640,
+				"parent" : 68
+			},
+			{
+				"command" : 22,
 				"file" : 19,
 				"line" : 2870,
-				"parent" : 71
+				"parent" : 69
 			},
 			{
 				"command" : 21,
 				"file" : 19,
 				"line" : 2723,
-				"parent" : 72
+				"parent" : 70
 			},
 			{
-				"command" : 28,
+				"command" : 27,
 				"file" : 1,
-				"line" : 68,
+				"line" : 67,
 				"parent" : 0
 			},
 			{
-				"command" : 30,
+				"command" : 29,
 				"file" : 19,
 				"line" : 517,
 				"parent" : 62
 			},
 			{
-				"command" : 29,
+				"command" : 28,
 				"file" : 19,
 				"line" : 2515,
-				"parent" : 75
+				"parent" : 73
 			},
 			{
-				"command" : 29,
+				"command" : 28,
 				"file" : 19,
 				"line" : 2540,
-				"parent" : 75
+				"parent" : 73
 			},
 			{
-				"command" : 32,
+				"command" : 31,
 				"file" : 19,
 				"line" : 2322,
-				"parent" : 75
+				"parent" : 73
 			},
 			{
-				"command" : 31,
+				"command" : 30,
 				"file" : 0,
 				"line" : 1077,
-				"parent" : 78
+				"parent" : 76
 			},
 			{
-				"command" : 31,
+				"command" : 30,
 				"file" : 19,
 				"line" : 2506,
-				"parent" : 75
+				"parent" : 73
 			},
 			{
 				"command" : 10,
@@ -533,21 +519,21 @@
 				"command" : 9,
 				"file" : 0,
 				"line" : 342,
+				"parent" : 79
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 1810,
+				"parent" : 80
+			},
+			{
+				"command" : 30,
+				"file" : 0,
+				"line" : 1574,
 				"parent" : 81
 			},
 			{
-				"command" : 8,
-				"file" : 0,
-				"line" : 1810,
-				"parent" : 82
-			},
-			{
-				"command" : 31,
-				"file" : 0,
-				"line" : 1574,
-				"parent" : 83
-			},
-			{
 				"command" : 10,
 				"file" : 19,
 				"line" : 561,
@@ -557,61 +543,19 @@
 				"command" : 9,
 				"file" : 0,
 				"line" : 342,
+				"parent" : 83
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 1810,
+				"parent" : 84
+			},
+			{
+				"command" : 30,
+				"file" : 0,
+				"line" : 1574,
 				"parent" : 85
-			},
-			{
-				"command" : 8,
-				"file" : 0,
-				"line" : 1810,
-				"parent" : 86
-			},
-			{
-				"command" : 31,
-				"file" : 0,
-				"line" : 1574,
-				"parent" : 87
-			},
-			{
-				"command" : 33,
-				"file" : 19,
-				"line" : 2080,
-				"parent" : 65
-			},
-			{
-				"command" : 31,
-				"file" : 19,
-				"line" : 979,
-				"parent" : 89
-			},
-			{
-				"command" : 31,
-				"file" : 19,
-				"line" : 2129,
-				"parent" : 65
-			},
-			{
-				"command" : 10,
-				"file" : 19,
-				"line" : 2205,
-				"parent" : 65
-			},
-			{
-				"command" : 9,
-				"file" : 0,
-				"line" : 342,
-				"parent" : 92
-			},
-			{
-				"command" : 8,
-				"file" : 0,
-				"line" : 1810,
-				"parent" : 93
-			},
-			{
-				"command" : 31,
-				"file" : 0,
-				"line" : 1574,
-				"parent" : 94
 			}
 		]
 	},
@@ -675,7 +619,7 @@
 					"define" : "QT_QMLMODELS_LIB"
 				},
 				{
-					"backtrace" : 74,
+					"backtrace" : 72,
 					"define" : "QT_QML_DEBUG"
 				},
 				{
@@ -710,56 +654,52 @@
 					"path" : "/home/artur/Game_log/build/Felgo_SDK_Desktop_Qt_6_4_1_GCC_64bit-Profile/appratatouile_autogen/include"
 				},
 				{
-					"backtrace" : 76,
+					"backtrace" : 74,
 					"path" : "/home/artur/Game_log"
 				},
 				{
-					"backtrace" : 77,
-					"isSystem" : true,
+					"backtrace" : 75,
 					"path" : "/home/artur/Felgo/Felgo/gcc_64/include/QtQml/6.4.1"
 				},
 				{
-					"backtrace" : 77,
-					"isSystem" : true,
+					"backtrace" : 75,
 					"path" : "/home/artur/Felgo/Felgo/gcc_64/include/QtQml/6.4.1/QtQml"
 				},
 				{
-					"backtrace" : 77,
-					"isSystem" : true,
+					"backtrace" : 75,
 					"path" : "/home/artur/Felgo/Felgo/gcc_64/include/QtCore/6.4.1"
 				},
 				{
-					"backtrace" : 77,
-					"isSystem" : true,
+					"backtrace" : 75,
 					"path" : "/home/artur/Felgo/Felgo/gcc_64/include/QtCore/6.4.1/QtCore"
 				},
 				{
-					"backtrace" : 77,
+					"backtrace" : 75,
 					"isSystem" : true,
 					"path" : "/home/artur/Felgo/Felgo/gcc_64/include/QtCore"
 				},
 				{
-					"backtrace" : 77,
+					"backtrace" : 75,
 					"isSystem" : true,
 					"path" : "/home/artur/Felgo/Felgo/gcc_64/include"
 				},
 				{
-					"backtrace" : 77,
+					"backtrace" : 75,
 					"isSystem" : true,
 					"path" : "/home/artur/Felgo/Felgo/gcc_64/mkspecs/linux-g++"
 				},
 				{
-					"backtrace" : 77,
+					"backtrace" : 75,
 					"isSystem" : true,
 					"path" : "/home/artur/Felgo/Felgo/gcc_64/include/QtQml"
 				},
 				{
-					"backtrace" : 77,
+					"backtrace" : 75,
 					"isSystem" : true,
 					"path" : "/home/artur/Felgo/Felgo/gcc_64/include/QtQmlIntegration"
 				},
 				{
-					"backtrace" : 77,
+					"backtrace" : 75,
 					"isSystem" : true,
 					"path" : "/home/artur/Felgo/Felgo/gcc_64/include/QtNetwork"
 				},
@@ -834,12 +774,9 @@
 			[
 				0,
 				1,
-				120,
 				121,
 				122,
-				123,
-				124,
-				125
+				123
 			]
 		}
 	],
@@ -850,11 +787,7 @@
 			"id" : "Felgo_resources_1::@6890427a1f51a3e7e1df"
 		},
 		{
-			"backtrace" : 66,
-			"id" : "appratatouile_tooling::@6890427a1f51a3e7e1df"
-		},
-		{
-			"backtrace" : 73,
+			"backtrace" : 71,
 			"id" : "appratatouile_qmlimportscan::@6890427a1f51a3e7e1df"
 		},
 		{
@@ -1018,12 +951,9 @@
 			[
 				0,
 				1,
-				120,
 				121,
 				122,
-				123,
-				124,
-				125
+				123
 			]
 		},
 		{
@@ -1057,7 +987,13 @@
 				117,
 				118,
 				119,
-				126,
+				120,
+				124,
+				131,
+				132,
+				133,
+				134,
+				135,
 				136,
 				137,
 				138,
@@ -1067,12 +1003,7 @@
 				142,
 				143,
 				144,
-				145,
-				146,
-				147,
-				148,
-				149,
-				150
+				145
 			]
 		},
 		{
@@ -1176,15 +1107,12 @@
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
+				125,
+				126,
 				127,
 				128,
 				129,
-				130,
-				131,
-				132,
-				133,
-				134,
-				135
+				130
 			]
 		}
 	],
@@ -1780,6 +1708,11 @@
 		},
 		{
 			"backtrace" : 4,
+			"path" : "qml/config.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
 			"path" : "qml/config/.qmldir.swp",
 			"sourceGroupIndex" : 1
 		},
@@ -1789,51 +1722,30 @@
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 79,
+			"backtrace" : 77,
 			"isGenerated" : true,
 			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_GCC_64bit-Profile/meta_types/qt6appratatouile_relwithdebinfo_metatypes.json.gen",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 80,
+			"backtrace" : 78,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
 			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_GCC_64bit-Profile/appratatouile_qmltyperegistrations.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 84,
+			"backtrace" : 82,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
 			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_GCC_64bit-Profile/.rcc/qrc_qmake_ratatouile.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 88,
+			"backtrace" : 86,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
 			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_GCC_64bit-Profile/.rcc/qrc_qmake_ratatouile_copy.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 90,
-			"compileGroupIndex" : 0,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_GCC_64bit-Profile/.rcc/qmlcache/appratatouile_qmlcache_loader.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 91,
-			"compileGroupIndex" : 0,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_GCC_64bit-Profile/.rcc/qmlcache/appratatouile_qml/Chronometer_qml.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 95,
-			"compileGroupIndex" : 0,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_GCC_64bit-Profile/.rcc/qrc_appratatouile_raw_qml_0.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -1864,24 +1776,6 @@
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_GCC_64bit-Profile/.rcc/qrc_qmake_ratatouile_copy.cpp.rule",
-			"sourceGroupIndex" : 3
-		},
-		{
-			"backtrace" : 0,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_GCC_64bit-Profile/.rcc/qmlcache/appratatouile_qmlcache_loader.cpp.rule",
-			"sourceGroupIndex" : 3
-		},
-		{
-			"backtrace" : 0,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_GCC_64bit-Profile/.rcc/qmlcache/appratatouile_qml/Chronometer_qml.cpp.rule",
-			"sourceGroupIndex" : 3
-		},
-		{
-			"backtrace" : 0,
-			"isGenerated" : true,
-			"path" : "build/Felgo_SDK_Desktop_Qt_6_4_1_GCC_64bit-Profile/.rcc/qrc_appratatouile_raw_qml_0.cpp.rule",
 			"sourceGroupIndex" : 3
 		},
 		{
