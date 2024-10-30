@@ -3,126 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Web/src/style/standard.css">
   <title>Ratatouille</title>
+  <style>
+      header {
+        margin-top: 60px;
+        position: relative;
+        color: white;
+        padding: 130px;
+        background-image: url("https://images.alphacoders.com/678/678281.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+      }
+      @media (max-width: 600px) {
+        .top-bar ul {
+          flex-direction: column;
+        }
+
+        .top-bar li {
+          margin: 10px 0;
+        }
+      }
+      header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); 
+        z-index: 1;
+      }
+      header h1, header p {
+        position: relative;
+        z-index: 2; 
+      }
+  </style>
 </head>
-
-<style>
-    body {
-    margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #DDDDDD;
-  color: #333;
-  text-align: center;
-}
-
-.top-bar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.8); 
-  color: white;
-  padding: 10px 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
-  z-index: 10;
-}
-
-.top-bar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-
-.top-bar li {
-  margin: 0 15px;
-}
-
-.top-bar a {
-  color: white;
-  text-decoration: none;
-  font-size: 1em;
-  font-weight: bold;
-  transition: color 0.3s; 
-}
-
-.top-bar a:hover {
-  color: #4CAF50; 
-}
-
-
-header {
-  margin-top: 60px;
-}
-
-
-@media (max-width: 600px) {
-  .top-bar ul {
-    flex-direction: column;
-  }
-  
-  .top-bar li {
-    margin: 10px 0;
-  }
-}
-
-header {
-  position: relative;
-  color: white;
-  padding: 130px;
-  background-image: url("https://images.alphacoders.com/678/678281.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  overflow: hidden; 
-}
-
-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); 
-  z-index: 1;
-}
-
-header h1, header p {
-  position: relative;
-  z-index: 2; 
-}
-
-
-.download-button {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  color: white;
-  background-color: #ff5722;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 16px;
-  transition: background-color 0.3s;
-}
-
-.download-button:hover {
-  background-color: #e64a19;
-}
-
-</style>
 <body>
     <nav class="top-bar">
-        <ul>
-          <li><a href="#documentacao">Documentação</a></li>
-          <li><a href="#combinacoes">Combinações</a></li>
-          <li><a href="#regras">Regras</a></li>
-          <li><a href="#download">Download</a></li>
-        </ul>
-      </nav>
-    
-      <!-- Conteúdo Principal -->
+      <ul>
+        <li><a href="./Web/documentation.html">Documentação</a></li>
+        <li><a href="./index.html">Index</a></li>
+      </ul>
+    </nav>
+  <!-- Conteúdo Principal -->
   <header>
     <h1>Ratatouille Simbol Conbination</h1>
     <p>Para Windows, Linux e Android</p>
@@ -131,16 +58,14 @@ header h1, header p {
   <main>
     <section>
       <h2>Sobre o Jogo</h2>
-      <p>O projeto implementa um jogo de combinações baseado em probabilidades,possui funcionalidades de jogar <br>
-         automaticamente ou mais rapidamente, calcular, gerenciar e armazenar ganhos. O tema do jogo é o filme da Disney ratatouille de 2007<p>
-            <div class="download-buttons">
-                <a href="LINK_JOGO_LINUX" download class="download-button">Baixar para Linux</a>
-                <a href="LINK_JOGO_WINDOWS" download class="download-button">Baixar para Windows</a>
-                <a href="LINK_JOGO_ANDROID" download class="download-button">Baixar para Android</a>
-              </div>
+      <p >O projeto implementa um jogo de combinações baseado em probabilidades,possui funcionalidades de jogar<br>automaticamente ou mais rapidamente, calcular, gerenciar e armazenar ganhos. O tema do jogo é o filme da Disney ratatouille de 2007<br>Veja mais em <a href="./documentation.html">Documentação</a><p>
+      <div class="download-buttons">
+        <a href="./Web/src/download/MainLinux.zip" download class="download-button">Baixar para Linux</a>
+        <a href="./Web/src/download/WebVersionWin.zip" download class="download-button">Baixar para Windows/Web</a>
+        <!-- <a href="LINK_JOGO_ANDROID" download class="download-button">Baixar para Android</a> -->
+      </div>
     </section>
   </main>
-
   <footer>
     <p>Feito por: Artur Henrique Lima Regadas  &<br>
     Cristiano Chincaro Sanchez</p>
