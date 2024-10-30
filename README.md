@@ -1,7 +1,7 @@
 # Ratatouille, a combination game
 O projeto implementa um jogo de combinações baseado em probabilidades, possuindo funcionalidades de jogar automaticamente ou mais rapidamente, calcular, gerenciar e armazenar ganhos. O tema do jogo é o filme da Disney ratatouille de 2007.
 
-    "Boa culinária não é para os fracos de coração. É para as mentes criativas! Corações fortes! As coisas podem até dar errado, mas não deve deixar ninguém definir seus limites a partir de sua origem. O único limite é sua alma."-Auguste Guseau
+    "Boa culinária não é para os fracos de coração. É para as mentes criativas! Corações fortes! As coisas podem até dar errado, mas não deve deixar ninguém definir seus limites a partir de sua origem. O único limite é sua alma." -Auguste Guseau
 
 # Summary
 
@@ -11,6 +11,8 @@ O projeto implementa um jogo de combinações baseado em probabilidades, possuin
 <a href="#4-arquitetura">4 ………..…………………………………….Arquitetura</a><br>
 <a href="#5-funcionalidades">5 ………………………………………Funcionalidades</a><br>
 <a href="#6-introdução-ao-uso">6 ……………………………………Introdução ao uso</a><br>
+
+<img src="./assets/Documentation/E.g.1.jpeg"></img>
 
 ## 1 Introdução
 ### 1.1 Trabalho
@@ -26,10 +28,10 @@ A alta dos caça níqueis no Brasil, tem causado polêmica, tanto em relação a
 Em relação ao tema (filme ratatouille 2007) do jogo, uma crítica ao mercenários jogos gerenciados pelas grandes empresas, que usam animais como representante da marca
 
 ### 1.3 Objetivo
-Além de servir como uma atividade de ensino,o jogo se provou como uma atividade recreativa, servindo como pontapé para futuros projetos de larga escala. Tendo em vista atender aqueles que possuem algum vício com jogos ou queira apenas se divertir com nosso jogo.
+Além de servir como uma atividade de ensino, o jogo se provou como uma atividade recreativa, servindo como pontapé para futuros projetos de larga escala. Tendo em vista atender aqueles que possuem algum vício com jogos ou queira apenas se divertir com nosso jogo.
 
-## 2 Requesitos 
-### 2.1 Plantaformas
+## 2 Requisitos 
+### 2.1 Plataformas
 Disponível para computador com Sistema Operacional Windows 7, 10 ou 11, em um arquivo .exe  instalado, Linux (Debian / Fedora / Arch Linux / SUSE), em um arquivo .ELF .Para acesso por celular ou outra plataforma, é possível também acessar a versão Web do jogo, disponibilizada na nuvem para que qualquer um acesse
 
 ### 2.2 Incompatibilidade
@@ -59,7 +61,9 @@ Seque-se abaixa as linhas de vitórias possíveis:
 
 <img src="./assets/Documentation/CombinationsLines.jpeg">
 
-### 5.3 Sounds
+Em caso de prêmios superior a 5X o valor apostado, Big Win, ou a existência de uma sequência com somente cartas não especiais, pop-ups serão exibidos contendo informação do prêmio total ou de quantos spins grátis foram adquiridos. Em caso de haver dois pop-ups para serem exibidos, O Big Win irá se sobrepor sobre os demais pop-ups.
+
+### 5.2 Sounds
 Todos os Sons e músicas do jogo estão presentes na pasta /assets/Sounds/ . Dentre as músicas presentes, todas são do jogo Ratatouille de 2007, e são variações das músicas do filme, os efeitos sonoros foram baixados em sites, os quais disponibilizam efeitos sonoros sem direitos autorais
 
 ## 6 Introdução ao uso
@@ -247,3 +251,11 @@ Segue abaixo uma tabela de combinações possíveis para melhor entendimento dos
     </tr>
 </table>
 *Nota: Caso analíse o código bruto do aquivo ./qml/config/SymbolRats, o nome Auguste não está presente, e sim o nome Gusteau.
+
+### Exemplos de vitória
+
+<img src="./assets/Documentation/E.g.2.jpeg"></img>
+Neste exemplo, o prêmio foi superior a 5x o valor apostado, portanto a tela contendo a imagem do Big Win aparece, exibindo o prêmio total. Em casos específicos, quando há a presença do pop-up dos FreeSpins, esta tela sobrepõe os demais  pop-ups. Para fechar este pop-up, clique na tela, exceto no título Ratatouille e na barra inferior 
+
+<img src="./assets//Documentation/E.g.3.jpeg"></img>
+Neste exemplo, por conta de haver uma combinação de mais de duas cartas não especiais, o jogador adquiriu dez spins grátis. Para sair desta tela, clique em qualquer local da tela
