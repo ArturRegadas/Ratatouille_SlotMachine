@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="qml/Chronometer.qml">/home/artur/Game_log/qml/Chronometer.qml</file>
+  </qresource>
+</RCC>
+

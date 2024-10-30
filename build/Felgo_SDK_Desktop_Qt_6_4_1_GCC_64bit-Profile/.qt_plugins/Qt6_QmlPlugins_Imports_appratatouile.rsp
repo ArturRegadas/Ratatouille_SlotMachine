@@ -1,0 +1,15 @@
+-rootPath
+/home/artur/Game_log
+-cmake-output
+-output-file
+/home/artur/Game_log/build/Felgo_SDK_Desktop_Qt_6_4_1_GCC_64bit-Profile/.qt_plugins/Qt6_QmlPlugins_Imports_appratatouile.cmake
+-importPath
+/home/artur/Game_log/build/Felgo_SDK_Desktop_Qt_6_4_1_GCC_64bit-Profile/ratatouile
+-importPath
+/home/artur/Game_log/build/Felgo_SDK_Desktop_Qt_6_4_1_GCC_64bit-Profile
+-importPath
+/home/artur/Felgo/Felgo/gcc_64/./qml
+-qrcFiles
+/home/artur/Game_log/build/Felgo_SDK_Desktop_Qt_6_4_1_GCC_64bit-Profile/.rcc/qmake_ratatouile.qrc
+/home/artur/Game_log/build/Felgo_SDK_Desktop_Qt_6_4_1_GCC_64bit-Profile/.rcc/qmake_ratatouile_copy.qrc
+/home/artur/Game_log/build/Felgo_SDK_Desktop_Qt_6_4_1_GCC_64bit-Profile/.rcc/appratatouile_raw_qml_0.qrc

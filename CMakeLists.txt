@@ -14,7 +14,7 @@ set(PRODUCT_VERSION_NAME "1.0.0")
 set(PRODUCT_VERSION_CODE 1)
 
 # Set either "test" or "publish" stage:
-set(PRODUCT_STAGE "test")
+set(PRODUCT_STAGE "publish")
 
 # Optionally set a license key that is used instead of the license key from
 # main.qml file (App::licenseKey for your app or GameWindow::licenseKey for your game)
@@ -52,12 +52,8 @@ qt_add_qml_module(appratatouile
 #    QML_FILES ${QmlFiles}
 #    RESOURCES ${AssetsFiles}
     NO_RESOURCE_TARGET_PATH
-    QML_FILES qml/Sounds.qml
-    QML_FILES qml/chronometer.qml
     QML_FILES qml/Chronometer.qml
-    QML_FILES qml/PopUpWin.qml
-    QML_FILES qml/slotMachine/BoxWining.qml
-    QML_FILES qml/slotMachine/BlocksBoxWinning.qml
+
 )
 
 # NOTE: for PUBLISHING, perform the following steps:

@@ -1,0 +1,5 @@
+module ratatouile
+typeinfo appratatouile.qmltypes
+prefer :/
+Chronometer 1.0 qml/Chronometer.qml
+
