@@ -1,0 +1,4 @@
+module ratatouile
+typeinfo appratatouile.qmltypes
+prefer :/
+

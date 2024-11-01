@@ -1,0 +1,151 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-446705021c8beb7ff41f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ratatouile",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Felgo_other_files::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Felgo_other_files-Release-2173a8f07cc1a74b571e.json",
+					"name" : "Felgo_other_files",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Felgo_resources_1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Felgo_resources_1-Release-c6e1f7c7199a77238d63.json",
+					"name" : "Felgo_resources_1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Felgo_resources_1_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Felgo_resources_1_autogen-Release-a562bde7f85b69edb884.json",
+					"name" : "Felgo_resources_1_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Felgo_resources_1_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Felgo_resources_1_autogen_timestamp_deps-Release-8180fbfb468972fbbbc1.json",
+					"name" : "Felgo_resources_1_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmltyperegistrations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmltyperegistrations-Release-aae2c421d682d6c89863.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appratatouile::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appratatouile-Release-9cdbde830d56e3e121e3.json",
+					"name" : "appratatouile",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appratatouile_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appratatouile_autogen-Release-5c9fca7b871f7950d58a.json",
+					"name" : "appratatouile_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appratatouile_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appratatouile_autogen_timestamp_deps-Release-f81a4655ac9951fb2716.json",
+					"name" : "appratatouile_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appratatouile_other_files::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appratatouile_other_files-Release-5a8b9ed3976c4f8ae9e1.json",
+					"name" : "appratatouile_other_files",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appratatouile_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appratatouile_qmlimportscan-Release-c76673ec22a6c3798163.json",
+					"name" : "appratatouile_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appratatouile_qmltyperegistration::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appratatouile_qmltyperegistration-Release-bee6bb68d7389b962f02.json",
+					"name" : "appratatouile_qmltyperegistration",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/ahlre/Documents/ratatouile/build/Felgo_SDK_Desktop_Qt_6_4_1_MinGW_64_bit-Release",
+		"source" : "C:/Users/ahlre/Documents/Game_Log"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
