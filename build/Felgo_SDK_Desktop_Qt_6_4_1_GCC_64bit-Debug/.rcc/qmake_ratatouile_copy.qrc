@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/ratatouile">
-    <file alias="qmldir">/home/artur/Game_Log/build/Felgo_SDK_Desktop_Qt_6_4_1_GCC_64bit-Debug/ratatouile/qmldir</file>
-  </qresource>
-</RCC>
-
