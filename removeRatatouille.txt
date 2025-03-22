@@ -1,0 +1,65 @@
+We love you Disney, but don't sue us
+
+@/assets
+(/Documentation): 
+    CombinationLines.jpeg
+    E.g.1.jpeg
+    E.g.2.jpeg
+    E.g.3.jpeg
+
+(/FreeSpin):
+    FreeChefHat1.png
+    FreeChefHat2.png
+    FreeChefHat3.png
+    FreeCollete1.png
+    FreeCollete2.png
+    FreeCollete3.png
+    FreeDjango1.png
+    FreeDjango2.png
+    FreeDjango3.png
+    FreeEgon1.png
+    FreeEgon2.png
+    FreeEgon3.png
+    FreeEgon3.png
+    FreeEgon3.png
+    FreeEmile1.png
+    FreeEmile2.png
+    FreeEmile3.png
+    FreeGusteau1.png
+    FreeGusteau2.png
+    FreeGusteau3.png
+
+(/scenes_loader):
+    scene_one.jpeg
+    scene_two.jpeg
+    scene_tree.jpeg
+    scene_four.jpeg
+    scene_five.jpeg
+    scene_six.jpeg
+
+(/slotMachine):
+    SymbolAuguste.png
+    SymbolChefHat.png
+    SymbolCollete.png
+    SymbolDjango.png
+    SymbolEgon.png
+    SymbolEmile.png
+    SymbolHorst.png
+    SymbolLarousse.png
+    SymbolLinguini.png
+    SymbolLogo.png
+    SymbolRemy.png
+    SymbolSkinner.png
+
+(/Sounds):
+    LaFestin.wav
+    MainMebuBG.wav
+    startGameMusic.wav
+
+(/):
+    backgroundLeftMain.jpeg
+    backgroundLeftMain.png
+    backgroundMain.png
+    backgroundRightMain.jpeg
+    backgroundRightMain.png
+    GmaeLogo.png

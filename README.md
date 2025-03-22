@@ -1,4 +1,8 @@
 # Ratatouille, a combination game
+
+<h3>ATENÇÃO</h3>
+para evitar processos da Disney estamos trabalhando em um novo tema, mas atualmente todas as fotos e musicas vinculadas a marca foram removidas, entretanto casos queira por si colocar fotos e musicas basta colocar nas pastas e com os nomes que estão no bloco de notas "removeRatatouille.txt" as imagens de seu agrado, estamos trabalhando também em novidades para um futuro próximo
+<br><br>
 O projeto implementa um jogo de combinações baseado em probabilidades, possuindo funcionalidades de jogar automaticamente ou mais rapidamente, calcular, gerenciar e armazenar ganhos. O tema do jogo é o filme da Disney ratatouille de 2007.
 
     "Boa culinária não é para os fracos de coração. É para as mentes criativas! Corações fortes! As coisas podem até dar errado, mas não deve deixar ninguém definir seus limites a partir de sua origem. O único limite é sua alma." -Auguste Guseau
@@ -259,3 +263,10 @@ Neste exemplo, o prêmio foi superior a 5x o valor apostado, portanto a tela con
 
 <img src="./assets//Documentation/E.g.3.jpeg"></img>
 Neste exemplo, por conta de haver uma combinação de mais de duas cartas não especiais, o jogador adquiriu dez spins grátis. Para sair desta tela, clique em qualquer local da tela
+
+<h3>De: </h3>
+<ul>
+    <li><a href="github.com/ArturReagdas">Artur Regadas</a></li>
+    <li><a href="github.com/CastCris">Cristiano Sanchez</a></li>
+
+</ul>
