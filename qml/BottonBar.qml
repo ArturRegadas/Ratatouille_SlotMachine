@@ -1,5 +1,6 @@
 import QtQuick
 import Felgo
+import QtMultimedia 6.4
 
 Item {
     id: bottomBar
@@ -43,7 +44,10 @@ Item {
         anchors.leftMargin: 8
         MouseArea{
             anchors.fill:parent
-            onClicked: autoClicked()
+            onClicked:{ 
+		autoClicked()
+		functionSounds.stopJackPot()
+		}
         }
     }
 
@@ -61,6 +65,7 @@ Item {
             onClicked:{
                 functionSounds.playClickSoundEffect()
                 fastClicked()
+		functionSounds.stopJackPot()
             }
         }
     }
@@ -232,6 +237,7 @@ Item {
         MouseArea{
             anchors.fill:parent
             onClicked: {
+		functionSounds.stopJackPot()
                 if (delay){
                     startClicked()
                     delay = false
@@ -276,7 +282,10 @@ Item {
             anchors.verticalCenter: parent.verticalCenter
             MouseArea{
                 anchors.fill: parent
-                onClicked: decrementClicked()
+                onClicked:{ 
+			decrementClicked()
+			functionSounds.stopJackPot()	
+		}
             }
         }
 
@@ -288,7 +297,10 @@ Item {
             anchors.verticalCenter: parent.verticalCenter
             MouseArea{
                 anchors.fill: parent
-                onClicked: incrementClicked()
+                onClicked:{
+		 	incrementClicked()
+			functionSounds.stopJackPot()
+		}
             }
         }
 
@@ -300,7 +312,10 @@ Item {
             anchors.verticalCenter: parent.verticalCenter
             MouseArea{
                 anchors.fill: parent
-                onClicked: maxValueClicked()
+                onClicked:{
+			maxValueClicked()
+			functionSounds.stopJackPot()
+		}
             }
         }
     }

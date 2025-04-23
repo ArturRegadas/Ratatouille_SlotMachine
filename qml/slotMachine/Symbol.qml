@@ -1,5 +1,6 @@
 import QtQuick 2.0
 import Felgo 4.0
+import QtMultimedia 6.4
 
 Item{
     id: blocks

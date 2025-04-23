@@ -1,4 +1,0 @@
-module FlaskOfRum
-typeinfo appFlaskOfRum.qmltypes
-prefer :/
-

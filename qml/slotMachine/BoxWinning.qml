@@ -1,5 +1,6 @@
 import QtQuick
 import Felgo
+import QtMultimedia 6.4
 
 Item {
     id: boxWinning
@@ -38,6 +39,7 @@ Item {
                 advance(visibleCartIndex)
                 boxWinning.reset()
                 boxWinning.visible=false
+		functionSounds.stopJackPot()
                 sleep.start()
             }
         }

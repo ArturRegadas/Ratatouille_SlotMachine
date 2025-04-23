@@ -1,6 +1,8 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
-import Felgo 3.0
+import Felgo 4.0
+import QtMultimedia 6.4
+
 
 Popup {
     property int flyMoney: 0
@@ -27,6 +29,12 @@ Popup {
         height: 700
         anchors.centerIn: parent // Faz a imagem preencher todo o Popup
         playing: true
+	MouseArea{
+		onClicked:{
+                	functionSounds.stopJackPot()
+		}
+
+	}
 
     }
 
@@ -85,6 +93,12 @@ Popup {
         height: 700
         anchors.centerIn: parent // Faz a imagem preencher todo o Popup
         playing: true
+MouseArea{
+		onClicked:{
+                	functionSounds.stopJackPot()
+		}
+
+	}
 
     }
     function openPopup() {
@@ -103,11 +117,13 @@ Popup {
 
         onTriggered: {
             customPopup.visible = false
+	    functionSounds.stopJackPot()
         }
     }
 
     function closePopup() {
         endPopUpTimer.start()
+
         fadeOutAnimation.start()
 
     }

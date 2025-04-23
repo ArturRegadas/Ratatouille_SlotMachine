@@ -1,6 +1,8 @@
 import Felgo 4.0
 import QtQuick 2.15
 import "../config"
+import QtMultimedia 6.4
+
 //
 SlotMachine{
     id: machine

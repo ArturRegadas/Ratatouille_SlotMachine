@@ -2,6 +2,7 @@ import Felgo 4.0
 import QtQuick 2.0
 import "slotMachine"
 import QtQuick.Controls 2.15
+import QtMultimedia
 
 
 GameWindow{
@@ -98,6 +99,16 @@ GameWindow{
         property var combinationsColors:[]
         property var combinationsNames:[]
         property var combinationsInt:[]
+
+	MouseArea{
+        anchors.fill: parent
+        onClicked:{
+            functionSounds.stopJackPot()
+            //myPopup.openPopup()
+        }
+        // Define o popup como visível ao clicar no botão
+        //onClicked: clickSound.play()
+    }
         //Animação do crédito caindo
         Behavior on creditStack{
             PropertyAnimation{
@@ -125,6 +136,15 @@ GameWindow{
         }
         //
         Rectangle{ // Para caso da janela ser maior que a scene, esse gradiente irá prencher o fundo
+		MouseArea{
+        anchors.fill: parent
+        onClicked:{
+            functionSounds.stopJackPot()
+            //myPopup.openPopup()
+        }
+        // Define o popup como visível ao clicar no botão
+        //onClicked: clickSound.play()
+    }
             anchors.fill: scene.gameWindowAnchorItem
             gradient: Gradient{
                 GradientStop{
@@ -139,6 +159,15 @@ GameWindow{
         }
 
         Image{ // Imagem da lateral esquerda
+MouseArea{
+        anchors.fill: parent
+        onClicked:{
+            functionSounds.stopJackPot()
+            //myPopup.openPopup()
+        }
+        // Define o popup como visível ao clicar no botão
+        //onClicked: clickSound.play()
+    }
             x:-20
             y: parent.verticalCenter
             source: "../assets/backgroundLeftMain.jpg"
@@ -147,6 +176,15 @@ GameWindow{
         }
 
         Image{
+MouseArea{
+        anchors.fill: parent
+        onClicked:{
+            functionSounds.stopJackPot()
+            //myPopup.openPopup()
+        }
+        // Define o popup como visível ao clicar no botão
+        //onClicked: clickSound.play()
+    }
             x:parent.width-150 // Imagem da lateral direita
             y: parent.verticalCenter
             source: "../assets/backgroundRightMain.jpg"
@@ -166,6 +204,15 @@ GameWindow{
             defaultReelWidth: Math.round(defaultItemHeight/80*67)
             spinVelocity: !bottomBar.fastActive&&!scene.additionalSpin?350:bottomBar.fastActive&&!scene.additionalSpin?100:250,!bottomBar.fastActive&&!scene.additionalSpin?750:bottomBar.fastActive&&!scene.additionalSpin?1900:1200
             //
+MouseArea{
+        anchors.fill: parent
+        onClicked:{
+            functionSounds.stopJackPot()
+            //myPopup.openPopup()
+        }
+        // Define o popup como visível ao clicar no botão
+        //onClicked: clickSound.play()
+    }
             onSpinEnded: scene.endedSlotMachine()
             
             onSpinStarted: {
@@ -192,6 +239,15 @@ GameWindow{
             anchors.horizontalCenter: slotMachine.horizontalCenter
             height: slotMachine.height
             width: Math.round(height/240*408)
+MouseArea{
+        anchors.fill: parent
+        onClicked:{
+            functionSounds.stopJackPot()
+            //myPopup.openPopup()
+        }
+        // Define o popup como visível ao clicar no botão
+        //onClicked: clickSound.play()
+    }
         }
 
         TopBar { // Aba acima da roleta
@@ -199,6 +255,15 @@ GameWindow{
            width: scene.gameWindowAnchorItem.width
            anchors.top: scene.gameWindowAnchorItem.top
            anchors.horizontalCenter: scene.gameWindowAnchorItem.horizontalCenter
+MouseArea{
+        anchors.fill: parent
+        onClicked:{
+            functionSounds.stopJackPot()
+            //myPopup.openPopup()
+        }
+        // Define o popup como visível ao clicar no botão
+        //onClicked: clickSound.play()
+    }
         }
         
         BottonBar{ // Aba abaixo da roleta
@@ -221,6 +286,7 @@ GameWindow{
             width:scene.gameWindowAnchorItem.width
             height:scene.gameWindowAnchorItem.height
             visible: false
+
         }
         // Funções
 

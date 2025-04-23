@@ -1,6 +1,7 @@
 import QtQuick
 import Felgo
 import "../config"
+import QtMultimedia 6.4
 
 Item {
     id: lineSymbol
